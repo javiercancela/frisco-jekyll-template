@@ -1,6 +1,6 @@
 ---
-title: Un blog en GitHub (y V - Últimos ajustes)
-date: 2017-01-19 22:00:00 +0200
+title: Intruducción al álgebra lineal
+date: 2017-01-20 22:00:00 +0200
 description: La experiencia de montar un blog en GitHub
 categories:
   - blog
