@@ -1,5 +1,5 @@
 ---
-title: Teclado mecánico Logitech
+title: Teclado mecánico Logitech G610
 date: 2018-01-22 00:00:00 +0200
 description: La experiencia de montar un blog en GitHub
 categories:
