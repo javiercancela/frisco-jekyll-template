@@ -1,6 +1,6 @@
 ---
 title: Un blog en GitHub (y V - Últimos ajustes)
-date: 2017-01-29 22:00:00 +0200
+date: 2017-02-19 03:00:00 +0200
 description: La experiencia de montar un blog en GitHub
 categories:
   - blog
@@ -8,11 +8,11 @@ categories:
 image: https://source.unsplash.com/V4EOZj7g1gw/2000x1322
 comments: true
 ---
-## Jekyll y GitHub Pages
 Los blogs, y los sites en general, albergados en GitHub son totalmente estáticos. Es decir, al acceder a una url de nuestro blog no se ejecuta código en el servidor, tan solo se devuelven archivos html, js, css, multimedia, ... tal como están guardados en el mismo.
 
 Las partes dinámicas que pueda haber (comentarios en los posts, formularios de contacto, ...) se consiguen mediante integraciones con otras páginas web. Como ejemplo, este blog tiene comentarios en las entradas, pero todo el código relativo a ellos se encuentra en el servidor de [Disqus](https://disqus.com/).
 
+## Jekyll y GitHub Pages
 En los posts anteriores hemos visto cómo utilizar un lenguaje de marcado, [Liquid](http://shopify.github.io/liquid/), para generar dinámicamente algunas partes del sitio web. Podría pensarse entonces que Jekyll funciona como un servidor de aplicaciones generando estas páginas según las vamos solicitando. Sin embargo, lo que hace Jekyll es compilar los archivos con Liquid, y los demás recursos del repositorio, para generar un sitio web estático convencional que almacena en la carpeta `_site`.
 
 Hasta ahora hemos dejado que el Jekyll de GitHub se encargase de la generación del site. Al subir nuestro código al repositorio GitHub Pages se encarga de realizar la compilación, tal como ocurre cuando la hacemos en local con 

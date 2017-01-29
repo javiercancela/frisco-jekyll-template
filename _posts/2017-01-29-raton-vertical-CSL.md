@@ -1,7 +1,7 @@
 ---
 title: Ratón vertical CSL
-date: 2017-01-30 03:00:00 +0200
-description: Impresiones sobre mi nuevo ratón
+date: 2017-01-29 03:00:00 +0200
+description: Bueno, bonito, barato y de fabricante desconocido
 categories:
   - hardware
 image: https://images-na.ssl-images-amazon.com/images/I/81uKkvC%2BG4L._SL1500_.jpg
