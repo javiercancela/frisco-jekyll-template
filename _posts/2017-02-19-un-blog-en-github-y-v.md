@@ -1,6 +1,6 @@
 ---
 title: Un blog en GitHub (y V - Últimos ajustes)
-date: 2017-02-20 22:00:00 +0200
+date: 2017-02-19 03:00:00 +0200
 description: La experiencia de montar un blog en GitHub
 categories:
   - blog

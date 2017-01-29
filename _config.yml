@@ -49,7 +49,10 @@ paginate: 5
 paginate_path: "/:num/"
 
 jekyll-archives:
-  enabled: ['categories']
+  enabled: 
+    - categories
+    - year
+    - month
 
 defaults:
   -

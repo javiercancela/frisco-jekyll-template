@@ -1,6 +1,6 @@
 ---
 title: Ratón vertical CSL
-date: 2017-01-30 03:00:00 +0200
+date: 2017-01-29 03:00:00 +0200
 description: Bueno, bonito, barato y de fabricante desconocido
 categories:
   - hardware
