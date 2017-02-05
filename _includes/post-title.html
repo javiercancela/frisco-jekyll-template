@@ -1,7 +1,12 @@
 <p class="post-details">
 	{% for category in include.post.categories %}
+		{% for scategory in site.data.categories %}
+		  {% if category == scategory.slug %}
+		    {% assign  catname =  scategory.name %}
+		  {% endif %}
+		{% endfor %}
 		<span class="blog-filter">
-			<a href="{{ site.baseurl }}/category/{{ category}}/">{{ category | capitalize }}</a>
+			<a href="{{ site.baseurl }}/category/{{ category}}/">{{ catname }}</a>
 		</span>
 	{% endfor %}
 	{% if post.date %}

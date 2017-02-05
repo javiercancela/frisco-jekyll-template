@@ -1,0 +1,28 @@
+---
+title: Blog
+description: El blog de Javier Cancela.
+image: https://source.unsplash.com/EZSm8xRjnX0/2000x1322
+---
+
+<section class="hero" style="background-image: url(https://source.unsplash.com/o6GEPQXnqMY/2000x1322)">
+  <div class="inner-hero text-container">
+    <div class="hero-text-container">
+      <h1>Archivo</h1>
+      <p class="subtext">Conocimiento obsoleto</p>
+    </div>
+  </div>
+</section>
+
+<section>
+	<div class="text-container">
+	   {% for post in site.posts %}
+	       {% assign currentDate = post.date | date: "%Y" %}
+	       {% if currentDate != myDate %}
+	           <br/><br/><h2>{{ currentDate }}</h2>
+	           {% assign myDate = currentDate %}
+	       {% endif %}
+	       <h3><a href="{{ post.url }}"><span>{{ post.date | date: "%B %-d, %Y" }}</span> - {{ post.title }}</a></h3>
+	   {% endfor %}
+	   <br/>
+	</div>
+</section>

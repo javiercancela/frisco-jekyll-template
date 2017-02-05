@@ -1,4 +1,6 @@
 - name: Blog
   link: /
+- name: Archivo
+  link: /archivo/
 - name: Sobre mí
   link: /sobre-mi/
