@@ -4,7 +4,7 @@ date: 2017-01-15 22:00:00 +0200
 description: Comentario sin spoilers sobre la trilogía de Cixin Liu
 categories:
   - libros
-  - ciencia ficcion
+  - ciencia-ficcion
 image: https://source.unsplash.com/Q1p7bh3SHj8/2000x1322
 comments: true
 ---
