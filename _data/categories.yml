@@ -1,0 +1,14 @@
+- name: Blog
+  slug: Blog
+- name: GitHub
+  slug: github
+- name: Hardware
+  slug: hardware
+- name: Libros
+  slug: libros
+- name: Ciencia Ficción
+  slug: ciencia-ficcion
+- name: Deep Learning
+  slug: deep-learning
+- name: Inteligencia Artificial
+  slug: inteligencia-artificial

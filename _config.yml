@@ -26,7 +26,7 @@ social:
 # -----
 # Build
 
-permalink: pretty
+permalink: /:year/:month/:day/:title/
 
 gems:
   - jekyll-seo-tag
@@ -49,10 +49,8 @@ paginate: 5
 paginate_path: "/:num/"
 
 jekyll-archives:
-  enabled: 
-    - categories
-    - year
-    - month
+  enabled: all
+    
 
 defaults:
   -

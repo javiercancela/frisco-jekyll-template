@@ -3,9 +3,9 @@ title: Deep learning - Prólogo
 date: 2017-02-26 22:00:00 +0200
 description: Apuntes sobre el libro Deep Learning, de Ian Goodfellow
 categories:
-  - Libros
-  - Deep Learning
-  - Inteligencia Artificial
+  - libros
+  - deep-learning
+  - inteligencia-artificial
 image: /images/deep-learning.jpg
 comments: true
 ---
