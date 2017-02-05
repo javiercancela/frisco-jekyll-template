@@ -5,6 +5,7 @@ description: Apuntes sobre el libro Deep Learning, de Ian Goodfellow
 categories:
   - Libros
   - Deep Learning
+  - Inteligencia Artificial
 image: /images/deep-learning.jpg
 comments: true
 ---

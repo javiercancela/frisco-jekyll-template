@@ -5,28 +5,23 @@ description: Apuntes sobre el libro Deep Learning, de Ian Goodfellow
 categories:
   - Libros
   - Deep Learning
+  - Inteligencia Artificial
 image: /images/deep-learning.jpg
 comments: true
 ---
+Notas sobre el capítulo 1 del libro "Deep learning"
 
-# Capítulo 1 - Introducción
+## Capítulo 1 - Introducción
 
-This book is about a solution to these more intuitive problems. This solution isto allow computers to learn from experience and understand the world in terms of ahierarchy of concepts, with each concept deﬁned in terms of its relation to simplerconcepts. By gathering knowledge from experience, this approach avoids the needfor human operators to formally specify all of the knowledge that the computerneeds. The hierarchy of concepts allows the computer to learn complicated conceptsby building them out of simpler ones. If we draw a graph showing how these concepts are built on top of each other, the graph is deep, with many layers. Forthis reason, we call this approach to AI deep learning.
+El libro comienza hablando sobre los problemas que constituyen el verdadero desafío las la inteligencia artificial hoy en día, aquellos que la gente realiza con facilidad pero cuya descripción formal es compleja, como reconocer rostros en imágenes. _Deep learning_ es una solución a estos problemas. Por una parte acumula conocimiento a través de la experiencia, evitando así que se tenga que definir formalmente todo el conocimiento necesario. Por otro lado, define conceptos en varias capas jerárquicas, de forma que cada concepto se define a partir de varios conceptos más simples. Es esta idea de construir conceptos complejos sobre muchas capas de conceptos más simples, de forma que las estructuras de estas redes neuronales tienen mucha "profundidad", es la que da el nombre de _deep learning_ a esta disciplina.
 
-Chess can be completely described by a very brief list of completely formal rules, easily provided ahead of time by the programmer.
+El origen de esta aproximación a la inteligencia artificial está en las limitaciones de los sistemas que necesitaban que el conocimiento se incorporase de forma explícita. Para eliminar estas limitaciones se empieza a diseñar sistemas capaces de distinguir patrones en datos. Esta capacidad consituye en nucleo del _machine learning_.
 
-A person’s everyday life requires an immense amount of knowledgeabout the world. Much of this knowledge is subjective and intuitive, and thereforediﬃcult to articulate in a formal way.
-
-The difficulties faced by systems relying on hard-coded knowledge suggestthat AI systems need the ability to acquire their own knowledge, by extractingpatterns from raw data. This capability is known asmachine learning.
-
-The performance of these simple machine learning algorithms depends heavily on the representation of the data they are given. For example, when logisticregression is used to recommend cesarean delivery, the AI system does not examinethe patient directly. Instead, the doctor tells the system several pieces of relevantinformation, such as the presence or absence of a uterine scar. Each piece ofinformation included in the representation of the patient is known as afeature.
-
-One solution to this problem is to use machine learning to discover not onlythe mapping from representation to output but also the representation itself.This approach is known asrepresentation learning.
-
-The quintessential example of a representation learning algorithm is theau-toencoder. An autoencoder is the combination of anencoderfunction thatconverts the input data into a diﬀerent representation, and adecoderfunctionthat converts the new representation back into the original format. Autoencodersare trained to preserve as much information as possible when an input is runthrough the encoder and then the decoder, but are also trained to make the newrepresentation have various nice properties. Diﬀerent kinds of autoencoders aim toachieve diﬀerent kinds of properties
-
-Of course, it can be very diﬃcult to extract such high-level, abstract featuresfrom raw data. Many of these factors of variation, such as a speaker’s accent,can be identiﬁed only using sophisticated, nearly human-level understanding ofthe data. When it is nearly as diﬃcult to obtain a representation as to solve theoriginal problem, representation learning does not, at ﬁrst glance, seem to help us.
-
-Deep learningsolves this central problem in representation learning by intro-ducing representations that are expressed in terms of other, simpler representations.Deep learning allows the computer to build complex concepts out of simpler con-cepts. Figure 1.2 shows how a deep learning system can represent the concept ofan image of a person by combining simpler concepts, such as corners and contours,which are in turn deﬁned in terms of edgesç
-
-The quintessential example of a deep learning model is the feedforward deepnetwork ormultilayer perceptron(MLP). A multilayer perceptron is just amathematical function mapping some set of input values to output values. Thefunction is formed by composing many simpler functions. We can think of eachapplication of a diﬀerent mathematical function as providing a new representationof the inpu
+Una consecuencia de este enfoque centrado en los datos es que los algoritos de _machine learning_ dependen mucho de la representación de los datos utilizada. El libro nos muestra un ejemplo muy visual: 
+<div style="text-align:center">
+    <figure>
+        <img alt="Figura 1.1 - El mismo conjunto de datos representado en coordenadas cartesianas (izq.) y polares (dcha.)" src ="/images/DL/Fig1.1.jpg" />
+        <figcaption>Figura 1.1 - El mismo conjunto de datos representado en coordenadas cartesianas (izq.) y polares (dcha.)</figcaption>
+    </figure>
+</div>
+Si el objetivo fuese separar con una línea recta los datos de una categoría (triángulos verdes) de los de la otra (círculos azules), lo tendríamos fácil al representar los datos con coordenadas polares, e imposible al hacerlo con coordenadas cartesianas.
