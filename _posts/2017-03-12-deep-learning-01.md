@@ -1,6 +1,6 @@
 ---
 title: Deep learning - Introducción
-date: 2018-01-02 22:00:00 +0200
+date: 2017-03-12 22:00:00 +0200
 description: Apuntes sobre el libro Deep Learning, de Ian Goodfellow
 categories:
   - libros
@@ -17,6 +17,7 @@ El libro comienza hablando sobre los problemas que constituyen el verdadero desa
 
 El origen de esta aproximación a la inteligencia artificial está en las limitaciones de los sistemas que necesitaban que el conocimiento se incorporase de forma explícita. Para eliminar estas limitaciones se empieza a diseñar sistemas capaces de distinguir patrones en datos. Esta capacidad consituye en nucleo del _machine learning_.
 
+## Representaciones y características
 Una consecuencia de este enfoque centrado en los datos es que los algoritos de _machine learning_ dependen mucho de la representación de los datos utilizada. El libro nos muestra un ejemplo muy visual: 
 <div style="text-align:center">
     <figure>
@@ -25,3 +26,8 @@ Una consecuencia de este enfoque centrado en los datos es que los algoritos de _
     </figure>
 </div>
 Si el objetivo fuese separar con una línea recta los datos de una categoría (triángulos verdes) de los de la otra (círculos azules), lo tendríamos fácil al representar los datos con coordenadas polares, e imposible al hacerlo con coordenadas cartesianas.
+
+Otro concepto básico que nos presentan es el de **característica** (_feature_ en inglés, lo he visto también traducido al castellano como **atributo**). Una característica es una propiedad medible del fenómeno que se está representando en los datos. Un ejemplo que nos presentan es el de la identificación de una persona a partir de su voz. El sonido emitido permite estimar el tamaño del tracto vocal; este tamaño constituye una **característica** que sirve de pista sobre el sexo y la edad de la persona que habla. 
+
+La definición de característica da paso a la introducción del concepto _representation learning_ (aprendizaje de representaciones, aunque creo que la expresión se utiliza también en pedagogía con otro sentido distinto). Determinar qué características debe extraer nuestro algoritmo es, habitualmente, una tarea muy compleja (pensemos en cómo indicarle que detecte coches en fotos, haciéndolo en términos del valor de cada pixel). El _representation learning_ busca que el ordenador descubra tanto la relación entre la representación y el resultado (si tiene cuatro ruedas es un coche) como la representación en sí (el ordenador no va a saber qué es una rueda, pero sí va a aprender que ciertos valores de pixels en zonas próximas aparecen dos, tres o cuatro veces en las fotos que contienen coches).
+
