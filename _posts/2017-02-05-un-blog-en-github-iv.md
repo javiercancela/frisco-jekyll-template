@@ -1,6 +1,6 @@
 ---
 title: Un blog en GitHub (IV - Asignar un dominio)
-date: 2017-02-06 03:00:00 +0200
+date: 2017-02-05 03:00:00 +0200
 description: La experiencia de montar un blog en GitHub
 categories:
   - blog
