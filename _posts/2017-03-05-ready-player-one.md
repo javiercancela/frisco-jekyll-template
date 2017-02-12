@@ -39,7 +39,7 @@ El libro está bien escrito. Tiene ritmo, sobre todo al principio, y los persona
     </figure>
 </div>
 
-Tras leer el libre me encontré con que [Steven Spielberg está rodando una versión para el cine](https://es.wikipedia.org/wiki/Ready_Player_One_(pel%C3%ADcula)). Imagino que la idea es apuntar al _target_ natural del libro (cuarentones nostálgicos) y añadir los cambios necesarios para asegurarse el interés del público joven. Veremos cómo resulta.
+Tras leer el libro me encontré con que [Steven Spielberg está rodando una versión para el cine](https://es.wikipedia.org/wiki/Ready_Player_One_(pel%C3%ADcula)). Imagino que la idea es apuntar al _target_ natural del libro (cuarentones nostálgicos) y añadir los cambios necesarios para asegurarse el interés del público joven. Veremos cómo resulta.
 
 <div style="text-align:center">
     <figure>
