@@ -49,6 +49,8 @@ git push origin master
 ```
 De esta forma, cada vez que publico una nueva versión en la rama `release`, se publica en GitHub Pages una versión compilada sin restricciones de plugins.
 
+La variable `JEKYLL_ENV=production` se define para que la compilación se haga incluyendo todo lo necesario para la publicación real. En mi caso, esto añade el javascript de Google Analytics. 
+
 ## Imágenes
 GitHub Pages tiene un límite de 1GB para el tamaño de los sites alojados. Aunque es un límite amplio, si no queremos superarlo tenemos que tener un poco de cuidado con el tamaño de los archivos que subamos. Una buena práctica es alojar los archivos multimedia en aplicaciones destinadas a ellos, como [YouTube](https://www.youtube.com/) para vídeos. Para los imágenes yo estoy usando [Unsplash](https://unsplash.com/), un repositorio de imágenes muy fácil de usar, que descubrí gracias a la plantilla de Jekyll que estoy usando.
 

@@ -1,6 +1,6 @@
 ---
 title: Teclado mecánico Logitech G610
-date: 2017-02-13 03:00:00 +0200
+date: 2017-02-12 03:00:00 +0200
 description: O cómo mirar precios de todos los teclados ergonómicos del mercado para acabar comprando un teclado sin reposamuñecas
 categories:
   - hardware
