@@ -1,6 +1,6 @@
 ---
 title: Deep learning - Introducción
-date: 2017-03-12 22:00:00 +0200
+date: 2018-03-12 22:00:00 +0200
 description: Apuntes sobre el libro Deep Learning, de Ian Goodfellow
 categories:
   - libros
