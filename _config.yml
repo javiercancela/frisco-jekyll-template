@@ -2,6 +2,8 @@
 # Markdown
 kramdown:
   input: GFM
+  highlighter: rouge
+
  
 # Site
 
