@@ -6,9 +6,13 @@
   slug: hardware
 - name: Libros
   slug: libros
+- name: Python
+  slug: python
 - name: Ciencia Ficción
   slug: ciencia-ficcion
 - name: Deep Learning
   slug: deep-learning
+- name: Machine Learning
+  slug: machine-learning
 - name: Inteligencia Artificial
   slug: inteligencia-artificial
