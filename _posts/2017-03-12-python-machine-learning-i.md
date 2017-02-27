@@ -31,7 +31,7 @@ donde _x_ sería el tamaño de la mano, _A_ y _B_ valores definidos tras el proc
 
 <div style="text-align:center">
     <figure>
-        <img alt="Ejemplo de regresión lineal" src ="/images/pml/1_regresion.png" />
+        <img alt="Ejemplo de regresión lineal" src ="/images/pml/1_regression.png" />
         <figcaption>Ejemplo de regresión lineal</figcaption>
     </figure>
 </div>
