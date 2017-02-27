@@ -23,10 +23,7 @@ En el aprendizaje supervisado se entrena el modelo con datos para los que ya se 
 
 Un ejemplo de problema de clasificación es el mencionado en la entrada anterior: la clasificación de spam. Al modelo se le presenta con una serie de correos que ya han sido identificados con una etiqueta 'spam' o 'no spam'. El modelo utiliza esos correos para calibrar ciertos valores internos, de forma que pueda identificar correctamente futuros correos sin intervención humana.
 
-En los problemas de regresión el valor esperado pertenece a un rango continuo. Un ejemplo, [sacado de este post (en inglés)](http://setosa.io/ev/ordinary-least-squares-regression/), sería un modelo para predecir la altura de una persona a partir del tamaño de su mano. Para ello entrenaríamos el modelo con una muestra aleatoria de personas, para las cuales tendríamos tanto el tamaño de su mano como su altura real. El resultado sería una ecuación del tipo 
-\begin{equation}
-y = A + Bx
-\end{equation}
+En los problemas de regresión el valor esperado pertenece a un rango continuo. Un ejemplo, [sacado de este post (en inglés)](http://setosa.io/ev/ordinary-least-squares-regression/), sería un modelo para predecir la altura de una persona a partir del tamaño de su mano. Para ello entrenaríamos el modelo con una muestra aleatoria de personas, para las cuales tendríamos tanto el tamaño de su mano como su altura real. El resultado sería una ecuación del tipo \(y = A + Bx\)
 donde _x_ sería el tamaño de la mano, _A_ y _B_ valores definidos tras el proceso de aprendizaje, e _y_ la altura predicha para el valor x.
 
 <div style="text-align:center">
@@ -72,10 +69,22 @@ En aprendizaje automático existe un conjunto de datos muy conocido que se usa e
 
 <div style="text-align:center">
     <figure>
-        <img alt="Algunos datos de Iris y una ilustración de la flor" src ="/images/pml/1_compression.png" />
+        <img alt="Algunos datos de Iris y una ilustración de la flor" src ="/images/pml/1_iris.png" />
         <figcaption>Algunos datos de Iris y una ilustración de la flor</figcaption>
     </figure>
 </div>
 
-Como se puede apreciar en la imagen superior, cada fila de datos es una *muestra*, *instancia* u *observación*. Para cada una de estas muestras se proporciona una serie de datos, a los que nos solemos referir como *características*, aunque también *atributos*, *medidas* o *dimensiones*. Finalmente, la especie de la flor sería la *etiqueta* u *objetivo*. Como se ve, la consistencia en la terminología no es un fuerte del _machine learning_.
+Como se puede apreciar en la imagen superior, cada fila de datos es una *muestra*, *instancia* u *observación*. Para cada una de estas muestras se proporciona una serie de datos, a los que nos solemos referir como *características*, aunque también *atributos*, *medidas* o *dimensiones*. Finalmente, la especie de la flor sería la *etiqueta* u *objetivo*. La consistencia en la terminología no es un fuerte del _machine learning_.
 
+En este punto el libro también nos habla de notación algebraica. El trabajo con matrices es fundamental en el _machine learning_, así que este el autor nos cuenta qué notación utiliza para representar matices, vectores y elementos dentro de los mismos. 
+
+Por ejemplo, el conjunto de datos Iris se puede representar como una matriz de 150 filas (una por muestra) y 4 columnas (una por característica):
+
+\begin{bmatrix}
+x_1^(1) & x_2^(1) & x_3^(1) & x_4^(1) \cr
+x_1^(2) & x_2^(2) & x_3^(2) & x_4^(2) \cr
+\vdots & \vdots & \vdots & \vdots \cr
+x_1^(150) & x_2^(150) & x_3^(150) & x_4^(150) \cr
+\end{bmatrix}
+
+En general, un elemento \(x_n^(m)\) se refiere al elemento de la fila m y la columna n de una matriz. Usaremos negritas en minúsculas para los vectores (\(\bf x \epsilon \mathbb R^nx1\))
