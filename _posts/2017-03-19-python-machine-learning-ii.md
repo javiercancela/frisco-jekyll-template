@@ -15,7 +15,7 @@ Empezamos con los algoritmos. Vamos a implementar un perceptrón en Python, y en
 
 <div style="text-align:center">
     <figure>
-        <a href="https://www.packtpub.com/big-data-and-business-intelligence/python-machine-learning"><img alt="En este modelo se emite una señal de salida si el resultado de aplicar una función a la suma de las entradas supera cierto umbral" src ="/images/pml/2_MCP.png" /></a>
+        <img alt="En este modelo se emite una señal de salida si el resultado de aplicar una función a la suma de las entradas supera cierto umbral" src ="/images/pml/2_MCP.png" />
         <figcaption>En este modelo se emite una señal de salida si el resultado de aplicar una función a la suma de las entradas supera cierto umbral</figcaption>
     </figure>
 </div>
@@ -38,8 +38,8 @@ El libro asume cierta familiaridad trabajando con vectores y matrices. Para refr
 </div>
 
 Como podemos ver en la figura anterior, la señal de entrada está compuesta por un array $$\bf x$$ al que se aplica una serie de pesos definidos por un array $$\bf w$$. Es decir, cada elemento $$x_i$$ se multiplica por $$w_i$$, y se suma el resultado de cada uno de estos productos. De una manera más formal, definimos
+
 $$
-\begin{align}
 x = \begin{bmatrix}
 x_1 \cr
 \vdots \cr
@@ -49,23 +49,53 @@ w_1 \cr
 \vdots \cr
 w_m \cr
 \end{bmatrix}
-\end{align}
 $$
 
 Y la entrada resultante $$z$$ será la suma de cada entrada ponderada:
+
 $$
-\begin{align}
 z = \sum{w_ix_i} = w_1x_1 + \cdots + w_mx_m
-\end{align}
 $$
 
 Ya tenemos la entrada $$z$$ a la función de activación $$\phi(z)$$. Para nuestro caso vamos a usar como función de activación la [función escalón](https://es.wikipedia.org/wiki/Funci%C3%B3n_escal%C3%B3n_de_Heaviside). Esta función se define de la siguiente forma:
+
 $$
-\begin{align}
 \phi(z) = \begin{cases}
 \text{1 si } z \ge \theta \\
 \text{-1 en otro caso}
 \end{cases}
-\end{align}
 $$
+
+Ese valor $$\theta$$ es el umbral que tiene que superar $$z$$ para disparar la señal. Para simplificar los cálculos, definimos un peso 0 con $$w_0 = -\theta$$ y $$x_0 = 1$$, de esta forma podemos escribir:
+
+$$
+z = w_0x_0 + w_1x_1 + \cdots + w_mx_m
+$$
+
+y 
+
+$$
+\phi(z) = \begin{cases}
+\text{1 si } z \ge 0 \\
+\text{-1 en otro caso}
+\end{cases}
+$$
+
+El valor de $$z$$ se puede escribir también como $$z = \mathbf{w}^T\bf x$$. El superíndice T indica que la matriz (en este caso un array, que tratamos como una matriz de 1 columna y n filas) está traspuesta, o lo que es lo mismo, se han convertidos sus columnas en filas. Por lo tanto:
+
+$$
+\mathbf{w}^T\bf x = \begin{bmatrix} w_0 & w_1 & \cdots & w_m \end{bmatrix} \begin{bmatrix}
+x_1 \cr
+\vdots \cr
+x_m \cr
+\end{bmatrix}
+$$
+
+Esto nos permite usar la operación de producto escalar entre matrices. En una operación entre matrices, si la primera tiene es de dimensiones $$n \times m$$, la segunda debe tener $$m \times p$$, dando resultado una matriz $$n \times p$$. En nuestro caso, la dimensiones serían $$1 \times n$$ y $$n \times 1$$, dando como resultado una matriz $$1 \times 1$$, es decir, un escalar. Por ello esta operación es realmente un producto escalar entre vectores, cuyo resultado es la ya conocida expresión
+
+$$
+z = w_0x_0 + w_1x_1 + \cdots + w_mx_m
+$$
+
+## Entrenando el modelo
 
