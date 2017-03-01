@@ -99,3 +99,17 @@ $$
 
 ## Entrenando el modelo
 
+Recapitulando, lo que pretendemos es ir modificando los valores de los pesos ($$\mathbf{w}$$) de forma que las salidas del preceptrón se vayan acercando a los valores esperados. Para ello se inicializan los pesos a cero, o a un valor muy pequeño, se obtiene la salida, y se actualizan los pesos.
+
+¿Cómo se actualizan los pesos? Pues sumándoles una cantidad (positiva o negativa) que depende de la entrada, de la diferencia entre la salida real y la salida esperada, y de la tasa de aprendizaje, que es una constante que vale entre 0 y 1, denotada por la letra $$\eta$$:
+
+$$
+\Delta w_j = \eta(y^{(i) - \hat y^{(i)})x_j^{(i)}
+$$
+
+En esta fórmula, a demás de la ya mencionada tasa de aprendizaje $$\eta$$, $$y^{(i)$$ es la clase a la que pertenece la muestra (i), $$\hat y^{(i)}$$ es la clase predicha por el perceptrón, y $$x_j^{(i)}$$ es la entrada de la característica j para la muestra (i). Todo esto se multiplica para calcular la variación en la característica j: $$\Delta w_j$$. Para la siguiente muestra, se recalcularán los pesos:
+
+$$
+w_j := w_j + \Delta w_j
+$$
+
