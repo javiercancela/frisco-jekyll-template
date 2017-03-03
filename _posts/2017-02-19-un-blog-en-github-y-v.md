@@ -5,7 +5,7 @@ description: La experiencia de montar un blog en GitHub
 categories:
   - blog
   - github
-image: https://source.unsplash.com/V4EOZj7g1gw/2000x1322
+image: /images/blog.jpg
 comments: true
 ---
 Los blogs, y los sites en general, albergados en GitHub son totalmente estáticos. Es decir, al acceder a una url de nuestro blog no se ejecuta código en el servidor, tan solo se devuelven archivos html, js, css, multimedia, ... tal como están guardados en el mismo.

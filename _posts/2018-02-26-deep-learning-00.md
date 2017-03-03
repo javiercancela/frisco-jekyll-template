@@ -17,7 +17,7 @@ Han pasado más de veinte años, y el mundo de la inteligencia artificial de hoy
 
 <div style="text-align:center">
     <figure>
-        <img alt="Las inteligencias artificiales leen código ofuscado para evadirse" src ="https://source.unsplash.com/xekxE_VR0Ec/1000x666" />
+        <img alt="Las inteligencias artificiales leen código ofuscado para evadirse" src ="/images/ofuscado.jpg" />
         <figcaption>Las inteligencias artificiales leen código ofuscado para evadirse</figcaption>
     </figure>
 </div>
@@ -32,7 +32,7 @@ _Deep learning_ ([Aprendizaje profundo](https://es.wikipedia.org/wiki/Aprendizaj
 
 <div style="text-align:center">
     <figure>
-        <img alt="En las profundidades del aprendizaje" src ="https://source.unsplash.com/tcGyprO5SFQ/1000x666" />
+        <img alt="En las profundidades del aprendizaje" src ="/images/profundo.jpg" />
         <figcaption>En las profundidades del aprendizaje</figcaption>
     </figure>
 </div>

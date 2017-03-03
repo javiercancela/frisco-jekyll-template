@@ -5,7 +5,7 @@ description: La experiencia de montar un blog en GitHub
 categories:
   - blog
   - github
-image: https://source.unsplash.com/V4EOZj7g1gw/2000x1322
+image: /images/blog.jpg
 comments: true
 ---
 La forma más eficiente de montar un blog con Jekyll consiste en descargarse una plantilla y modificarla según nuestras necesidades. La página [Jekyll Tips](http://jekyll.tips/templates/) tiene varias plantillas para elegir. Yo me decanté por [Frisco](https://github.com/CloudCannon/frisco-jekyll-template).
