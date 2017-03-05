@@ -216,3 +216,27 @@ Veamos ahora cómo calcular el término $$\hat y^{(i)}$$, que en código se obti
     return np.where(self.net_input(xi) >= 0.0, 1, -1)
 ```
 Lo primero que hace `predict` con `xi` es usarlo para invocar `net_input`. En esta función usamos `np.dot` para realizar un producto escalar entre `xi` y `self.w_[1:]`. Es decir, suponiendo una muestra con dos características, y por tanto dos entradas y dos pesos, `np.dot(xi, self.w_[1:])` equivale a $$w_1x_1 + w_2x_2$$. A esto le sumamos $$w_0$$ (ya que $$x_0$$ es igual a uno), y tenemnos que `net_input` devuelve el valor $$z$$, tal como se define en \eqref{2.4}. La última parte, `np.where(self.net_input(xi) >= 0.0, 1, -1)` devuelve 1 si $$z$$ es mayor o igual que 0, y -1 en otro caso. En resumen, el método `predict` es la función $$\phi(z)$$ (\eqref{2.5}). 
+
+### Perceptrón con el conjunto de datos Iris
+
+Toda la lógica del perceptrón está implementada en la clase anterior. Vamos a utilizarla con el conjunto de datos Iris ya mencionado anteriormente. El ejemplo del libro utilizan la librería `pandas`, especializada en análisis de datos y estructuras, para cargar los datos de Iris. Estos datos se almacenan en un tipo de datos de la librería llamado [DataFrame](http://pandas.pydata.org/pandas-docs/stable/dsintro.html#dataframe):
+
+```python
+import pandas as pd
+df = pd.read_csv('https://archive.ics.uci.edu/ml/'
+                 'machine-learning-databases/iris/iris.data', header=None)
+print(df.tail())                
+```
+
+El archivo de datos lo estamos descargando de internet, pero también está disponible en el código de ejemplo para usar en local.
+
+El código de ejmplo imprime las últimas líneas de la estructura de datos cargada:
+
+||  0| 1| 2| 3| 4|
+|---|---|---|---|---|---|
+145 6.7 3.0 5.2 2.3 Iris-virginica
+146 6.3 2.5 5.0 1.9 Iris-virginica
+147 6.5 3.0 5.2 2.0 Iris-virginica
+148 6.2 3.4 5.4 2.3 Iris-virginica
+149 5.9 3.0 5.1 1.8 Iris-virginica
+
