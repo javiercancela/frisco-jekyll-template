@@ -5,21 +5,24 @@ description: Comentario sin spoilers sobre la novela de Blake Crouch
 categories:
   - libros
   - ciencia-ficcion
-image: /images/florian-de-gesincourt-degesart-sk0010-playerone-j-deges1500.jpg
+image: http://i.imgur.com/q2ZEHxF.jpg
 comments: true
 ---
-_[Imagen de la cabecera](https://www.artstation.com/artwork/bg49G) de [Florian de Gesincourt](https://www.artstation.com/artist/degesart)_
 
-[*Ready Player One*, de Ernest Cline](https://www.amazon.es/Ready-player-one-Grandes-novelas/dp/8466649174/) es un homenaje a la cultura pop de los años 80 en su vertiente más friki: máquinas recreativas, videoconsolas, juegos de rol, y novelas, comics, películas de componente más o menos fantástico. Conmigo la fórmula funcionó muy bien, y lo devoré como se devora una hamburguesa un viernes a las 7 de la mañana antes de irte a dormir. 
+[*Materia oscura*, de Blake Crouch](https://www.amazon.com/Materia-oscura-Spanish-Blake-Crouch/dp/6075270477) es una novela de ciencia ficción protagonizada por Jason Dessen, un profesor de física que vive felizmente con su mujer y su hijo en Chicago. El libro nos sumerge en una trama que comienza cuando Jason es secuestrado por un misterioso hombre encapuchado. 
 
 <div style="text-align:center">
     <figure>
-        <img style="width:400px" alt="Cuando devoré mi última hamburguesa a las 7 de la mañana aun había maquinitas de Invaders en los bares" src="https://images-na.ssl-images-amazon.com/images/I/71teOCvL2TL.jpg" />  
-        <figcaption>Cuando devoré mi última hamburguesa a las 7 de la mañana aun había maquinitas de Invaders en los bares</figcaption>
+        <img style="width:400px" alt="La portada de la edición en castellano es mucho más chula que la inglesa" src="https://images-na.ssl-images-amazon.com/images/I/61ToEf-IziL.jpg" />  
+        <figcaption>La portada de la edición en castellano es mucho más chula que la inglesa</figcaption>
     </figure>
 </div>
 
-Estamos en el año 2044. Wade Watts es una adolescente huérfano que vive con una tía que le odia en un asentamiento donde las caravanas se apilan a varias alturas, y cuya única ilusión en la vida es evadirse a través de OASIS, un híbrido de internet y MMORPG que sirve lo mismo para jugar al rol que para ir a clase. Ernest Cline aprovecha este entorno para sumergirnos en una fantasía casi sin límites, a partir de un concurso que se convierte en una aventura repleta de guiños nostálgicos al pasado.
+*Materia oscura* es una historia sobre universos paralelos. Fundamentalmente es un *thriller* con ingredientes de ciencia ficción, toques románticos, y reflexiones sobre aquello que nos hace únicos, sobre la esencia de nuestra identidad. Todo se mezcla en una historia que avanza a un ritmo muy alto, a veces atropellado. Este ritmo permite que no nos entretengamos demasiado demasiado profundos para ser tratados en un libro de este tipo, pero a cambio le da a la historia un tono superficial en varios puntos.
+
+El libro se lee de un tirón. Al estar protagonizado por un físico y tener el viaje entre universos paralelos como eje, contiene las inevitables descripciones de fenómenos cuánticos que justifiquen la trama. Pero estas descripciones son las justas para dar un poco de sentido a la trama, y no entorpecen la narración.
+
+
 
 <div style="text-align:center">
     <figure>
