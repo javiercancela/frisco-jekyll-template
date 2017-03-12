@@ -22,8 +22,6 @@ comments: true
 
 El libro se lee de un tirón. Al estar protagonizado por un físico y tener el viaje entre universos paralelos como eje, contiene las inevitables descripciones de fenómenos cuánticos que justifiquen la trama. Pero estas descripciones son las justas para dar un poco de sentido a la trama, y no entorpecen la narración.
 
-
-
 <div style="text-align:center">
     <figure>
         <img style="width:400px" alt="Planetas visitados por el protagonista" src="/images/multiverse.jpg" />  
