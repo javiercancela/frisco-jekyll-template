@@ -1,6 +1,6 @@
 ---
 title: Materia oscura
-date: 2017-03-05 03:00:00 +0200
+date: 2017-03-26 03:00:00 +0200
 description: Comentario sin spoilers sobre la novela de Blake Crouch
 categories:
   - libros
