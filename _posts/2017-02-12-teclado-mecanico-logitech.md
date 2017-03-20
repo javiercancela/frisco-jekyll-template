@@ -63,7 +63,7 @@ No es fácil buscar un teclado mecánico discreto, porque la oferta está satura
     </figure>
 </div>
 
-Al final me decidí por el [Logictech G610 Orion Brown](http://gaming.logitech.com/en-us/product/g610-orion-brown-keyboard). Logitech lo coloca en la categoría _gaming_, pero no hay que llevarse a engaño. Es un teclado iluminado, pero sólo en blanco, con un color negro mate bastante bonito, y sin teclas programables. El tacto de los interruptores Cherry MX Brown es muy agradable, y el teclado se ve sólido, aunque algo pesado. Un teclado apropiado para gente a la que le guste escribir, o programar. [90€ en Amazon](https://www.amazon.es/Logitech-G610-Orion-Brown-Teclado/dp/B01CHYS2YM/).
+Al final me decidí por el [Logitech G610 Orion Brown](http://gaming.logitech.com/en-us/product/g610-orion-brown-keyboard). Logitech lo coloca en la categoría _gaming_, pero no hay que llevarse a engaño. Es un teclado iluminado, pero sólo en blanco, con un color negro mate bastante bonito, y sin teclas programables. El tacto de los interruptores Cherry MX Brown es muy agradable, y el teclado se ve sólido, aunque algo pesado. Un teclado apropiado para gente a la que le guste escribir, o programar. [90€ en Amazon](https://www.amazon.es/Logitech-G610-Orion-Brown-Teclado/dp/B01CHYS2YM/).
 
 Tiene algunas peculiaridades: los símbolos secundarios está bajo los principales. Es decir, la admiración bajo el 1 y el punto y coma bajo la coma. Esto ocurre en otros modelos mecánicos, y el motivo está en la iluminación: los interruptores llevan el led en la parte superior, de manera que los símbolos que se iluminan están en la parte más alta de la tecla para coincidir con el led.
 
@@ -75,3 +75,16 @@ La adaptación a este teclado me ha resultado un poco más lenta que al ratón. 
         <figcaption>Y además es bonito</figcaption>
     </figure>
 </div>
+
+## Actualización 11/03/2017
+
+Tras reinstalar mi ordenador con Ubuntu he visto que no hay versión del software del teclado para Linux. Esto es un problema, ya que la configuración por defecto del teclado muestra las luces con efecto de "ola". Así que buscando por internet he encontrado [esta página de Reddit](https://www.reddit.com/r/MechanicalKeyboards/comments/5er55e/review_logitech_g610_orion_brown/) con la siguiente chuleta:
+```
+Light Switch + 0 - Fixed Light mode
+Light Switch + 1 - Wave mode, left to right.
+Light Switch + 2 - Wave mode, right to left. 
+Light Switch + 3 - Wave mode, center out.
+Light Switch + "Plus Key" - Increase speed of effect.
+Light Switch + "Minus Key" - Decrease speed of effect.
+```
+Problema resuelto.

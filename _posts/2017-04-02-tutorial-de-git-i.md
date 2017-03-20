@@ -1,13 +1,14 @@
 ---
-title: Un blog en GitHub (IV - Asignar un dominio)
-date: 2017-02-05 03:00:00 +0200
-description: La experiencia de montar un blog en GitHub
+title: Tutoria de Git (I - Introducción)
+date: 2017-04-02 03:00:00 +0200
+description: Tutorial de Git para novatos
 categories:
-  - blog
-  - github
-image: /images/blog.jpg
+  - git
+image: /images/git/git.jpg
 comments: true
 ---
+
+
 Como hemos visto antes, la url de nuestro blog será http://nombreusuario.github.io, de forma que la url coincida con el nombre del repositorio. Si nos interesa, podemos cambiar el dominio de la página por un dominio de nuestra propiedad. Por ejemplo, la url de este blog es [http://www.javiercancela.com](http://www.javiercancela.com), en vez de [http://javiercancela.github.io](http://javiercancela.github.io). Veamos cómo se realiza este cambio.
 
 En primer lugar, nos vamos a nuestro repositorio en GitHub y entramos en el apartado Settings. En mi caso, la url es https://github.com/javiercancela/javiercancela.github.io/settings. Aquí, en la parte inferior, en la sección "GitHub Pages", encontramos el campo "Custom domain". Escribo aquí `www.javiercancela.com` y pulso "Save". La parte de `www.` es opcional. Sin embargo, GitHub recomienda que use por cuestiones de rendimiento y estabilidad. Ver [www subdomains](https://help.github.com/articles/about-supported-custom-domains/#www-subdomains) (en inglés).
