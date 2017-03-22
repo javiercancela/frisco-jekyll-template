@@ -32,3 +32,13 @@ En concreto, la función lineal de activación de Adaline es la función identid
 
 Como vimos en el caso del perceptrón, la actualización de pesos se realiza calculando $$w_j := w_j + \eta(y^{(i)} - \hat y^{(i)})x_j^{(i)}$$. Para el perceptrón tanto $$y^{(i)}$$ como $$\hat y^{(i)}$$ son etiquetas de clases con solo dos posibles valores. En el caso de Adaline se usan valores continuos.
 
+La idea de la función de costos es definir una función que se pueda optimizar durante el proceso de aprendizaje. Para ello utilizamos la suma de los errores al cuadrado (_Sum of Squared Errors_, o _SSE_, también llamado en inglés [_Residual Sum of Squareds_](https://en.wikipedia.org/wiki/Residual_sum_of_squares)):
+
+$$
+J({\mathbf{w}}) = \frac{1}{2} \sum_i \big(y^{(i)} - \phi(z)_{A}^{(i)}\big)^2
+$$
+
+donde $$\frac{1}{2}$$ se incluye para simplificar cálculos posteriores. Como buscamos el $$\mathbf{w}$$ que minimiza el valor de esa función, multiplicarla por una constante no afecta al resultado. Como siempre, $$y^{(i)}$$ es el resultado esperado para la muestra $$i$$. $$\phi(z)_{A}^{(i)}$$ es la salida de la función de activación ($$A$$) para la muestra $$i$$. 
+
+Esta función es diferenciable y convexa, lo que nos permite calcular un mínimo. Para ello se usa un algoritmo llamado [gradiente descendente](http://alejandrosanchezyali.blogspot.co.uk/2016/01/algoritmo-del-gradiente-descendente-y.html). Como nuestra función de costos sólo depende de los pesos $$\mathbf{w}$$, minimizarla nos dará el peso que tenga una menor diferencia entre la salida esperada y la obtenida ($$y^{(i)} - \phi(z)_{A}^{(i)}$$).
+
