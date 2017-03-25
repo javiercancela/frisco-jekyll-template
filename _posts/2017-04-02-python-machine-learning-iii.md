@@ -67,10 +67,91 @@ $$
 J({\mathbf{w}}) = \frac{1}{2} \sum_i \big(y^{(i)} - \phi(z)_{A}^{(i)}\big)^2,
 $$
 
-tendremos que 
+tendremos que cada uno de los pesos se actualizará con este incremento:
 
 $$
 \Delta w_{j} := \eta \sum_i \big(y^{(i)} - \phi(z)_{A}^{(i)}\big) x_{j}^{(i)}.
 $$
 
 Para una explicación del cálculo de este gradiente podemos leer [este artículo del propio Sebastian Raschka](http://rasbt.github.io/mlxtend/user_guide/general_concepts/linear-gradient-derivative/).
+
+## Adaline en Python
+
+Como en la entrada anterior, el código está [sacado de GitHub](https://github.com/rasbt/python-machine-learning-book/blob/master/code/ch02/ch02.ipynb). 
+
+La implementación de Adaline es muy similar a la del Perceptrón. La única diferencia está en el método `fit`, donde los pesos se actualizan con el gradiente descendente
+
+
+<pre class="line-numbers">
+  <code class="language-python">
+	class AdalineGD(object):
+	    def __init__(self, eta=0.01, n_iter=50):
+	        self.eta = eta
+	        self.n_iter = n_iter
+
+	    def fit(self, X, y):
+	        self.w_ = np.zeros(1 + X.shape[1])
+	        self.cost_ = []
+
+	        for i in range(self.n_iter):
+	            output = self.activation(X)
+	            errors = (y - output)
+	            self.w_[1:] += self.eta * X.T.dot(errors)
+	            self.w_[0] += self.eta * errors.sum()
+	            cost = (errors**2).sum() / 2.0
+	            self.cost_.append(cost)
+	        return self
+
+	    def net_input(self, X):
+	        return np.dot(X, self.w_[1:]) + self.w_[0]
+
+	    def activation(self, X):
+	        return self.net_input(X)
+
+	    def predict(self, X):
+	        return np.where(self.activation(X) >= 0.0, 1, -1)
+  </code>
+</pre>
+
+Recordemos cómo funciona el método `fit`. Se le pasan dos parámetros: una matriz $$\bf X$$, que contiene una fila por cada muestra y una columna por cada característica, y que constituye nuestro conjunto de datos de entrenamiento; y un array $$\bf y$$, que contiene el resultado objetivo para cada muestra. 
+
+Lo primero que hace el método `fit` es inicializar los pesos y los costos:
+
+```python
+self.w_ = np.zeros(1 + X.shape[1])
+self.cost_ = []
+```
+Después iteramos el proceso tantas veces como épocas se hayan definido. La entrada neta (la función `net_input`) es el producto escalar de los atributos de las muestras y sus pesos. Para la salida utilizamos una función `activation` que es igual a la entrada neta. La existencia de este método se justifica para hacer el código más general, y poder reutilizarlo con otros algoritmos. En nuestro caso, esta función es la función identidad, por lo que podríamos haber usado directamente `net_input`. El error será la difencia entre la salida esperada, `y`, y la real, `output`.
+
+
+```python
+output = self.activation(X)
+errors = (y - output)
+```
+
+Si recordamos las entradas anteriores, la salida esperada `y` es un array con las clases reales de 100 muestras, las 50 primeras con valor -1 (Iris-setosa), y las 50 siguientes con valor 1 (Iris-versicolor). El valor de output es la salida de la función identidad, pero en este caso vamos a considerar todas las muestras a la vez, con lo que tendremos un array de 100 elementos en vez de un escalar. El método `net_input` calcula el producto escalar de la matriz de muestras `X` por el array de pesos `w_`. 
+
+
+```python
+def net_input(self, X):
+    return np.dot(X, self.w_[1:]) + self.w_[0]
+
+```
+
+El resultado es un array de errores `errors` de 100 elementos, uno para cada muestra. Con ellos se actualizan los pesos:
+
+
+```python
+self.w_[1:] += self.eta * X.T.dot(errors)
+self.w_[0] += self.eta * errors.sum()
+```
+
+En la primera línea se aplica un incremento `self.eta * X.T.dot(errors)` al array de pesos $$\mathbf{w}$$, salvo al elemento $$w_0$$ (peso asociado a una entrada ficticia $$x_0 = 1$$ para simplificar los cálculos). Recordando la fórmula de incremento de pesos vista más arriba:
+
+$$
+\Delta w_{j} := \eta \sum_i \big(y^{(i)} - \phi(z)_{A}^{(i)}\big) x_{j}^{(i)},
+$$
+
+tenemos que los elementos $$error^{(i)}$$ del array `errors` se corresponden con $$error^{(i)} = y^{(i)} - \phi(z)_{A}^{(i)}$$. Por lo tanto, el producto escalar entre la traspuesta de la matriz de atributos de cada muestra `X` y el array de errores `errors` (`X.T.dot(errors)`) se corresonden con el sumatorio $$\sum_i \big(y^{(i)} - \phi(z)_{A}^{(i)}\big) x_{j}^{(i)}$$.
+
+Para el caso del elemento $$w_0$$, al ser el valor de los atributos de esa muestra ficticia igual a uno, basta con sumar los errores para obtener el incremento de peso (también podríamos haber añadido una fila con valores unitarios a la matriz `X`).

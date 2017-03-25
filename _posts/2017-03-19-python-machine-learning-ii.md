@@ -174,7 +174,7 @@ El código comienza declarando una clase `Perceptron` en la que se definen en co
 
 Inicializamos el perceptrón con dos parámetros: `eta`, que es la tasa de aprendizaje, y `n_iter`, que es el número de veces que vamos a recorrer el conjunto de datos de entrenamiento. A cada una de estas veces se les llama "épocas".
 
-Una vez instanciado el perceptrón llamaremos al método `fit` para entrenar nuestro modelo. Se le pasan dos parámetros: una matriz $$\bf X$$, que contiene una fila por cada muestra y una columna por cada característica, y que constituye nuestro conjunto de datos de entrenamiento, y un array $$\bf y$$, que contiene el resultado objetivo para cada muestra. 
+Una vez instanciado el perceptrón llamaremos al método `fit` para entrenar nuestro modelo. Se le pasan dos parámetros: una matriz $$\bf X$$, que contiene una fila por cada muestra y una columna por cada característica, y que constituye nuestro conjunto de datos de entrenamiento; y un array $$\bf y$$, que contiene el resultado objetivo para cada muestra. 
 
 Lo primero que hace el método `fit` es inicializar los pesos y los errores:
 ```python
