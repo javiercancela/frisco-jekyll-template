@@ -155,3 +155,56 @@ $$
 tenemos que los elementos $$error^{(i)}$$ del array `errors` se corresponden con $$error^{(i)} = y^{(i)} - \phi(z)_{A}^{(i)}$$. Por lo tanto, el producto escalar entre la traspuesta de la matriz de atributos de cada muestra `X` y el array de errores `errors` (`X.T.dot(errors)`) se corresonden con el sumatorio $$\sum_i \big(y^{(i)} - \phi(z)_{A}^{(i)}\big) x_{j}^{(i)}$$.
 
 Para el caso del elemento $$w_0$$, al ser el valor de los atributos de esa muestra ficticia igual a uno, basta con sumar los errores para obtener el incremento de peso (también podríamos haber añadido una fila con valores unitarios a la matriz `X`).
+
+Aunque el algoritmo no usa la función de costos directanemte, ya que el ajuste de pesos se realiza mediante el gradiente descendente que acabamos de aplicar, y que se explica más arriba, vamos a almacenar también el valor de la función para dibujar después su evolución. 
+
+Recordemos la funcón de costos: $$J({\mathbf{w}}) = \frac{1}{2} \sum_i \big(y^{(i)} - \phi(z)_{A}^{(i)}\big)^2$$. El programa almacena un arrary `errors = (y - output)` que se corresponde con $$y^{(i)} - \phi(z)_{A}^{(i)}$$, así que para calcular en valor de la función sólo tenemos que sumar el cuadrado de los valores del array y dividir entre dos. Esto nos dará el valor calculado por la función de costos para los pesos actuales. Como estamos iterando mediante el gradiente descendente vamos a almacenar los resultados de la función obtenidos para cada conjunto de pesos:
+
+```python
+cost = (errors**2).sum() / 2.0
+self.cost_.append(cost)
+```
+
+Una vez definida la clase, el libro pasa a utilizarla con dos tasas de aprendizaje distintas. Esta tasa va a determinar la convergencia del algoritmo, y encontrar el valor que nos de la mejor convergencia posible requiere muchas pruebas. Vamos a probar con $$\eta = 0.1$$ y $$\eta = 0.0001$$:
+
+```python
+fig, ax = plt.subplots(nrows=1, ncols=2, figsize=(8, 4))
+
+ada1 = AdalineGD(n_iter=10, eta=0.01).fit(X, y)
+ax[0].plot(range(1, len(ada1.cost_) + 1), np.log10(ada1.cost_), marker='o')
+ax[0].set_xlabel('Epochs')
+ax[0].set_ylabel('log(Sum-squared-error)')
+ax[0].set_title('Adaline - Learning rate 0.01')
+
+ada2 = AdalineGD(n_iter=10, eta=0.0001).fit(X, y)
+ax[1].plot(range(1, len(ada2.cost_) + 1), ada2.cost_, marker='o')
+ax[1].set_xlabel('Epochs')
+ax[1].set_ylabel('Sum-squared-error')
+ax[1].set_title('Adaline - Learning rate 0.0001')
+
+plt.tight_layout()
+plt.show()
+```
+
+Pintamos una gráfica con cada tasa, representado la evolución del valor de la función de costos para cada iteración (época). Para la tasa de 0.1 representamos en realidad el logaritmo del valor, ya que el valor real diverge exponencialmente. En cambio, podemos ver como la tasa de 0.0001 converge, pero lentamente.
+
+<div style="text-align:center">
+    <figure>
+        <a href="https://github.com/rasbt/python-machine-learning-book/blob/master/code/ch02/images/02_11.png"><img alt="Una tasa de aprendizaje muy alta provoca que el algoritmo no converja, una tasa muy baja provoca que converja lentamente" src ="https://raw.githubusercontent.com/rasbt/python-machine-learning-book/master/code/ch02/images/02_11.png" /></a>
+        <figcaption>Una tasa de aprendizaje muy alta provoca que el algoritmo no converja, una tasa muy baja provoca que converja lentamente</figcaption>
+    </figure>
+</div>
+
+Llevado al ejemplo visual del gradiente descendente, podemos ver como la tasa de aprendizaje influye en la longitud del "paso" que se da hacia el mínimo. Si este paso es muy grande el algoritmo "se sale":
+
+<div style="text-align:center">
+    <figure>
+        <a href="https://github.com/rasbt/python-machine-learning-book/blob/master/code/ch02/images/02_12.png"><img alt="Visualización gráfica de los pasos dados con el algoritmo" src ="https://raw.githubusercontent.com/rasbt/python-machine-learning-book/master/code/ch02/images/02_12.png" /></a>
+        <figcaption>Visualización gráfica de los pasos dados con el algoritmo</figcaption>
+    </figure>
+</div>
+
+El libro acaba esta parte con una referencia al escalado de características que se verá en el tema 3, y que nosotros dejaremos hasta entonces.
+
+En la próxima entrada veremos cómo modificar este algoritmo para adaptarlo a grandes grupos de datos.
+
