@@ -14,7 +14,7 @@ comments: true
 El perceptrón visto en el post anterior es una red neuronal de una sola capa. Otro ejemplo de este tipo de redes es la llamada **neurona lineal adaptativa**, en inglés _ADAptative LIneal NEuron_, o [_ADALINE_](https://es.wikipedia.org/wiki/Adaline). Nos dice el libro que la importancia de este algoritmo se debe a que muestra con claridad la definición y minimización de las funciones de costos (_cost functions_). 
 
 ## Función de costos
-**Función de costos** es un término que procede de la economía, y hace referencia a la función que expresa los costes de producción en términos de la cantidad conocida. En el campo de las redes neuronales la función de costos devuelve un número que determina indica lo bien que el algoritmo genera las salidas correctas para las muestras de entrenamiento. Este número es mejor cuanto más bajo, por eso se busca minimizar el valor de la función. Esta minimización de la función de costos supone la base de técnicas de clasificación más avanzadas.
+**Función de costos** es un término que procede de la economía, y hace referencia a la función que expresa los costes de producción en términos de la cantidad producida. En el campo de las redes neuronales la función de costos devuelve un número que determina indica lo bien que el algoritmo genera las salidas correctas para las muestras de entrenamiento. Este número es mejor cuanto más bajo, por eso se busca minimizar el valor de la función. Esta minimización de la función de costos supone la base de muchas técnicas de clasificación.
 
 La diferencia básica entre Adaline y el perceptrón está en la función de activación, que pasa de ser una función escalón a ser una función lineal.
 
@@ -30,7 +30,7 @@ En concreto, la función lineal de activación de Adaline es la función identid
 
 ## Minimización de funciones de costos
 
-Como vimos en el caso del perceptrón, la actualización de pesos se realiza calculando $$w_j := w_j + \eta(y^{(i)} - \hat y^{(i)})x_j^{(i)}$$. Para el perceptrón tanto $$y^{(i)}$$ como $$\hat y^{(i)}$$ son etiquetas de clases con solo dos posibles valores. En el caso de Adaline se usan valores continuos.
+Igual que en el caso del perceptrón, la actualización de pesos se realiza calculando $$w_j := w_j + \eta(y^{(i)} - \hat y^{(i)})x_j^{(i)}$$. Para el perceptrón tanto $$y^{(i)}$$ como $$\hat y^{(i)}$$ son etiquetas de clases con solo dos posibles valores. En el caso de Adaline se usan valores continuos.
 
 La idea de la función de costos es definir una función que se pueda optimizar durante el proceso de aprendizaje. Para ello utilizamos la suma de los errores al cuadrado (_Sum of Squared Errors_, o _SSE_, también llamado en inglés [_Residual Sum of Squareds_](https://en.wikipedia.org/wiki/Residual_sum_of_squares)):
 
@@ -40,13 +40,15 @@ $$
 
 donde $$\frac{1}{2}$$ se incluye para simplificar cálculos posteriores. Como buscamos el $$\mathbf{w}$$ que minimiza el valor de esa función, multiplicarla por una constante no afecta al resultado. Como siempre, $$y^{(i)}$$ es el resultado esperado para la muestra $$i$$. $$\phi(z)_{A}^{(i)}$$ es la salida de la función de activación ($$A$$) para la muestra $$i$$. 
 
-Esta función es diferenciable y convexa, lo que nos permite calcular un mínimo. Como nuestra función de costos sólo depende de los pesos $$\mathbf{w}$$, minimizarla nos dará el peso que tenga una menor diferencia entre la salida esperada y la obtenida ($$y^{(i)} - \phi(z)_{A}^{(i)}$$). Para ello se usa un algoritmo llamado [gradiente descendente](http://alejandrosanchezyali.blogspot.co.uk/2016/01/algoritmo-del-gradiente-descendente-y.html). Para ello vamos a ir modificar el peso $$\mathbf{w}$$ en incrementos $$\Delta \mathbf{w}$$: 
+Esta función es diferenciable y convexa, lo que nos permite calcular un mínimo. Como nuestra función de costos sólo depende de los pesos $$\mathbf{w}$$, minimizarla nos dará el peso que tenga una menor diferencia entre la salida esperada y la obtenida ($$y^{(i)} - \phi(z)_{A}^{(i)}$$). Para calcular el mínimo se usa un algoritmo llamado [gradiente descendente](http://alejandrosanchezyali.blogspot.co.uk/2016/01/algoritmo-del-gradiente-descendente-y.html). 
+
+Nuestro objetivo, como siempre, es ajustar el peso $$\mathbf{w}$$ en incrementos $$\Delta \mathbf{w}$$: 
 
 $$
 \mathbf{w} := \mathbf{w} + \Delta \mathbf{w}.
 $$
 
-Para calcular $$\Delta \mathbf{w}$$ vamos a necesitar conocer el gradiente de nuestra función de costos: $$\nabla J(\mathbf{w})$$. [Gradiente](https://es.wikipedia.org/wiki/Gradiente) es un término matemático que hace referencia al vector que indica la dirección en la que un campo varía con más rapidez. Desde un punto de vista geométrico, el gradiente de una curva es su derivada, o el vector que apunta en la dirección en la que el incremento de la misma es máximo. 
+Para calcular $$\Delta \mathbf{w}$$ vamos a necesitar conocer el gradiente de nuestra función de costos: $$\nabla J(\mathbf{w})$$. [Gradiente](https://es.wikipedia.org/wiki/Gradiente) es un término matemático que hace referencia al vector que indica la dirección en la que un campo varía con más rapidez. Para una función de $$k$$ variables el gradiente es el vector de $$k$$ dimensiones que marca la dirección en la que la función se incrementa más rápidamente. 
 
 <div style="text-align:center">
     <figure>
@@ -138,7 +140,9 @@ def net_input(self, X):
 
 ```
 
-El resultado es un array de errores `errors` de 100 elementos, uno para cada muestra. Con ellos se actualizan los pesos:
+### Cálculo de errores
+
+El resultado es un array de errores (`errors`) de 100 elementos, uno para cada muestra. Con ellos se actualizan los pesos:
 
 
 ```python
@@ -156,9 +160,17 @@ tenemos que los elementos $$error^{(i)}$$ del array `errors` se corresponden con
 
 Para el caso del elemento $$w_0$$, al ser el valor de los atributos de esa muestra ficticia igual a uno, basta con sumar los errores para obtener el incremento de peso (también podríamos haber añadido una fila con valores unitarios a la matriz `X`).
 
-Aunque el algoritmo no usa la función de costos directanemte, ya que el ajuste de pesos se realiza mediante el gradiente descendente que acabamos de aplicar, y que se explica más arriba, vamos a almacenar también el valor de la función para dibujar después su evolución. 
+Aunque el algoritmo no usa la función de costos directamente, ya que el ajuste de pesos se realiza mediante el gradiente descendente que acabamos de aplicar y que se explica más arriba, vamos a almacenar también el valor de la función para dibujar después su evolución. 
 
-Recordemos la funcón de costos: $$J({\mathbf{w}}) = \frac{1}{2} \sum_i \big(y^{(i)} - \phi(z)_{A}^{(i)}\big)^2$$. El programa almacena un arrary `errors = (y - output)` que se corresponde con $$y^{(i)} - \phi(z)_{A}^{(i)}$$, así que para calcular en valor de la función sólo tenemos que sumar el cuadrado de los valores del array y dividir entre dos. Esto nos dará el valor calculado por la función de costos para los pesos actuales. Como estamos iterando mediante el gradiente descendente vamos a almacenar los resultados de la función obtenidos para cada conjunto de pesos:
+### Cálculo de costos
+
+Recordemos la funcón de costos: 
+
+$$
+J({\mathbf{w}}) = \frac{1}{2} \sum_i \big(y^{(i)} - \phi(z)_{A}^{(i)}\big)^2.
+$$ 
+
+El programa almacena un arrary `errors = (y - output)` que se corresponde con $$y^{(i)} - \phi(z)_{A}^{(i)}$$, así que para calcular en valor de la función sólo tenemos que sumar el cuadrado de los valores del array y dividir entre dos. Esto nos dará el valor calculado por la función de costos para los pesos actuales. Como estamos iterando mediante el gradiente descendente vamos a almacenar los resultados de la función obtenidos para cada conjunto de pesos:
 
 ```python
 cost = (errors**2).sum() / 2.0
@@ -195,7 +207,7 @@ Pintamos una gráfica con cada tasa, representado la evolución del valor de la 
     </figure>
 </div>
 
-Llevado al ejemplo visual del gradiente descendente, podemos ver como la tasa de aprendizaje influye en la longitud del "paso" que se da hacia el mínimo. Si este paso es muy grande el algoritmo "se sale":
+Llevado al ejemplo visual del gradiente descendente, vemos que la tasa de aprendizaje influye en la longitud del "paso" que se da hacia el mínimo. Si este paso es muy grande el algoritmo "se sale":
 
 <div style="text-align:center">
     <figure>
