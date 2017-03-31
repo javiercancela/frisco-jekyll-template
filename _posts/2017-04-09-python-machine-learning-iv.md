@@ -32,6 +32,12 @@ $$
 
 Este cambio tiene dos consecuencias fundamentales Por un lado, los pesos se actualizan con más frecuencia, así que la convergencia suele ser más rápida. Por otro lado, usar una sola muestra da menos precisión a la actualización, así que se introduce más ruido en los pesos. Esto no es necesariamente malo, ya que facilita salir de mínimos locales que no se corresponden con la minimización de nuestra función de costos. Otra ventaja de este algoritmo es que resulta adecuado para el aprendizaje _on line_, es decir, aquel en el que el modelo tiene que adaptarse rápidamente a cambios en los datos.
 
+Una variante mencionada en el libro pero no implementada en el código es la siguiente: en vez de utilizar una tasa de aprendizaje fija $$\eta$$ usamos una que disminuya con el tiempo:
+
+$$
+\frac{c_1}{[\textit {número de iteraciones}] + c_2}
+$$
+
 Vamos a adaptar la clase Adaline anterior a este nuevo algoritmo:
 
 <pre class="line-numbers">
@@ -104,3 +110,4 @@ def _shuffle(self, X, y):
     r = np.random.permutation(len(y))
     return X[r], y[r]
 ```
+
