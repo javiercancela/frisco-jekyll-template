@@ -111,3 +111,47 @@ def _shuffle(self, X, y):
     return X[r], y[r]
 ```
 
+El constructor incluye parámetros para indicar si queremos mezclar al azar los datos de entrada y para inicializar una semilla para esta mezcla. 
+
+El método `fit` es el que se encarga del entrenamiento. Invocamos primero al método que inicializa los pesos a cero. Este método existe para marcar los pesos como inicializados, información que necesitamos para el método de entrenamiento parcial `parcial_fit`.
+
+
+Dentro del método `fit` el código que se itera en cada época comienza comprobando si hay que barajar los datos de entrada, e inicializa el costo que evaluará la función de costos:
+
+
+```python
+if self.shuffle:
+    X, y = self._shuffle(X, y)
+cost = []
+```
+
+A continuación iteramos los datos. La variable `X` es una matriz que contiene una fila por cada muestra, y una columna por cada característica. La variable `y` es un array que contiene un elemento, la clase real, para cada muestra de `X`. El método `zip` nos devolverá un elemento de cada variable (_zip_ en inglés significa, entre otras cosas, cremallera), por lo que en cada iteración del `for` en `xi` y en `target` se almacenarán las características y la clase real de cada muestra.
+
+```python
+for xi, target in zip(X, y):
+    cost.append(self._update_weights(xi, target))
+
+```
+
+Para cada muestra, actualizamos los pesos en el método `_update_weights`:
+
+```python
+def _update_weights(self, xi, target):
+    output = self.net_input(xi)
+    error = (target - output)
+    self.w_[1:] += self.eta * xi.dot(error)
+    self.w_[0] += self.eta * error
+    cost = 0.5 * error**2
+    return cost
+
+```
+
+Para la salida real seguimos utilizando la función identidad, con lo que la `output` es igual a la entrada. La diferencia en este nuevo algoritmo está en cómo ajustamos los pesos. El array de pesos se ajusta con el producto del error con la muestra procesada, no con toda la matriz de entradas. Lógicamente, el costo calculado se obtendrá del error de esta muestra al cuadrado. El costo lo añadimos al array de costos para representarlo posteriormente.
+
+
+```python
+avg_cost = sum(cost) / len(y)
+self.cost_.append(avg_cost)
+```
+
+Para finalizar el método `fit` calculamos la media de los costos de cada muestra, y la añadimos al array de costos.

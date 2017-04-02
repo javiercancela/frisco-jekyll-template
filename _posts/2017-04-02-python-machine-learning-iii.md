@@ -156,7 +156,7 @@ $$
 \Delta w_{j} := \eta \sum_i \big(y^{(i)} - \phi(z)_{A}^{(i)}\big) x_{j}^{(i)},
 $$
 
-tenemos que los elementos $$error^{(i)}$$ del array `errors` se corresponden con $$error^{(i)} = y^{(i)} - \phi(z)_{A}^{(i)}$$. Por lo tanto, el producto escalar entre la traspuesta de la matriz de atributos de cada muestra `X` y el array de errores `errors` (`X.T.dot(errors)`) se corresonden con el sumatorio $$\sum_i \big(y^{(i)} - \phi(z)_{A}^{(i)}\big) x_{j}^{(i)}$$.
+tenemos que los elementos $$error^{(i)}$$ del array `errors` se corresponden con $$error^{(i)} = y^{(i)} - \phi(z)_{A}^{(i)}$$. Por lo tanto, el producto escalar entre la traspuesta de la matriz de atributos de cada muestra `X` y el array de errores `errors` (`X.T.dot(errors)`) se corresponden con el sumatorio $$\sum_i \big(y^{(i)} - \phi(z)_{A}^{(i)}\big) x_{j}^{(i)}$$.
 
 Para el caso del elemento $$w_0$$, al ser el valor de los atributos de esa muestra ficticia igual a uno, basta con sumar los errores para obtener el incremento de peso (también podríamos haber añadido una fila con valores unitarios a la matriz `X`).
 
@@ -164,7 +164,7 @@ Aunque el algoritmo no usa la función de costos directamente, ya que el ajuste 
 
 ### Cálculo de costos
 
-Recordemos la funcón de costos: 
+Recordemos la función de costos: 
 
 $$
 J({\mathbf{w}}) = \frac{1}{2} \sum_i \big(y^{(i)} - \phi(z)_{A}^{(i)}\big)^2.
