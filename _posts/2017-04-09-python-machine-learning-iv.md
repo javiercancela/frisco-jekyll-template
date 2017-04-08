@@ -16,14 +16,15 @@ $$
 \Delta \mathbf{w} = \eta \sum_i \big(y^{(i)} - \phi(z)_{A}^{(i)}\big) x^{(i)}
 $$
 
-Es decir, para cada época tenemos que ralizar un millón de veces:
+Es decir, para cada época tenemos que realizar un millón de veces:
 
-* el cálculo de la función de costros
+* el cálculo de la función de costos
 * el cálculo de la resta con la clase real
 * la multiplicación del resultado por la entrada de la muestra
 
 y después sumar el millón de resultados.
 
+### Optimizando el proceso
 
 El gradiente descendente estocástico utiliza otra aproximación. En vez de recalcular los pesos usando todas las muestras, utilizamos sólo la muestra de la entrada para el cálculo:
 $$
@@ -32,11 +33,13 @@ $$
 
 Este cambio tiene dos consecuencias fundamentales Por un lado, los pesos se actualizan con más frecuencia, así que la convergencia suele ser más rápida. Por otro lado, usar una sola muestra da menos precisión a la actualización, así que se introduce más ruido en los pesos. Esto no es necesariamente malo, ya que facilita salir de mínimos locales que no se corresponden con la minimización de nuestra función de costos. Otra ventaja de este algoritmo es que resulta adecuado para el aprendizaje _on line_, es decir, aquel en el que el modelo tiene que adaptarse rápidamente a cambios en los datos.
 
-Una variante mencionada en el libro pero no implementada en el código es la siguiente: en vez de utilizar una tasa de aprendizaje fija $$\eta$$ usamos una que disminuya con el tiempo:
+Una variante mencionada en el libro pero no implementada en el código consiste en sustituir una tasa de aprendizaje fija $$\eta$$ por una que disminuya con el tiempo:
 
 $$
 \frac{c_1}{[\textit {número de iteraciones}] + c_2}
 $$
+
+### Código Python
 
 Vamos a adaptar la clase Adaline anterior a este nuevo algoritmo:
 
@@ -155,3 +158,43 @@ self.cost_.append(avg_cost)
 ```
 
 Para finalizar el método `fit` calculamos la media de los costos de cada muestra, y la añadimos al array de costos.
+
+### Resultados
+
+Ahora toca usar esta clase. La instanciamos y entrenamos el modelo (el libro usa, en este ejemplo y en el de la entrada anterior, un conjunto de datos escalado para mejorar el rendimiento, y que nosotros revisaremos en el tema 3):
+
+
+```python
+ada = AdalineSGD(n_iter=15, eta=0.01, random_state=1)
+ada.fit(X, y)
+```
+
+Pintamos los resultados, primero mostrando la clasificación de las muestras y después el costo por época.
+
+```python
+plot_decision_regions(X, y, classifier=ada)
+plt.title('Adaline - Gradiente descendiente estocástico')
+plt.xlabel('longitud sépalo')
+plt.ylabel('longitud pétalo')
+plt.legend(loc='upper left')
+
+plt.tight_layout()
+plt.show()
+plt.plot(range(1, len(ada.cost_) + 1), ada.cost_, marker='o')
+plt.xlabel('Épocas')
+plt.ylabel('Costo medio')
+
+plt.tight_layout()
+plt.show()
+```
+Los datos obtenidos son estos (los resultados son distintos a los obtenidos en el libro, ya que nosotros no hemos estandarizado los valores de las muestras):
+
+<div style="text-align:center">
+    <figure>
+        <img alt="Arriba, nuestros resultados. Abajo, los resultados del libro con los valores estandarizados" src ="/images/pml/2_adaline.png" />
+        <a href="https://github.com/rasbt/python-machine-learning-book/blob/master/code/ch02/images/02_14.png"><img alt="Arriba, nuestros resultados. Abajo, los resultados del libro con los valores estandarizados" src ="https://raw.githubusercontent.com/rasbt/python-machine-learning-book/master/code/ch02/images/02_14.png" /></a>
+        <figcaption>Arriba, nuestros resultados. Abajo, los resultados del libro con los valores estandarizados</figcaption>
+    </figure>
+</div>
+
+Nuestra convergencia es mucha más rápida, pero también muy variable, ya que a partir de la sexta época el costo empieza a oscilar.
