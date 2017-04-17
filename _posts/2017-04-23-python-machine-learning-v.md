@@ -41,10 +41,42 @@ Como mencionamos en la entrada anterior, el escalado de características es una 
 
 
 ```python
-
+from sklearn.preprocessing import StandardScaler
+sc = StandardScaler()
+sc.fit(X_train)
+X_train_std = sc.transform(X_train)
+X_test_std = sc.transform(X_test)
 ```
 
+La clase `StandardScaler` contiene un método `fit` que permite estimar los parámetros necesarios para la estandarización. A partir de los datos de entrenamiento proporcionados, el método estimará la media ($$\mu$$) y la [desviación estándar](https://es.wikipedia.org/wiki/Desviaci%C3%B3n_t%C3%ADpica) ($$\sigma$$). Con ellas el método `transform` generará nuestros nuevos conjuntos de datos de entrenamiento y de pruebas estandarizados. Tras la estandarización, las características pasan a tener valores positivos y negativos, siguiendo una distribución casi normal centrada en el cero:
 
+```python
+max(X_train_std[:,0])
+Out[13]: 1.7101884052506424
 
+max(X_train_std[:,1])
+Out[14]: 1.6373128028016599
 
+min(X_train_std[:,0])
+Out[15]: -1.5192836530366176
+
+min(X_train_std[:,1])
+Out[16]: -1.4487217993375945
+```
+
+### La clase `Perceptron` con _one-vs.-rest_
+
+Una diferencia de la clase `Perceptron` de `scikit-learn` con la implementada en el capítulo 2 del libro es que la que vamos a ver ahora soporta clasificaciones multiclase. En el capítulo 2 restringimos nuestro conjunto de datos a muestras sólo dos clases, ya que el algoritmo sólo era capaz de distinguir si una muestra pertenecía a una clase u otra. Si la función de activación superaba un umbral se asignaba una clase, si no, se asignaba la otra.
+
+Esta función de activación es inherente al Perceptrón. Sin embargo, aun con ella es posible realizar clasificaciones multiclase. Para ello se utiliza una estrategia llamada 'Uno contra los demás' (_one-vs.-rest_, _OvR_). En esta estrategia se entrena un clasificador para cada clase. Es decir, en nuestro conjunto de datos con tres variantes de Iris, en vez de usar el Perceptrón para entrenar un clasificador que nos diga si una muestra es _Iris-setosa_ o _Iris-versicolor_, entrenaremos un clasificador que nos diga si una muestra es _Iris-setosa_ o no, otro que nos diga si una muestra es _Iris-versicolor_ o no, y otro que haga lo mismo con _Iris-virginica_. 
+
+Para poder resolver ambigüedades (una muestra que esté en más de una clase, o que no esté en ninguna), los clasificadores devuelven no una etiqueta, sino una puntuación de confianza, que indica cómo de seguro está el clasificador de que una muestra pertenece a la clase evaluada. Así, cuando queremos predecir la clase de una muestra nueva, nos quedamos con la clase a la que corresponde la puntuación de confianza más alta.
+
+El código Pytho para hacer esto es muy simple:
+```python
+from sklearn.linear_model import Perceptron
+
+ppn = Perceptron(n_iter=40, eta0=0.1, random_state=0)
+ppn.fit(X_train_std, y_train)
+```
 
