@@ -5,7 +5,6 @@ date: 2008-01-14T12:06:09+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2008/01/14/mas-sobre-la-firma-de-aplicaciones-symbian/
-permalink: /index.php/2008/01/14/mas-sobre-la-firma-de-aplicaciones-symbian/
 categories:
   - symbian
 image: /images/obsolete.jpg

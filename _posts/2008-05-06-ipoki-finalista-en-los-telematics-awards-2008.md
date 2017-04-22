@@ -5,7 +5,6 @@ date: 2008-05-06T20:52:56+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.wordpress.com/?p=212
-permalink: /index.php/2008/05/06/ipoki-finalista-en-los-telematics-awards-2008/
 categories:
   - ipoki
 image: /images/obsolete.jpg

@@ -5,7 +5,6 @@ date: 2008-01-29T16:08:43+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2008/01/29/ampliado-el-plazo-de-presentacion-de-aplicaciones-para-el-android-developer-challenge/
-permalink: /index.php/2008/01/29/ampliado-el-plazo-de-presentacion-de-aplicaciones-para-el-android-developer-challenge/
 categories:
   - android
   - noticias

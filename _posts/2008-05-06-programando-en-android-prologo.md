@@ -5,7 +5,6 @@ date: 2008-05-06T19:57:54+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.wordpress.com/?p=210
-permalink: /index.php/2008/05/06/programando-en-android-prologo/
 categories:
   - android
 image: /images/obsolete.jpg

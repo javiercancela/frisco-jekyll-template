@@ -5,7 +5,6 @@ date: 2008-01-03T16:29:24+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2008/01/03/tutorial-firmando-una-aplicacion-symbian/
-permalink: /index.php/2008/01/03/tutorial-firmando-una-aplicacion-symbian/
 categories:
   - symbian
 image: /images/obsolete.jpg

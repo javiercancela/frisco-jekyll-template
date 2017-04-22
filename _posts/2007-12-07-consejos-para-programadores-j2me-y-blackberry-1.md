@@ -5,7 +5,6 @@ date: 2007-12-07T14:42:14+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2007/12/07/consejos-para-programadores-j2me-y-blackberry-1/
-permalink: /index.php/2007/12/07/consejos-para-programadores-j2me-y-blackberry-1/
 categories:
   - blackberry
   - java-me

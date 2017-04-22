@@ -5,7 +5,6 @@ date: 2008-01-16T15:37:19+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2008/01/16/tutoriales-de-java-me-en-symbianrecourcescom/
-permalink: /index.php/2008/01/16/tutoriales-de-java-me-en-symbianrecourcescom/
 categories:
   - java-me
   - symbian

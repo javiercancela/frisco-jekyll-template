@@ -5,7 +5,6 @@ date: 2008-01-10T11:45:27+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2008/01/10/nueva-version-de-la-web-movil-de-yahoo/
-permalink: /index.php/2008/01/10/nueva-version-de-la-web-movil-de-yahoo/
 categories:
   - noticias
   - web-movil

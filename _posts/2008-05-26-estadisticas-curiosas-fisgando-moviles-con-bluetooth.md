@@ -5,7 +5,6 @@ date: 2008-05-26T19:37:09+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.wordpress.com/?p=232
-permalink: /index.php/2008/05/26/estadisticas-curiosas-fisgando-moviles-con-bluetooth/
 categories:
   - otros
 image: /images/obsolete.jpg

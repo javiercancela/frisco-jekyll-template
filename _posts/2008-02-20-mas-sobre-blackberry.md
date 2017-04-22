@@ -5,7 +5,6 @@ date: 2008-02-20T19:35:17+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2008/02/20/mas-sobre-blackberry/
-permalink: /index.php/2008/02/20/mas-sobre-blackberry/
 categories:
   - blackberry
 image: /images/obsolete.jpg

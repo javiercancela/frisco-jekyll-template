@@ -5,7 +5,6 @@ date: 2008-05-17T19:32:47+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.wordpress.com/?p=223
-permalink: /index.php/2008/05/17/limo-platform-la-plataforma-linux-mobile/
 categories:
   - linux-mobile
 image: /images/obsolete.jpg

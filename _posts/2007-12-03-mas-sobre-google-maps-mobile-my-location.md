@@ -5,7 +5,6 @@ date: 2007-12-03T17:56:28+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2007/12/03/mas-sobre-google-maps-mobile-my-location/
-permalink: /index.php/2007/12/03/mas-sobre-google-maps-mobile-my-location/
 categories:
   - lbs
 image: /images/obsolete.jpg

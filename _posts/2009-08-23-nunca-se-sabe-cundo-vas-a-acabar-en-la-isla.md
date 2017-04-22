@@ -5,7 +5,6 @@ date: 2009-08-23T18:52:25+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.wordpress.com/2009/08/23/nunca-se-sabe-cundo-vas-a-acabar-en-la-isla/
-permalink: /index.php/2009/08/23/nunca-se-sabe-cundo-vas-a-acabar-en-la-isla/
 categories:
   - android
 image: /images/obsolete.jpg

@@ -5,7 +5,6 @@ date: 2009-08-17T07:00:49+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.wordpress.com/?p=472
-permalink: /index.php/2009/08/17/realidad-aumentada-en-android-ar-compass-iii/
 categories:
   - android
 image: /images/obsolete.jpg

@@ -5,7 +5,6 @@ date: 2008-01-17T09:51:52+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2008/01/17/problema-del-mes-concurso-para-programadores-de-s60/
-permalink: /index.php/2008/01/17/problema-del-mes-concurso-para-programadores-de-s60/
 categories:
   - symbian
 image: /images/obsolete.jpg

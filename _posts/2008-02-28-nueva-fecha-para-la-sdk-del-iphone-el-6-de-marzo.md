@@ -5,7 +5,6 @@ date: 2008-02-28T10:57:24+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2008/02/28/nueva-fecha-para-la-sdk-del-iphone-el-6-de-marzo/
-permalink: /index.php/2008/02/28/nueva-fecha-para-la-sdk-del-iphone-el-6-de-marzo/
 categories:
   - noticias
 image: /images/obsolete.jpg

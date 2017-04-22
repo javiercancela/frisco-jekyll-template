@@ -5,7 +5,6 @@ date: 2008-02-25T12:47:08+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2008/02/25/como-mostrar-imagenes-de-mapas-en-el-movil/
-permalink: /index.php/2008/02/25/como-mostrar-imagenes-de-mapas-en-el-movil/
 categories:
   - otros
 image: /images/obsolete.jpg

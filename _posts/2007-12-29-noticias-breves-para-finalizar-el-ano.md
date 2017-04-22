@@ -5,7 +5,6 @@ date: 2007-12-29T18:37:11+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2007/12/29/noticias-breves-para-finalizar-el-ano/
-permalink: /index.php/2007/12/29/noticias-breves-para-finalizar-el-ano/
 categories:
   - noticias
 image: /images/obsolete.jpg

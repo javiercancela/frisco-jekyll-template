@@ -5,7 +5,6 @@ date: 2008-04-07T08:00:10+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2008/04/07/primeros-pasos-programando-con-android/
-permalink: /index.php/2008/04/07/primeros-pasos-programando-con-android/
 categories:
   - android
 image: /images/obsolete.jpg

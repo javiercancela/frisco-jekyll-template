@@ -5,7 +5,6 @@ date: 2008-09-21T17:14:50+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.wordpress.com/?p=249
-permalink: /index.php/2008/09/21/los-problemas-de-desarrollar-para-el-iphone/
 categories:
   - otros
 image: /images/obsolete.jpg

@@ -5,7 +5,6 @@ date: 2008-02-11T18:38:25+00:00
 author: javiercancela
 layout: post
 guid: 'http://javiercancela.com/2008/02/11/%c2%bfpara-que-modelo-de-blackberry-desarrollar/'
-permalink: /index.php/2008/02/11/para-que-modelo-de-blackberry-desarrollar/
 categories:
   - blackberry
 image: /images/obsolete.jpg

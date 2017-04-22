@@ -5,7 +5,6 @@ date: 2007-11-21T17:38:17+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2007/11/21/mas-listas-sobre-los-moviles-mas-usados-para-acceder-a-la-web/
-permalink: /index.php/2007/11/21/mas-listas-sobre-los-moviles-mas-usados-para-acceder-a-la-web/
 categories:
   - web-movil
 image: /images/obsolete.jpg

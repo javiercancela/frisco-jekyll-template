@@ -5,7 +5,6 @@ date: 2008-04-29T10:31:46+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2008/04/29/tendencias-en-el-tamano-de-pantalla-de-los-dispositivos-moviles/
-permalink: /index.php/2008/04/29/tendencias-en-el-tamano-de-pantalla-de-los-dispositivos-moviles/
 categories:
   - otros
 image: /images/obsolete.jpg

@@ -5,7 +5,6 @@ date: 2009-07-15T07:00:47+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.wordpress.com/?p=390
-permalink: /index.php/2009/07/15/errores-emulando-el-gps-en-android/
 categories:
   - android
 image: /images/obsolete.jpg

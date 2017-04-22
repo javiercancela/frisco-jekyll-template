@@ -5,7 +5,6 @@ date: 2008-01-08T10:49:23+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2008/01/08/yahoo-anuncia-yahoo-go-30-y-la-mobile-developer-platform/
-permalink: /index.php/2008/01/08/yahoo-anuncia-yahoo-go-30-y-la-mobile-developer-platform/
 categories:
   - noticias
   - web-movil

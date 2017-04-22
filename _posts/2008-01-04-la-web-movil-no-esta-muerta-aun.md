@@ -5,7 +5,6 @@ date: 2008-01-04T08:00:17+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2008/01/04/la-web-movil-no-esta-muerta-aun/
-permalink: /index.php/2008/01/04/la-web-movil-no-esta-muerta-aun/
 categories:
   - web-movil
 image: /images/obsolete.jpg

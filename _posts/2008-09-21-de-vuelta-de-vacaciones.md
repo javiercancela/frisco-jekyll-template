@@ -5,7 +5,6 @@ date: 2008-09-21T13:12:40+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.wordpress.com/2008/09/21/de-vuelta-de-vacaciones/
-permalink: /index.php/2008/09/21/de-vuelta-de-vacaciones/
 categories:
   - ipoki
 ---

@@ -5,7 +5,6 @@ date: 2008-01-21T12:23:24+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2008/01/21/s60-en-el-mobile-world-congress/
-permalink: /index.php/2008/01/21/s60-en-el-mobile-world-congress/
 categories:
   - noticias
   - symbian

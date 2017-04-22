@@ -5,7 +5,6 @@ date: 2008-02-26T16:26:47+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2008/02/26/debate-en-la-red-sobre-el-futuro-de-las-aplicaciones-moviles/
-permalink: /index.php/2008/02/26/debate-en-la-red-sobre-el-futuro-de-las-aplicaciones-moviles/
 categories:
   - web-movil
 image: /images/obsolete.jpg

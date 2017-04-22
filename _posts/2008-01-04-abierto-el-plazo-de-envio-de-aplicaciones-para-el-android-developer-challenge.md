@@ -5,7 +5,6 @@ date: 2008-01-04T09:18:55+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2008/01/04/abierto-el-plazo-de-envio-de-aplicaciones-para-el-android-developer-challenge/
-permalink: /index.php/2008/01/04/abierto-el-plazo-de-envio-de-aplicaciones-para-el-android-developer-challenge/
 categories:
   - android
   - noticias

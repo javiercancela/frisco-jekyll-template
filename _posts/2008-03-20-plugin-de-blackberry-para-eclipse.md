@@ -5,7 +5,6 @@ date: 2008-03-20T13:09:14+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2008/03/20/plugin-de-blackberry-para-eclipse/
-permalink: /index.php/2008/03/20/plugin-de-blackberry-para-eclipse/
 categories:
   - blackberry
 image: /images/obsolete.jpg

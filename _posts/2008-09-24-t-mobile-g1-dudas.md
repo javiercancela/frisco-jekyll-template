@@ -5,7 +5,6 @@ date: 2008-09-24T21:53:22+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.wordpress.com/?p=254
-permalink: /index.php/2008/09/24/t-mobile-g1-dudas/
 categories:
   - android
 image: /images/obsolete.jpg

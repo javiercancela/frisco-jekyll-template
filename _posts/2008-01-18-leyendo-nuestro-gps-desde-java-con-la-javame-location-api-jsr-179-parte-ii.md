@@ -5,7 +5,6 @@ date: 2008-01-18T08:00:32+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2008/01/18/leyendo-nuestro-gps-desde-java-con-la-javame-location-api-jsr-179-parte-ii/
-permalink: /index.php/2008/01/18/leyendo-nuestro-gps-desde-java-con-la-javame-location-api-jsr-179-parte-ii/
 categories:
   - blackberry
   - java-me

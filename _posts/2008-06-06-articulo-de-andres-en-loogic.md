@@ -5,7 +5,6 @@ date: 2008-06-06T19:25:44+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.wordpress.com/?p=243
-permalink: /index.php/2008/06/06/articulo-de-andres-en-loogic/
 categories:
   - ipoki
 image: /images/obsolete.jpg

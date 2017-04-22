@@ -5,7 +5,6 @@ date: 2007-11-29T12:05:00+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2007/11/29/google-maps-my-location-localizacion-sin-gps/
-permalink: /index.php/2007/11/29/google-maps-my-location-localizacion-sin-gps/
 categories:
   - lbs
 image: /images/obsolete.jpg

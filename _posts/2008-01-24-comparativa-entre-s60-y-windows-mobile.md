@@ -5,7 +5,6 @@ date: 2008-01-24T10:58:14+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2008/01/24/comparativa-entre-s60-y-windows-mobile/
-permalink: /index.php/2008/01/24/comparativa-entre-s60-y-windows-mobile/
 categories:
   - symbian
   - windows-mobile

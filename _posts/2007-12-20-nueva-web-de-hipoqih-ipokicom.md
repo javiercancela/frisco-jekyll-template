@@ -5,7 +5,6 @@ date: 2007-12-20T12:58:14+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2007/12/20/nueva-web-de-hipoqih-ipokicom/
-permalink: /index.php/2007/12/20/nueva-web-de-hipoqih-ipokicom/
 categories:
   - ipoki
 image: /images/obsolete.jpg

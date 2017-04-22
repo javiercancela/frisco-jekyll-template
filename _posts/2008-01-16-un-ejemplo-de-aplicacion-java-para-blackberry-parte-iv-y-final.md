@@ -5,7 +5,6 @@ date: 2008-01-16T08:00:05+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2008/01/16/un-ejemplo-de-aplicacion-java-para-blackberry-parte-iv-y-final/
-permalink: /index.php/2008/01/16/un-ejemplo-de-aplicacion-java-para-blackberry-parte-iv-y-final/
 categories:
   - blackberry
   - java-me

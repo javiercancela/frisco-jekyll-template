@@ -5,7 +5,6 @@ date: 2008-04-29T20:00:57+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2008/04/29/nueva-version-de-netbeans-mobility-61/
-permalink: /index.php/2008/04/29/nueva-version-de-netbeans-mobility-61/
 categories:
   - java-me
 image: /images/obsolete.jpg

@@ -5,7 +5,6 @@ date: 2008-01-25T14:55:46+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2008/01/25/predicciones-de-deloitte-sobre-el-mercado-de-las-telecomunicaciones-en-el-2008/
-permalink: /index.php/2008/01/25/predicciones-de-deloitte-sobre-el-mercado-de-las-telecomunicaciones-en-el-2008/
 categories:
   - otros
 image: /images/obsolete.jpg

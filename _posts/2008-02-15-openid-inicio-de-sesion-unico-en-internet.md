@@ -5,7 +5,6 @@ date: 2008-02-15T13:30:48+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/?p=82
-permalink: /index.php/2008/02/15/openid-inicio-de-sesion-unico-en-internet/
 categories:
   - internet
 image: /images/obsolete.jpg

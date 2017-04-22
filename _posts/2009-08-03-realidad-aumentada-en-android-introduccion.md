@@ -5,7 +5,6 @@ date: 2009-08-03T08:00:05+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/?p=421
-permalink: /index.php/2009/08/03/realidad-aumentada-en-android-introduccion/
 twitter_cards_summary_img_size:
   - 'a:7:{i:0;i:240;i:1;i:188;i:2;i:2;i:3;s:24:"width="240" height="188"";s:4:"bits";i:8;s:8:"channels";i:3;s:4:"mime";s:10:"image/jpeg";}'
 categories:

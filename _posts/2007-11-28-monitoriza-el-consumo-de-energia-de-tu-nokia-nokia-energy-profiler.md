@@ -5,7 +5,6 @@ date: 2007-11-28T18:35:01+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2007/11/28/monitoriza-el-consumo-de-energia-de-tu-nokia-nokia-energy-profiler/
-permalink: /index.php/2007/11/28/monitoriza-el-consumo-de-energia-de-tu-nokia-nokia-energy-profiler/
 categories:
   - noticias
   - symbian

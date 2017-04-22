@@ -5,7 +5,6 @@ date: 2008-03-14T07:30:31+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2008/03/14/mostrando-un-mapa-estatico-de-yahoo-en-con-la-blackberry/
-permalink: /index.php/2008/03/14/mostrando-un-mapa-estatico-de-yahoo-en-con-la-blackberry/
 categories:
   - blackberry
 image: /images/obsolete.jpg

@@ -5,7 +5,6 @@ date: 2008-01-08T17:35:53+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2008/01/08/la-guia-completa-de-symbian-signed/
-permalink: /index.php/2008/01/08/la-guia-completa-de-symbian-signed/
 categories:
   - noticias
   - symbian

@@ -5,7 +5,6 @@ date: 2007-12-03T11:33:23+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2007/12/03/edicion-para-desarrolladores-de-adobe-flash-lite-3/
-permalink: /index.php/2007/12/03/edicion-para-desarrolladores-de-adobe-flash-lite-3/
 categories:
   - noticias
   - symbian

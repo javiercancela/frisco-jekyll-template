@@ -5,7 +5,6 @@ date: 2008-05-15T21:07:47+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.wordpress.com/?p=220
-permalink: /index.php/2008/05/15/alberto-triunfando-en-la-where20-o-como-usa-is-different/
 categories:
   - ipoki
 image: /images/obsolete.jpg

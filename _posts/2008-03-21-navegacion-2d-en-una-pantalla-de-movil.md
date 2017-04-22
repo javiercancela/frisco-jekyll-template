@@ -5,7 +5,6 @@ date: 2008-03-21T13:58:37+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2008/03/21/navegacion-2d-en-una-pantalla-de-movil/
-permalink: /index.php/2008/03/21/navegacion-2d-en-una-pantalla-de-movil/
 categories:
   - web-movil
 image: /images/obsolete.jpg

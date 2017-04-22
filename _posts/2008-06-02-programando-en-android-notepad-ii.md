@@ -5,7 +5,6 @@ date: 2008-06-02T08:00:41+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.wordpress.com/?p=238
-permalink: /index.php/2008/06/02/programando-en-android-notepad-ii/
 categories:
   - android
 image: /images/obsolete.jpg

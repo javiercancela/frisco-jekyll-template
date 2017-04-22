@@ -5,7 +5,6 @@ date: 2008-01-03T10:39:08+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2008/01/03/android-en-un-motorola-q/
-permalink: /index.php/2008/01/03/android-en-un-motorola-q/
 categories:
   - android
 image: /images/obsolete.jpg

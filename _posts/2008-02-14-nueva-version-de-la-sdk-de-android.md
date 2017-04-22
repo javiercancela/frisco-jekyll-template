@@ -5,7 +5,6 @@ date: 2008-02-14T09:47:13+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2008/02/14/nueva-version-de-la-sdk-de-android/
-permalink: /index.php/2008/02/14/nueva-version-de-la-sdk-de-android/
 categories:
   - android
 image: /images/obsolete.jpg

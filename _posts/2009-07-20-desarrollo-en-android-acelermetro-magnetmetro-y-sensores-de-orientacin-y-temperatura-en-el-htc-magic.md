@@ -5,7 +5,6 @@ date: 2009-07-20T06:00:00+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.wordpress.com/?p=401
-permalink: /index.php/2009/07/20/desarrollo-en-android-acelermetro-magnetmetro-y-sensores-de-orientacin-y-temperatura-en-el-htc-magic/
 categories:
   - android
 image: /images/obsolete.jpg

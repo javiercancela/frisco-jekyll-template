@@ -5,7 +5,6 @@ date: 2008-02-01T14:54:25+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.wordpress.com/?p=80
-permalink: /index.php/2008/02/01/propositos-de-ano-nuevo/
 categories:
   - blog
 image: /images/obsolete.jpg

@@ -5,7 +5,6 @@ date: 2008-01-03T11:34:55+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2008/01/03/kunerilite-aplicaciones-flashlite-para-s60/
-permalink: /index.php/2008/01/03/kunerilite-aplicaciones-flashlite-para-s60/
 categories:
   - symbian
 image: /images/obsolete.jpg

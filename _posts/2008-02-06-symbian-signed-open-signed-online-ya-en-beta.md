@@ -5,7 +5,6 @@ date: 2008-02-06T16:43:02+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2008/02/06/symbian-signed-open-signed-online-ya-en-beta/
-permalink: /index.php/2008/02/06/symbian-signed-open-signed-online-ya-en-beta/
 categories:
   - noticias
   - symbian

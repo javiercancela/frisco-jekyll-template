@@ -5,7 +5,6 @@ date: 2008-01-03T10:22:58+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2008/01/03/pointui-interfaz-para-windows-mobile-pensada-para-usar-con-los-dedos/
-permalink: /index.php/2008/01/03/pointui-interfaz-para-windows-mobile-pensada-para-usar-con-los-dedos/
 categories:
   - noticias
   - windows-mobile

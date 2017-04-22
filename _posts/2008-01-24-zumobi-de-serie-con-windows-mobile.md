@@ -5,7 +5,6 @@ date: 2008-01-24T12:50:58+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2008/01/24/zumobi-de-serie-con-windows-mobile/
-permalink: /index.php/2008/01/24/zumobi-de-serie-con-windows-mobile/
 categories:
   - web-movil
   - windows-mobile

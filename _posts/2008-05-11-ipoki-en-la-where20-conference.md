@@ -5,7 +5,6 @@ date: 2008-05-11T11:16:07+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.wordpress.com/?p=217
-permalink: /index.php/2008/05/11/ipoki-en-la-where20-conference/
 categories:
   - ipoki
 image: /images/obsolete.jpg

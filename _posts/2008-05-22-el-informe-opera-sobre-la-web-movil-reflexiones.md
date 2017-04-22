@@ -5,7 +5,6 @@ date: 2008-05-22T20:43:56+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.wordpress.com/?p=226
-permalink: /index.php/2008/05/22/el-informe-opera-sobre-la-web-movil-reflexiones/
 categories:
   - web-movil
 image: /images/obsolete.jpg

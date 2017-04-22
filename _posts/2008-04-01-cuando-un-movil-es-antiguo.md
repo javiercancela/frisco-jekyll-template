@@ -5,7 +5,6 @@ date: 2008-04-01T20:41:08+00:00
 author: javiercancela
 layout: post
 guid: 'http://javiercancela.com/2008/04/01/%c2%bfcuando-un-movil-es-antiguo/'
-permalink: /index.php/2008/04/01/cuando-un-movil-es-antiguo/
 categories:
   - otros
 image: /images/obsolete.jpg

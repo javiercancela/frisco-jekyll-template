@@ -5,7 +5,6 @@ date: 2008-05-12T08:00:19+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.wordpress.com/?p=211
-permalink: /index.php/2008/05/12/programando-en-android-conceptos-iniciales-i/
 categories:
   - android
 image: /images/obsolete.jpg

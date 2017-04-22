@@ -5,7 +5,6 @@ date: 2008-05-31T22:30:30+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.wordpress.com/?p=239
-permalink: /index.php/2008/05/31/opiniones-firmes/
 categories:
   - otros
 image: /images/obsolete.jpg

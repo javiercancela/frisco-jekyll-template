@@ -5,7 +5,6 @@ date: 2008-03-29T22:02:05+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2008/03/29/pequeno-analisis-del-plugin-de-blackberry-para-eclipse/
-permalink: /index.php/2008/03/29/pequeno-analisis-del-plugin-de-blackberry-para-eclipse/
 categories:
   - blackberry
 image: /images/obsolete.jpg

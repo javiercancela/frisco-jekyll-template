@@ -5,7 +5,6 @@ date: 2008-05-03T22:08:58+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.wordpress.com/?p=207
-permalink: /index.php/2008/05/03/nuevo-dominio-javiercancelacom/
 categories:
   - ipoki
 image: /images/obsolete.jpg

@@ -5,7 +5,6 @@ date: 2008-05-08T19:00:15+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.wordpress.com/?p=213
-permalink: /index.php/2008/05/08/nueva-api-para-interfaces-de-usuario-javame-lwuit/
 categories:
   - java-me
 image: /images/obsolete.jpg

@@ -5,7 +5,6 @@ date: 2008-02-21T13:11:02+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/?p=90
-permalink: /index.php/2008/02/21/seguridad-y-libertad-en-la-telefonia-movil/
 categories:
   - otros
 image: /images/obsolete.jpg

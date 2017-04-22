@@ -5,7 +5,6 @@ date: 2008-02-17T12:10:36+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2008/02/17/intentando-firmar-una-aplicacion-blackberry-no-todo-va-a-ser-symbian/
-permalink: /index.php/2008/02/17/intentando-firmar-una-aplicacion-blackberry-no-todo-va-a-ser-symbian/
 categories:
   - blackberry
   - ipoki

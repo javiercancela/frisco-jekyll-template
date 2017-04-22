@@ -5,7 +5,6 @@ date: 2009-07-06T22:55:30+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.wordpress.com/2009/07/06/impresiones-sobre-el-htc-magic/
-permalink: /index.php/2009/07/06/impresiones-sobre-el-htc-magic/
 categories:
   - android
 image: /images/obsolete.jpg

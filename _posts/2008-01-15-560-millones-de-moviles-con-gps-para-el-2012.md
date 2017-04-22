@@ -5,7 +5,6 @@ date: 2008-01-15T16:29:32+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2008/01/15/560-millones-de-moviles-con-gps-para-el-2012/
-permalink: /index.php/2008/01/15/560-millones-de-moviles-con-gps-para-el-2012/
 categories:
   - lbs
   - noticias

@@ -5,7 +5,6 @@ date: 2007-12-04T13:37:20+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2007/12/04/nuevas-versiones-netbeans-mobility-60-y-sun-java-wireless-toolkit-252/
-permalink: /index.php/2007/12/04/nuevas-versiones-netbeans-mobility-60-y-sun-java-wireless-toolkit-252/
 categories:
   - java-me
   - noticias

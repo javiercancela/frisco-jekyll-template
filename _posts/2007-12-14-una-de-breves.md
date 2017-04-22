@@ -5,7 +5,6 @@ date: 2007-12-14T22:36:21+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2007/12/14/una-de-breves/
-permalink: /index.php/2007/12/14/una-de-breves/
 categories:
   - noticias
 image: /images/obsolete.jpg

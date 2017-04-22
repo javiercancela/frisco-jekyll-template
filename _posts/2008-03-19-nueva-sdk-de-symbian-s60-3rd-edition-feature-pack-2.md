@@ -5,7 +5,6 @@ date: 2008-03-19T19:21:38+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2008/03/19/nueva-sdk-de-symbian-s60-3rd-edition-feature-pack-2/
-permalink: /index.php/2008/03/19/nueva-sdk-de-symbian-s60-3rd-edition-feature-pack-2/
 categories:
   - symbian
 image: /images/obsolete.jpg

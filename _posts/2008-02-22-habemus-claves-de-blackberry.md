@@ -5,7 +5,6 @@ date: 2008-02-22T09:00:05+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2008/02/22/habemus-claves-de-blackberry/
-permalink: /index.php/2008/02/22/habemus-claves-de-blackberry/
 categories:
   - blackberry
 image: /images/obsolete.jpg

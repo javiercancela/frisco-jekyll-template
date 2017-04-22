@@ -5,7 +5,6 @@ date: 2008-03-13T20:00:26+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2008/03/13/acceder-a-internet-con-java-en-una-blackberry/
-permalink: /index.php/2008/03/13/acceder-a-internet-con-java-en-una-blackberry/
 categories:
   - blackberry
 image: /images/obsolete.jpg

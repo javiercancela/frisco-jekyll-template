@@ -5,7 +5,6 @@ date: 2008-04-07T18:48:01+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2008/04/07/desarrollo-java-me-y-nativo-en-symbian-os/
-permalink: /index.php/2008/04/07/desarrollo-java-me-y-nativo-en-symbian-os/
 categories:
   - symbian
 image: /images/obsolete.jpg

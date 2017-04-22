@@ -5,7 +5,6 @@ date: 2007-12-29T14:27:27+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2007/12/29/nuevo-blog/
-permalink: /index.php/2007/12/29/nuevo-blog/
 categories:
   - ipoki
 image: /images/obsolete.jpg

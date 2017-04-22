@@ -5,7 +5,6 @@ date: 2007-11-29T16:23:18+00:00
 author: javiercancela
 layout: post
 guid: http://javiercancela.com/2007/11/29/hipoqih-en-mobile-monday-barcelona/
-permalink: /index.php/2007/11/29/hipoqih-en-mobile-monday-barcelona/
 categories:
   - lbs
   - noticias
