@@ -18,3 +18,19 @@
   slug: inteligencia-artificial
 - name: Otros
   slug: otros
+- name: Symbian
+  slug: symbian
+- name: Noticias
+  slug: noticias
+- name: Windows Mobile
+  slug: windows-mobile
+- name: LBS
+  slug: lbs
+- name: Web Móvil
+  slug: web-movil
+- name: Java ME
+  slug: java-me
+- name: BlackBerry
+  slug: blackberry
+- name: Android
+  slug: android
