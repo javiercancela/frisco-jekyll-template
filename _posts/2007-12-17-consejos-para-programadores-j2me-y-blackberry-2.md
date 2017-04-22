@@ -43,6 +43,6 @@ Conclusión: lo importante en la gestión de memoria no es llamar a System.gc() 
 
 Más información: [J2ME Wiki &#8211; Memory Management](http://www.j2meforums.com/wiki/index.php/FAQ#Memory_Management)
 
-Entradas relacionadas:
+###Entradas relacionadas:
   
-[Consejos para programadores J2ME (y BlackBerry) &#8211; 1](http://javiercancela.com/2007/12/07/consejos-para-programadores-j2me-y-blackberry-1/)
+[Consejos para programadores J2ME (y BlackBerry) &#8211; 1]({% post_url 2007-12-07-consejos-para-programadores-j2me-y-blackberry-1 %})

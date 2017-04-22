@@ -19,7 +19,7 @@ Veamos cuales son las interfaces definidas por IMT-2000:
 
   * _IMT-SC, Single Carrier_
 
-También conocido como [EDGE](http://en.wikipedia.org/wiki/Enhanced_Data_Rates_for_GSM_Evolution "Enhanced Data Rates for GSM Evolution"), de la que ya hablamos en un [artículo anterior](http://javiercancela.com/2007/11/10/redes-de-telefonia-movil-25g/ "2.5G").
+También conocido como [EDGE](http://en.wikipedia.org/wiki/Enhanced_Data_Rates_for_GSM_Evolution "Enhanced Data Rates for GSM Evolution"), de la que ya hablamos en un [artículo anterior]({% post_url 2007-11-10-redes-de-telefonia-movil-25g %}).
 
   * _IMT-MC, Multi-Carrier_
 

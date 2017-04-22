@@ -370,12 +370,12 @@ super.makeMenu(menu, instance);<br />
 
 A partir de aquí, la descripción del código continúa en la serie **Leyendo nuestro GPS desde Java con la JavaME Location API (JSR-179)**.
 
-**Entradas relacionadas:**
+### Entradas relacionadas:
   
-[Un ejemplo de aplicación Java para BlackBerry &#8211; Parte I](http://javiercancela.com/2008/01/09/un-ejemplo-de-aplicacion-java-para-blackberry-parte-i/ "Un ejemplo de aplicación Java para BlackBerry - Parte I")
+[Un ejemplo de aplicación Java para BlackBerry &#8211; Parte I]({% post_url 2008-01-09-un-ejemplo-de-aplicacion-java-para-blackberry-parte-i %})
   
-[Un ejemplo de aplicación Java para BlackBerry &#8211; Parte II](http://javiercancela.com/2008/01/11/un-ejemplo-de-aplicacion-java-para-blackberry-parte-ii/ "Un ejemplo de aplicación Java para BlackBerry - Parte II")
+[Un ejemplo de aplicación Java para BlackBerry &#8211; Parte II]({% post_url 2008-01-11-un-ejemplo-de-aplicacion-java-para-blackberry-parte-ii %})
   
-[Un ejemplo de aplicación Java para BlackBerry &#8211; Parte III](http://javiercancela.com/2008/01/14/un-ejemplo-de-aplicacion-java-para-blackberry-parte-iii/ "Un ejemplo de aplicación Java para BlackBerry - Parte III")
+[Un ejemplo de aplicación Java para BlackBerry &#8211; Parte III]({% post_url 2008-01-14-mas-sobre-la-firma-de-aplicaciones-symbian %})
   
-[Leyendo nuestro GPS desde Java con la JavaME Location API (JSR-179) &#8211; Parte I](http://javiercancela.com/2008/01/07/leyendo-nuestro-gps-desde-java-con-la-javame-location-api-jsr-179-parte-i/ "Leyendo nuestro GPS desde Java con la JavaME Location API (JSR-179) - Parte I")
+[Leyendo nuestro GPS desde Java con la JavaME Location API (JSR-179) &#8211; Parte I]({% post_url 2008-01-07-leyendo-nuestro-gps-desde-java-con-la-javame-location-api-jsr-179-parte-i %})

@@ -36,8 +36,8 @@ Sin entrar en debates académicos sobre las ventajas e inconvenientes de la prog
 
 Lógicamente ninguna de estas recomendaciones se puede tomar como dogma, pero son útiles para recordar que nuestra mentalidad de programador debe cambiar cuando nos enfrentemos a dispositivos móviles.
 
-Entradas relacionadas:
+### Entradas relacionadas:
+
+[Consejos para programadores J2ME (y BlackBerry) &#8211; 1]({% post_url 2007-12-07-consejos-para-programadores-j2me-y-blackberry-1 %})
   
-[Consejos para programadores J2ME (y BlackBerry) &#8211; 1](http://javiercancela.com/2007/12/07/consejos-para-programadores-j2me-y-blackberry-1/)
-  
-[Consejos para programadores J2ME (y BlackBerry) &#8211; 2](http://javiercancela.com/2007/12/17/consejos-para-programadores-j2me-y-blackberry-2/)
+[Consejos para programadores J2ME (y BlackBerry) &#8211; 2]({% post_url 2007-12-17-consejos-para-programadores-j2me-y-blackberry-2 %})

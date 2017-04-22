@@ -9,7 +9,7 @@ categories:
   - lbs
 image: /images/obsolete.jpg
 ---
-Hablábamos en [una entrada anterior](http://javiercancela.com/2007/11/29/google-maps-my-location-localizacion-sin-gps/ "Localización sin GPS") del servicio My Location de Google Maps Mobile, que permite localizar un móvil sin GPS con un margen de error variable.
+Hablábamos en [una entrada anterior]({% post_url 2007-11-29-google-maps-my-location-localizacion-sin-gps %}) del servicio My Location de Google Maps Mobile, que permite localizar un móvil sin GPS con un margen de error variable.
 
 Sobre las formas que tiene Google de averiguar la localización del móvil, [un ingeniero de Vodafone UK](http://www.vodafonebetavine.net/web/guest/projects/resources/location_enhanced_services?p_p_id=bvblogs&p_p_action=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_pos=1&p_p_col_count=2&_bvblogs_struts_action=%2Fext%2Fbvblogs%2FviewPost&_bvblogs_postId=267&#p_bvblogs "Welcome to the Betavine Location Enhanced Services Blog") apunta que en el Reino Unido es la propia Vodafone quien proporciona a Google la información sobre la celda en la que se encuentra el usuario, así como una distancia aproximada y una orientación con respecto a la celda. La ventaja que poseen las operadoras es que saben no sólo en qué celda se encuentra el móvil, sino qué otras celdas están cerca, y en el caso de las antenas direccionales conocen la dirección aproximada respecto a la antena ([esta información](http://tech.groups.yahoo.com/group/momolondon/message/3316 "Google Maps location service for mobile") se indica esquemáticamente en un foro de yahoo que exige registro).
 

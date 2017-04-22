@@ -9,7 +9,7 @@ categories:
   - java-me
 image: /images/obsolete.jpg
 ---
-¿Qué entorno de desarrollo es el más aconsejable para desarrollar aplicaciones J2ME? Partamos de la suposición, bastante razonable, de que queremos que se ejecute en la mayor variedad de teléfonos móviles posible. Como veíamos en la [primera parte de este artículo](http://javiercancela.com/2007/10/25/introduccion-al-desarrollo-de-aplicaciones-para-telefonos-moviles-j2me-i/ "J2ME (I)"), J2ME no puede garantizar que un mismo código se ejecute correctamente en todos los dispositivos aunque estos implementen las mismas especificaciones, por lo que puede ser necesario desarrollar varias versiones de nuestra aplicación.
+¿Qué entorno de desarrollo es el más aconsejable para desarrollar aplicaciones J2ME? Partamos de la suposición, bastante razonable, de que queremos que se ejecute en la mayor variedad de teléfonos móviles posible. Como veíamos en la [primera parte de este artículo]({% post_url 2007-10-25-introduccion-al-desarrollo-de-aplicaciones-para-telefonos-moviles-j2me-i %}), J2ME no puede garantizar que un mismo código se ejecute correctamente en todos los dispositivos aunque estos implementen las mismas especificaciones, por lo que puede ser necesario desarrollar varias versiones de nuestra aplicación.
 
 Las marcas líderes en la comercialización de dispositivos móviles con soporte J2ME varían según el mercado específico al que nos dirijamos, pero casi en cualquier lista nos vamos a encontrar a Nokia, Samsung, Motorola, Sony Ericsson y RIM (los fabricantes de BlackBerry). Dejando de lado las BlackBerry, a las que dedicaré un artículo posterior, una buena idea es montar un entorno de desarrollo que nos permita utilizar las SDKs y los emuladores de estas marcas.
 

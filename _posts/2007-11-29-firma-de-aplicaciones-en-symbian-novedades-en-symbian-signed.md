@@ -9,7 +9,7 @@ categories:
   - symbian
 image: /images/obsolete.jpg
 ---
-En una [entrada anterior](http://javiercancela.com/2007/10/18/symbian-signed-firma-de-aplicaciones-en-symbian/ "Firma de aplicaciones en Symbian") hablábamos de Symbian Signed y mencionábamos que se estaban preparando cambios en el sistema de firma de aplicaciones Symbian. Estos cambios empezarán a tener efecto durante diciembre, pero ya se conoce con detalle en qué van a consistir.
+En una [entrada anterior]({% post_url 2007-10-18-symbian-signed-firma-de-aplicaciones-en-symbian %}) hablábamos de Symbian Signed y mencionábamos que se estaban preparando cambios en el sistema de firma de aplicaciones Symbian. Estos cambios empezarán a tener efecto durante diciembre, pero ya se conoce con detalle en qué van a consistir.
 
 **_Publisher ID_**
 

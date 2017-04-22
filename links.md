@@ -1,9 +1,11 @@
 ### Entradas relacionadas:
-
-[Redes de telefonía móvil: 2G]({% post_url 2007-11-04-redes-de-telefonia-movil-2g %})
-
-[Redes de telefonía móvil: 2.5G]({% post_url 2007-11-10-redes-de-telefonia-movil-25g %})
   
-[Redes de telefonía móvil: 3G]({% post_url 2007-11-15-redes-de-telefonia-movil-3g %})
+[Un ejemplo de aplicación Java para BlackBerry &#8211; Parte I]({% post_url 2008-01-09-un-ejemplo-de-aplicacion-java-para-blackberry-parte-i.md %})
   
-[Redes de telefonía móvil: WiMAX]({% post_url 2007-11-21-redes-de-telefonia-movil-wimax %})
+[Un ejemplo de aplicación Java para BlackBerry &#8211; Parte II]({% post_url 2008-01-11-un-ejemplo-de-aplicacion-java-para-blackberry-parte-ii.md %})
+  
+[Un ejemplo de aplicación Java para BlackBerry &#8211; Parte III]({% post_url 2008-01-14-mas-sobre-la-firma-de-aplicaciones-symbian.md %})
+  
+[Un ejemplo de aplicación Java para BlackBerry &#8211; Parte IV y final]({% post_url 2008-01-16-un-ejemplo-de-aplicacion-java-para-blackberry-parte-iv-y-final.md %})
+  
+[Leyendo nuestro GPS desde Java con la JavaME Location API (JSR-179) &#8211; Parte I]({% post_url 2008-01-07-leyendo-nuestro-gps-desde-java-con-la-javame-location-api-jsr-179-parte-i.md %})

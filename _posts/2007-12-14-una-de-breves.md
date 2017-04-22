@@ -11,7 +11,7 @@ image: /images/obsolete.jpg
 ---
 Tras unos días especialmente ocupado en el trabajo y preparando la nueva versión de [hipoqih](http://hipoqih.com), varias noticias interesantes:
 
-&#8211; Como mencionábamos en [una entrada anterior](http://javiercancela.com/2007/11/29/firma-de-aplicaciones-en-symbian-novedades-en-symbian-signed/), [Symbian Signed ya está disponible](http://www.symbian.com/news/pr/2007/pr20079685.html "Symbian’s Improved Developer Signing Processes are now available").
+&#8211; Como mencionábamos en [una entrada anterior]({% post_url 2007-11-29-firma-de-aplicaciones-en-symbian-novedades-en-symbian-signed %}), [Symbian Signed ya está disponible](http://www.symbian.com/news/pr/2007/pr20079685.html "Symbian’s Improved Developer Signing Processes are now available").
 
 &#8211; [Una página curiosa](http://www.tryphone.com/home.seam "TryPhone beta") que permite probar versiones flash de distintos dispositivos móviles.
 

@@ -9,11 +9,11 @@ categories:
   - android
 image: /images/obsolete.jpg
 ---
-Una vez [obtenida la imagen de la cámara](http://javiercancela.com/2009/08/04/realidad-aumentada-en-android-ar-compass-i/) pasamos a la brújula. Necesitaremos dos cosas: obtener los datos de orientación y dibujarlos en el lugar adecuado. Empezaremos inicializando los sensores y los datos iniciales de la brújula.
+Una vez [obtenida la imagen de la cámara]({% post_url 2009-08-04-realidad-aumentada-en-android-ar-compass-i %}) pasamos a la brújula. Necesitaremos dos cosas: obtener los datos de orientación y dibujarlos en el lugar adecuado. Empezaremos inicializando los sensores y los datos iniciales de la brújula.
 
 **Empezando con OpenGL**
 
-Como dijimos en [la entrada anterior](http://javiercancela.com/2009/08/04/realidad-aumentada-en-android-ar-compass-i/) vamos a usar OpenGL para dibujar la brújula. Una advertencia: antes de realizar esta serie de entradas no sabía nada de OpenGL, así que es probable es que el código que incluyo no sea muy ortodoxo, incluso puede que contenga errores. Aún así funciona correctamente en el HTC Magic.
+Como dijimos en [la entrada anterior]({% post_url 2009-08-04-realidad-aumentada-en-android-ar-compass-i %}) vamos a usar OpenGL para dibujar la brújula. Una advertencia: antes de realizar esta serie de entradas no sabía nada de OpenGL, así que es probable es que el código que incluyo no sea muy ortodoxo, incluso puede que contenga errores. Aún así funciona correctamente en el HTC Magic.
 
 Para aprender algo de OpenGL utilicé el libro _“The [OpenGL Programming Guide 5th Edition. The Official Guide to Learning OpenGL Version 2.1](http://www.glprogramming.com/red/)”_, también conocido como el _OpenGL Red Book_. Por supuesto hay gran cantidad de tutoriales de OpenGL por internet. Los [ejemplos de Android sobre OpenGL|ES](http://developer.android.com/guide/samples/ApiDemos/src/com/example/android/apis/graphics/index.html) permiten hacerse una idea de cómo usar OpenGL en Android. Algunas de las clases que aparecen en esta entrada están basadas en esos ejemplos.
 

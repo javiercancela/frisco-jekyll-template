@@ -14,7 +14,7 @@ Esta entrada completa la explicación del ejemplo tratado en la serie de entrada
 
 **Recapitulando**
 
-GPSDemo es una aplicación para BlackBerry que hace uso de la API JSR-179 para mostrar información de la posición y velocidad obtenidas de un dispositivo GPS o similar (ver la entrada [Leyendo nuestro GPS desde Java con la JavaME Location API (JSR-179) &#8211; Parte I](http://javiercancela.com/2008/01/07/leyendo-nuestro-gps-desde-java-con-la-javame-location-api-jsr-179-parte-i/ "Leyendo nuestro GPS desde Java con la JavaME Location API (JSR-179) - Parte I") para una explicación de las posibles fuentes de información).
+GPSDemo es una aplicación para BlackBerry que hace uso de la API JSR-179 para mostrar información de la posición y velocidad obtenidas de un dispositivo GPS o similar (ver la entrada [Leyendo nuestro GPS desde Java con la JavaME Location API (JSR-179) &#8211; Parte I]({% post_url 2008-01-07-leyendo-nuestro-gps-desde-java-con-la-javame-location-api-jsr-179-parte-i %}) para una explicación de las posibles fuentes de información).
 
 Habíamos dejado pendiente de describir el método `startLocationUpdate()` que se llama desde el constructor de la clase `GPSDemo`:
 
@@ -383,14 +383,14 @@ _verticalDistance=verticalDistance;<br />
 }<br />
 }`
 
-**Entradas relacionadas:**
+### Entradas relacionadas:
   
-[Un ejemplo de aplicación Java para BlackBerry &#8211; Parte I](http://javiercancela.com/2008/01/09/un-ejemplo-de-aplicacion-java-para-blackberry-parte-i/ "Un ejemplo de aplicación Java para BlackBerry - Parte I")
+[Un ejemplo de aplicación Java para BlackBerry &#8211; Parte I]({% post_url 2008-01-09-un-ejemplo-de-aplicacion-java-para-blackberry-parte-i %})
   
-[Un ejemplo de aplicación Java para BlackBerry &#8211; Parte II](http://javiercancela.com/2008/01/11/un-ejemplo-de-aplicacion-java-para-blackberry-parte-ii/ "Un ejemplo de aplicación Java para BlackBerry - Parte II")
+[Un ejemplo de aplicación Java para BlackBerry &#8211; Parte II]({% post_url 2008-01-11-un-ejemplo-de-aplicacion-java-para-blackberry-parte-ii %})
   
-[Un ejemplo de aplicación Java para BlackBerry &#8211; Parte III](http://javiercancela.com/2008/01/14/un-ejemplo-de-aplicacion-java-para-blackberry-parte-iii/ "Un ejemplo de aplicación Java para BlackBerry - Parte III")
+[Un ejemplo de aplicación Java para BlackBerry &#8211; Parte III]({% post_url 2008-01-14-mas-sobre-la-firma-de-aplicaciones-symbian %})
   
-[Un ejemplo de aplicación Java para BlackBerry &#8211; Parte IV y final](http://javiercancela.com/2008/01/16/un-ejemplo-de-aplicacion-java-para-blackberry-parte-iv-y-final/ "Un ejemplo de aplicación Java para BlackBerry - Parte IV y final")
+[Un ejemplo de aplicación Java para BlackBerry &#8211; Parte IV y final]({% post_url 2008-01-16-un-ejemplo-de-aplicacion-java-para-blackberry-parte-iv-y-final %})
   
-[Leyendo nuestro GPS desde Java con la JavaME Location API (JSR-179) &#8211; Parte I](http://javiercancela.com/2008/01/07/leyendo-nuestro-gps-desde-java-con-la-javame-location-api-jsr-179-parte-i/ "Leyendo nuestro GPS desde Java con la JavaME Location API (JSR-179) - Parte I")
+[Leyendo nuestro GPS desde Java con la JavaME Location API (JSR-179) &#8211; Parte I]({% post_url 2008-01-07-leyendo-nuestro-gps-desde-java-con-la-javame-location-api-jsr-179-parte-i %})
