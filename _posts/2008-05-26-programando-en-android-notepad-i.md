@@ -29,7 +29,7 @@ Dentro del elemento application lo primero que aparece es un provider, que nos d
 
 Además de indicar el nombre de la actividad, y la etiqueta que aparecerá en la ventana asociada, también especificamos que vamos a utilizar un tema concreto para esta actividad. Los temas nos permiten cambiar el _look&feel_ de las aplicaciones con temas predefinidos o creados por nosotros. En este caso podemos ver como el recurso correspondiente al tema se referencia a través del paquete `android`, ya que está definido en el sistema, no en nuestra aplicación.
 
-Dentro de cada `activity` hay definidos `intent-filters`, que permiten concretar el ámbito en el que se van a ejecutar, como ya vimos [anteriormente](http://javiercancela.com/2008/05/19/programando-en-android-conceptos-iniciales-ii/ "Programando en Android - Conceptos iniciales (II)"). Por ejemplo, en NotesList encontramos:
+Dentro de cada `activity` hay definidos `intent-filters`, que permiten concretar el ámbito en el que se van a ejecutar, como ya vimos [anteriormente]({% post_url 2008-05-19-programando-en-android-conceptos-iniciales-ii %}). Por ejemplo, en NotesList encontramos:
 
 > `<intent-filter><br />
 <action android:name="android.intent.action.MAIN" /><br />
@@ -62,10 +62,12 @@ permite al usuario seleccionar el tipo de dato `vnd.android.cursor.dir/vnd.googl
 
 Todo esto se verá más claro al examinar el código de las actividades.
 
-**Entradas anteriores:**
+### Entradas relacionadas:
   
-[Programando en Android &#8211; Conceptos iniciales (II)](http://javiercancela.com/2008/05/19/programando-en-android-conceptos-iniciales-ii/)
+[Programando en Android &#8211; Prólogo]({% post_url 2008-05-06-programando-en-android-prologo %})
   
-[Programando en Android &#8211; Conceptos iniciales (I)](http://javiercancela.com/2008/05/12/programando-en-android-conceptos-iniciales-i/)
+[Programando en Android &#8211; Conceptos iniciales (I)]({% post_url 2008-05-12-programando-en-android-conceptos-iniciales-i %})
   
-[Programando en Android &#8211; Prólogo](http://javiercancela.com/2008/05/06/programando-en-android-prologo/)
+[Programando en Android &#8211; Conceptos iniciales (II)]({% post_url 2008-05-19-programando-en-android-conceptos-iniciales-ii %})
+
+[Programando en Android &#8211; NotePad (II)]({% post_url 2008-06-02-programando-en-android-notepad-ii %})

@@ -14,4 +14,4 @@ Eso anuncia hoy el [Android Developers Blog](http://android-developers.blogspot.
 
 Es decir, que Google ha logrado uno de los objetivos de este concurso: obtener una comunidad de betatesters significativa para un software que todavía no tiene hardware sobre el que ejecutarse. La nueva SDK arreglará algunos de los múltiples fallos que se han detectado desde que se liberó la primera versión, y todavía podrá recibir mejoras antes de que sus librerías sean definitivamente incorporadas a los primeros modelos de teléfono.
 
-La estrategia opuesta a [la de Apple](http://javiercancela.com/2007/10/18/sdk-para-el-iphone/ "SDK para el iPhone"), cuya SDK debería publicarse este Febrero. Veremos como es de estable.
+La estrategia opuesta a [la de Apple]({% post_url 2007-10-18-sdk-para-el-iphone %}), cuya SDK debería publicarse este Febrero. Veremos como es de estable.

@@ -9,7 +9,7 @@ categories:
   - blackberry
 image: /images/obsolete.jpg
 ---
-Veíamos en un artículo anterior ([Cómo mostrar imágenes de mapas en el móvil](http://javiercancela.com/2008/02/25/como-mostrar-imagenes-de-mapas-en-el-movil/ "Cómo mostrar imágenes de mapas en el móvil")) distintas opciones para mostrar mapas estáticos (simples imágenes de mapas, nada de JavaScript). Vamos a ver con un poco de código cómo utilizar la Yahoo! Map Image API en BlackBerry (que con algunos cambios se podrá adaptar a cualquier aplicación Java ME).
+Veíamos en un artículo anterior ([Cómo mostrar imágenes de mapas en el móvil]({% post_url 2008-02-25-como-mostrar-imagenes-de-mapas-en-el-movil %}) distintas opciones para mostrar mapas estáticos (simples imágenes de mapas, nada de JavaScript). Vamos a ver con un poco de código cómo utilizar la Yahoo! Map Image API en BlackBerry (que con algunos cambios se podrá adaptar a cualquier aplicación Java ME).
 
 La API acepta varios parámetros para elegir la ubicación del mapa a mostrar, y nosotros vamos a utilizar como parámetros la longitud y latitud del punto central, así como el nivel de zoom y el tamaño de la imagen:
 

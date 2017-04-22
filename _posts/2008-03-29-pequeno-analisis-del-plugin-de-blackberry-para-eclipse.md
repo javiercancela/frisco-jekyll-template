@@ -11,7 +11,7 @@ image: /images/obsolete.jpg
 ---
 Las vacaciones de semana santa, el trabajo y un problema en el servidor, que volvió inaccesible este blog durante varias horas del miércoles, se han conjurado para hacerme establecer un nuevo record de días sin publicar nada. Pero hay mucho sobre lo que escribir, así que confío en que la próxima semana compense esta que acaba.
 
-Contaba en una entrada anterior que había aparecido un [plugin de BlackBerry para Eclipse](http://javiercancela.com/2008/03/20/plugin-de-blackberry-para-eclipse/ "Plugin de BlackBerry para Eclipse"), sin que yo supiese siquiera que se estaba preparando uno. El JDE de RIM no es un entorno de desarrollo de mi gusto, así he instalado el plugin con la esperanza de que resulte una alternativa más interesante. Y así es.
+Contaba en una entrada anterior que había aparecido un [plugin de BlackBerry para Eclipse]({% post_url 2008-03-20-plugin-de-blackberry-para-eclipse %}), sin que yo supiese siquiera que se estaba preparando uno. El JDE de RIM no es un entorno de desarrollo de mi gusto, así he instalado el plugin con la esperanza de que resulte una alternativa más interesante. Y así es.
 
 Al contrario que los plugins habituales de Eclipse, el plugin de BlackBerry es un instalable de Windows que copia en la carpeta plugins del IDE tanto los habituales jar como exes y dlls. Una vez completada la instalación, Eclipse se muestra con una nueva opción en la barra de menús:
 

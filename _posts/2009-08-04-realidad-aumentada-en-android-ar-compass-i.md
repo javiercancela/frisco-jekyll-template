@@ -9,9 +9,9 @@ categories:
   - android
 image: /images/obsolete.jpg
 ---
-Decíamos en el [anterior artículo](http://javiercancela.com/2009/08/03/realidad-aumentada-en-android-introduccion/) que la realidad aumentada combina datos generados por ordenador con imágenes del entorno obtenidas en tiempo real. La parte complicada es la superposición de los datos sobre la imagen en la posición correcta. Así que vamos a comenzar con una aplicación de realidad _levemente_ aumentada: una brújula virtual.
+Decíamos en el [anterior artículo]({% post_url 2009-08-03-realidad-aumentada-en-android-introduccion %}) que la realidad aumentada combina datos generados por ordenador con imágenes del entorno obtenidas en tiempo real. La parte complicada es la superposición de los datos sobre la imagen en la posición correcta. Así que vamos a comenzar con una aplicación de realidad _levemente_ aumentada: una brújula virtual.
 
-**AR Compass<img style="display:inline;margin-left:0;margin-right:0;border-width:0;" title="Mi pantalla apunta al noroeste" src="http://localhost/wp-content/uploads/2009/08/compass2.png" border="0" alt="Mi pantalla apunta al noroeste" width="252" height="172" align="right" />**
+**AR Compass<img style="display:inline;margin-left:0;margin-right:0;border-width:0;" title="Mi pantalla apunta al noroeste" src="/images/uploads/2009/08/compass2.png" border="0" alt="Mi pantalla apunta al noroeste" width="252" height="172" align="right" />**
 
 AR Compass (brújula de realidad aumentada, en inglés queda más _cool_) es una aplicación para Android que muestra una brújula superpuesta a la imagen capturada por la cámara. La brújula consiste en una serie de líneas verticales con el norte, el sur, el este y el oeste marcados.
 

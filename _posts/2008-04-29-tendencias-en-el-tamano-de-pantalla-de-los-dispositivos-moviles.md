@@ -15,9 +15,9 @@ En _[Mobile screen size trends](http://sender11.typepad.com/sender11/2008/04/mob
 
 Resultan muy ilustrativos los gráficos que muestran el tamaños en píxeles y la proporción entre dimensiones por un lado, y el tamaño en pulgadas por el otro:
   
-[![Pulgadas](http://localhost/wp-content/uploads/2008/05/physicalscreensmore.png)](http://localhost/wp-content/uploads/2008/05/physicalscreensmore.png "Pulgadas")
+[![Pulgadas](/images/uploads/2008/05/physicalscreensmore.png)](/images/uploads/2008/05/physicalscreensmore.png "Pulgadas")
 
-[![Pixels y ratios](http://localhost/wp-content/uploads/2008/05/physicalscreens.png)](http://localhost/wp-content/uploads/2008/05/physicalscreens.png "Pixels y ratios")
+[![Pixels y ratios](/images/uploads/2008/05/physicalscreens.png)](/images/uploads/2008/05/physicalscreens.png "Pixels y ratios")
 
 Conclusiones: se impone un modelo de pantalla adaptado a la visualización de vídeo, que resulta también adecuado para navegar por páginas no optimizadas para móviles. Así, el problema del diseño se desplaza al dispositivo de entrada: teclados virtuales frente a teclados físicos incrustados de alguna forma en el dispositivo; pantallas táctiles con interfaces de usuario adaptadas a las necesidades de la navegación móvil.
 

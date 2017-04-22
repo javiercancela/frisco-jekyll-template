@@ -9,7 +9,7 @@ categories:
   - ipoki
 image: /images/obsolete.jpg
 ---
-[<img class="alignnone size-full wp-image-219" src="http://localhost/wp-content/uploads/2008/05/728x90.jpg" alt="Where2.0 Conference" width="480" height="86" srcset="http://localhost/wp-content/uploads/2008/05/728x90.jpg 480w, http://localhost/wp-content/uploads/2008/05/728x90-300x54.jpg 300w" sizes="(max-width: 480px) 100vw, 480px" />](http://en.oreilly.com/where2008/public/schedule/detail/1577) [](http://localhost/wp-content/uploads/2008/05/728x90.jpg)
+[<img class="alignnone size-full wp-image-219" src="/images/uploads/2008/05/728x90.jpg" alt="Where2.0 Conference" width="480" height="86" srcset="/images/uploads/2008/05/728x90.jpg 480w, /images/uploads/2008/05/728x90-300x54.jpg 300w" sizes="(max-width: 480px) 100vw, 480px" />](http://en.oreilly.com/where2008/public/schedule/detail/1577) [](/images/uploads/2008/05/728x90.jpg)
 
 [Diego](http://www.ipoki.com/maps/diego "Mapa de Diego") y [Alberto](http://www.ipoki.com/maps/aandresl "Mapa de Alberto") participan esta semana en la [conferencia Where2.0](http://en.oreilly.com/where2008/public/schedule/detail/1577 "Where2.0"). También estarán el fin de semana en el [WhereCamp](http://wherecamp.pbwiki.com/WhereCamp2008 "WhereCamp") que organiza Google en sus instalaciones.
 

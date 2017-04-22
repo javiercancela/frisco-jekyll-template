@@ -11,7 +11,7 @@ image: /images/obsolete.jpg
 ---
 ###### 
 
-[<img style="display:inline;margin-left:0;margin-right:0;border-width:0;" title="Foto de yufujamar" border="0" alt="Foto de yufujamar" align="right" src="http://localhost/wp-content/uploads/2009/07/3492788468_6d7a024eba.jpg" width="260" height="180" />](http://www.flickr.com/photos/yufujamar/3492788468/) Ha pasado un mes y medio desde que tengo el HTC Magic. Me pasé de Orange a Vodafone por este móvil, un mes antes de que Orange anunciaran en exclusiva el HTC Hero. En fin…
+[<img style="display:inline;margin-left:0;margin-right:0;border-width:0;" title="Foto de yufujamar" border="0" alt="Foto de yufujamar" align="right" src="/images/uploads/2009/07/3492788468_6d7a024eba.jpg" width="260" height="180" />](http://www.flickr.com/photos/yufujamar/3492788468/) Ha pasado un mes y medio desde que tengo el HTC Magic. Me pasé de Orange a Vodafone por este móvil, un mes antes de que Orange anunciaran en exclusiva el HTC Hero. En fin…
 
 Como Internet está lleno de análisis del Magic me limito a soltar algunas impresiones personales. No he tenido ocasión de usar de forma continuada otros móviles de gama similar, así que no voy a hacer comparaciones.
 

@@ -21,11 +21,11 @@ El funcionamiento básico es el siguiente: el usuario crea una cuenta con un pro
 
 Con este identificador el usuario se dirige al sitio al que quiera acceder con su OpenID (voy a elegir para el ejemplo [Plaxo](http://www.plaxo.com "Plaxo"), una lista de posibles sitios se puede consultar aquí: [Directorio de sitios OpenID](https://www.myopenid.com/directory "Directorio de sitios OpenID")) En la pantalla de inicio de sesión se muestra un recuadro para iniciar sesión con OpenID, que tendrá además este icono: <img src="http://www.plaxo.com/images/openid/login-bg.gif" height="16" width="16" />:
 
-[![Inicio de sesión en Plaxo](http://localhost/wp-content/uploads/2008/02/plaxo.png)](http://localhost/wp-content/uploads/2008/02/plaxo.png "Inicio de sesión en Plaxo")
+[![Inicio de sesión en Plaxo](/images/uploads/2008/02/plaxo.png)](/images/uploads/2008/02/plaxo.png "Inicio de sesión en Plaxo")
 
 Al introducir el identificador (http://javiercancela.myopenid.com) el usuario será redirigido al sitio de su proveedor (en mi caso myopenid.com), donde iniciará sesión con su usuario y contraseña (salvo que alguna cookie mantenga la sesión iniciada). Su proveedor le preguntará si quiere confirmar su identidad al servicio al que intenta acceder (en mi caso, Plaxo):
 
-[![Verificación de OpenID](http://localhost/wp-content/uploads/2008/02/verificacion.png)](http://localhost/wp-content/uploads/2008/02/verificacion.png "Verificación de OpenID")
+[![Verificación de OpenID](/images/uploads/2008/02/verificacion.png)](/images/uploads/2008/02/verificacion.png "Verificación de OpenID")
 
 Una vez completado el proceso el usuario se habrá identificado ante el servicio en cuestión sin necesidad de proporcionarle un usuario y una contraseña. Este servicio tendrá acceso además a la información del perfil que haya proporcionado a su proveedor. Así, Plaxo puede saber mi dirección de correo electrónico o mi fecha de cumpleaños, si he proporcionado esta información a myOpenID.com.
 

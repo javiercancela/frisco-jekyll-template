@@ -9,7 +9,7 @@ categories:
   - android
 image: /images/obsolete.jpg
 ---
-El primer paso para [relacionar conceptos](http://javiercancela.com/2008/05/06/programando-en-android-prologo/ "Programando en Android - Prólogo") es conocer los conceptos. Y en Android existen una serie de conceptos que suponen la piedra y el mortero de cualquier aplicación.
+El primer paso para [relacionar conceptos]({% post_url 2008-05-06-programando-en-android-prologo %}) es conocer los conceptos. Y en Android existen una serie de conceptos que suponen la piedra y el mortero de cualquier aplicación.
 
 **El archivo `AndroidManifest.xml`**
 
@@ -27,7 +27,7 @@ Una actividad puede estar ejecutándose, en pausa o detenida. Simplificando, est
 
 En la documentación encontramos un gráfico que ilustra el ciclo de vida de una actividad:
 
-[<img class="alignnone size-full wp-image-216" src="http://localhost/wp-content/uploads/2008/05/activity_lifecycle.png" alt="" width="500" height="686" srcset="http://localhost/wp-content/uploads/2008/05/activity_lifecycle.png 540w, http://localhost/wp-content/uploads/2008/05/activity_lifecycle-219x300.png 219w" sizes="(max-width: 500px) 100vw, 500px" />](http://localhost/wp-content/uploads/2008/05/activity_lifecycle.png)
+[<img class="alignnone size-full wp-image-216" src="/images/uploads/2008/05/activity_lifecycle.png" alt="" width="500" height="686" srcset="/images/uploads/2008/05/activity_lifecycle.png 540w, /images/uploads/2008/05/activity_lifecycle-219x300.png 219w" sizes="(max-width: 500px) 100vw, 500px" />](/images/uploads/2008/05/activity_lifecycle.png)
 
 Aunque no es necesario entender de momento todos los detalles de este gráfico, en él se ven los estados por los que puede pasar una actividad (los óvalos coloreados) y los eventos que se disparan en dichos estados (los rectángulos grises):
 
@@ -36,3 +36,13 @@ Aunque no es necesario entender de momento todos los detalles de este gráfico, 
   * `onFreeze()` y `onPause()` son llamadas secuencialmente cuando otra actividad va a pasar en encargarse de la interacción con el usuario. Tras `onPause()` la actividad permanece en un estado de espera en el que puede ocurrir que la aplicación sea destruida, por lo que estos eventos se usan para consolidar la información que no queremos que se pierda. Si la actividad no se destruye volverá al primer plano con el evento `onResume()`.
 
 La idea importante con la que quedarse es que una actividad que esté pausada o detenida (tras `onPause()` u `onStop()`) puede ser destruida por el sistema si previo aviso, por lo que deberemos encargarnos de guardar antes la información necesaria (durante `onFreeze()` y `onPause()`). Los detalles lo veremos en una próxima entrada.
+
+### Entradas relacionadas:
+  
+[Programando en Android &#8211; Prólogo]({% post_url 2008-05-06-programando-en-android-prologo %})
+  
+[Programando en Android &#8211; Conceptos iniciales (II)]({% post_url 2008-05-19-programando-en-android-conceptos-iniciales-ii %})
+
+[Programando en Android &#8211; NotePad (I)]({% post_url 2008-05-26-programando-en-android-notepad-i %})
+
+[Programando en Android &#8211; NotePad (II)]({% post_url 2008-06-02-programando-en-android-notepad-ii %})

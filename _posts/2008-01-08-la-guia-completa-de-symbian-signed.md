@@ -10,7 +10,7 @@ categories:
   - symbian
 image: /images/obsolete.jpg
 ---
-La gente de Symbian ha publicado una versión aún más completa de la guía de Symbian Signed de la que hablábamos en [esta entrada](http://javiercancela.com/2007/11/29/firma-de-aplicaciones-en-symbian-novedades-en-symbian-signed/ "novedades en Symbian Signed").
+La gente de Symbian ha publicado una versión aún más completa de la guía de Symbian Signed de la que hablábamos en [esta entrada]({% post_url 2007-11-29-firma-de-aplicaciones-en-symbian-novedades-en-symbian-signed %}).
 
 La nueva guía se llama [The Complete Guide to Symbian Signed [zip]](http://developer.symbian.com/main/downloads/files/TheCompleteGuideToSymbianSigned.zip "The Complete Guide to Symbian Signed"), y contiene varias páginas más de información. Además se ha publicado una nueva versión de la [Symbian Signed Test Criteria](http://developer.symbian.com/wiki/display/sign/Symbian+Signed+Test+Criteria "Symbian Signed Test Criteria"), la 3.0.1.
 

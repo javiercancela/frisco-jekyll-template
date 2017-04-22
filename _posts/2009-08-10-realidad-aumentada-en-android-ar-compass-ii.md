@@ -25,7 +25,7 @@ Lo primero que necesitamos para trabajar con OpenGL es una superficie sobre la q
   </div>
 </div>
 
-En nuestro caso, dado que esta clase va a renderizar la brújula en base a los datos de los sensores, haremos que implemente también SensorEventListener (como veíamos en [esta entrada](http://javiercancela.com/2009/07/20/desarrollo-en-android-acelermetro-magnetmetro-y-sensores-de-orientacin-y-temperatura-en-el-htc-magic/)), para tener los datos en la misma clase.
+En nuestro caso, dado que esta clase va a renderizar la brújula en base a los datos de los sensores, haremos que implemente también SensorEventListener (como veíamos en [esta entrada]({% post_url 2009-07-20-desarrollo-en-android-acelermetro-magnetmetro-y-sensores-de-orientacin-y-temperatura-en-el-htc-magic %})), para tener los datos en la misma clase.
 
 Pero primero tenemos que decirle a nuestra actividad que use esta vista además de la vista de la cámara:
 

@@ -221,8 +221,8 @@ _store.commit();<br />
 
 En la siguiente entrada hablaremos de la gestión de los _waypoints_ y de la clase `PointScreen`.
 
-**Entradas relacionadas:**
+### Entradas relacionadas:
   
-[Un ejemplo de aplicación Java para BlackBerry &#8211; Parte I](http://javiercancela.com/2008/01/09/un-ejemplo-de-aplicacion-java-para-blackberry-parte-i/ "Un ejemplo de aplicación Java para BlackBerry - Parte I")
+[Un ejemplo de aplicación Java para BlackBerry &#8211; Parte I]({% post_url 2008-01-09-un-ejemplo-de-aplicacion-java-para-blackberry-parte-i %})
   
-[Un ejemplo de aplicación Java para BlackBerry &#8211; Parte II](http://javiercancela.com/2008/01/11/un-ejemplo-de-aplicacion-java-para-blackberry-parte-ii/ "Un ejemplo de aplicación Java para BlackBerry - Parte II")
+[Un ejemplo de aplicación Java para BlackBerry &#8211; Parte II]({% post_url 2008-01-11-un-ejemplo-de-aplicacion-java-para-blackberry-parte-ii %})

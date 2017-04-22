@@ -1,11 +1,9 @@
 ### Entradas relacionadas:
+
+[Programando en Android &#8211; NotePad (I)]({% post_url 2008-05-26-programando-en-android-notepad-i %})
   
-[Un ejemplo de aplicación Java para BlackBerry &#8211; Parte I]({% post_url 2008-01-09-un-ejemplo-de-aplicacion-java-para-blackberry-parte-i.md %})
+[Programando en Android &#8211; Conceptos iniciales (II)]({% post_url 2008-05-19-programando-en-android-conceptos-iniciales-ii %})
   
-[Un ejemplo de aplicación Java para BlackBerry &#8211; Parte II]({% post_url 2008-01-11-un-ejemplo-de-aplicacion-java-para-blackberry-parte-ii.md %})
+[Programando en Android &#8211; Conceptos iniciales (I)]({% post_url 2008-05-12-programando-en-android-conceptos-iniciales-i %})
   
-[Un ejemplo de aplicación Java para BlackBerry &#8211; Parte III]({% post_url 2008-01-14-mas-sobre-la-firma-de-aplicaciones-symbian.md %})
-  
-[Un ejemplo de aplicación Java para BlackBerry &#8211; Parte IV y final]({% post_url 2008-01-16-un-ejemplo-de-aplicacion-java-para-blackberry-parte-iv-y-final.md %})
-  
-[Leyendo nuestro GPS desde Java con la JavaME Location API (JSR-179) &#8211; Parte I]({% post_url 2008-01-07-leyendo-nuestro-gps-desde-java-con-la-javame-location-api-jsr-179-parte-i.md %})
+[Programando en Android &#8211; Prólogo]({% post_url 2008-05-06-programando-en-android-prologo %})

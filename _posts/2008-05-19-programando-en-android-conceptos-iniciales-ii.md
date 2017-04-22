@@ -47,8 +47,12 @@ Así, para llamar implícitamente a una actividad a través de un _intent_, en v
 
 _Activities_ e _Intents_ son los dos ejes sobre los que gira la arquitectura de las aplicaciones Android. Existen muchos más conceptos importantes, por supuesto, pero a partir de aquí lo mejor es verlo funcionando todo en una aplicación ejemplo. Pero eso será en la próxima entrada.
 
-**Entradas anteriores:**
+### Entradas relacionadas:
   
-[Programando en Android &#8211; Conceptos iniciales (I)](http://javiercancela.com/2008/05/12/programando-en-android-conceptos-iniciales-i/)
+[Programando en Android &#8211; Prólogo]({% post_url 2008-05-06-programando-en-android-prologo %})
   
-[Programando en Android &#8211; Prólogo](http://javiercancela.com/2008/05/06/programando-en-android-prologo/)
+[Programando en Android &#8211; Conceptos iniciales (I)]({% post_url 2008-05-12-programando-en-android-conceptos-iniciales-i %})
+  
+[Programando en Android &#8211; NotePad (I)]({% post_url 2008-05-26-programando-en-android-notepad-i %})
+
+[Programando en Android &#8211; NotePad (II)]({% post_url 2008-06-02-programando-en-android-notepad-ii %})
