@@ -17,7 +17,7 @@ Como paso previo el libro realiza una presentación de [_scikit-learn_](http://s
 
 ## Perceptrón con _scikit-learn_
 
-Para empezar con la librería, el libro vuelve al Perceptrón con el conjunto de datos Iris. La librería _scikit-learn_ incluye varios conjuntos de datos, así que usaremos ya el conjunto Iris incluido en la librería. Dividiremos el conjunto en un grupo de datos para el entrenamiento y otro para la validación.
+Para empezar con la librería, el libro vuelve al Perceptrón con el conjunto de datos Iris. La librería _scikit-learn_ incluye varios conjuntos de datos, así que usaremos el conjunto Iris incluido en la librería. Dividiremos el conjunto en un grupo de datos para el entrenamiento y otro para la validación.
 
 
 ```python
@@ -33,7 +33,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3,
 
 Cargamos los datos de la librería y hacemos un _slice_ de dos de las columnas (dos caracterísiticas) para cargar los datos en la matriz `X`. La librería nos permite acceder directamente a las clases reales de cada muestra a través de `iris.target`, donde los valores para _Iris-Setosa_, _Iris-Versicolor_ e _Iris-Virginica_ están almacenados como 0, 1 y 2.  
 
-El método `train_test_split` reparte el 30% de los datos (`test_size=0.3`) para las pruebas, de forma aleatoria. El resultado será una matriz `X_test` con 45 elementos, y un array `y_test` con las 45 clases correspondientes. `X_train` e `y_train` contendrán el resto de los datos para el entrenamiento.
+El método `train_test_split` reparte el 30% de los datos (`test_size=0.3`) para las pruebas, de forma aleatoria (al fijar un _seed_ a través de `random_state=0` garantizamos que el reparto pseudoaleatorio sea el mismo en cada ejecución). El resultado será una matriz `X_test` con 45 elementos, y un array `y_test` con las 45 clases correspondientes. `X_train` e `y_train` contendrán el resto de los datos para el entrenamiento.
 
 ### Escalado de características
 
@@ -70,7 +70,7 @@ Una diferencia de la clase `Perceptron` de `scikit-learn` con la implementada en
 
 Esta función de activación es inherente al Perceptrón. Sin embargo, aun con ella es posible realizar clasificaciones multiclase. Para ello se utiliza una estrategia llamada 'Uno contra los demás' (_one-vs.-rest_, _OvR_). En esta estrategia se entrena un clasificador para cada clase. Es decir, en nuestro conjunto de datos con tres variantes de Iris, en vez de usar el Perceptrón para entrenar un clasificador que nos diga si una muestra es _Iris-setosa_ o _Iris-versicolor_, entrenaremos un clasificador que nos diga si una muestra es _Iris-setosa_ o no, otro que nos diga si una muestra es _Iris-versicolor_ o no, y otro que haga lo mismo con _Iris-virginica_. 
 
-La clasificación se realiza evaluando cada muestra con cada clasificador. Cada clasificador nos dirá si la muestra pertenece a su clase o no. Para poder resolver ambigüedades (una muestra que esté en más de una clase, o que no esté en ninguna), los clasificadores devuelven no una etiqueta, sino una puntuación de confianza que indica cómo de seguro está el clasificador de que una muestra pertenece a la clase evaluada. Así, cuando queremos predecir la clase de una muestra nueva nos quedamos con la clase a la que corresponde la puntuación de confianza más alta.
+La clasificación se realiza evaluando cada muestra con cada clasificador. Estos nos dirán si la muestra pertenece a su clase o no. Para poder resolver ambigüedades (una muestra que esté en más de una clase, o que no esté en ninguna), los clasificadores no devuelven una etiqueta, sino una puntuación de confianza que indica cómo de seguro está el clasificador de que una muestra pertenece a la clase evaluada. Así, cuando queremos predecir la clase de una muestra nueva nos quedamos con la clase a la que corresponde la puntuación de confianza más alta.
 
 El código Python para hacer esto es muy simple:
 ```python
@@ -94,7 +94,7 @@ print('Accuracy: %.2f' % accuracy_score(y_test, y_pred))
 # Imprime: Accuracy: 0.91
 ```
 
-Para finalizar este apartado, el autor modifica el método `plot_decision_regions`, visto en entradas anteriores, para que resalte los datos de prueba con círculos. 
+Para finalizar este apartado, el autor modifica el método `plot_decision_regions`, visto en entradas anteriores, para que resalte los datos de prueba con círculos. El código se puede ver [aquí](https://github.com/rasbt/python-machine-learning-book/blob/master/code/ch03/ch03.ipynb).
 
 <div style="text-align:center">
     <figure>
