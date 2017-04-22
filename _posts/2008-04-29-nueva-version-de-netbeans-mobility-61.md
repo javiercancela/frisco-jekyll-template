@@ -7,11 +7,8 @@ layout: post
 guid: http://javiercancela.com/2008/04/29/nueva-version-de-netbeans-mobility-61/
 permalink: /index.php/2008/04/29/nueva-version-de-netbeans-mobility-61/
 categories:
-  - Java ME
-tags:
-  - JavaME
-  - NetBeans Mobility
-  - SVG
+  - java-me
+image: /images/obsolete.jpg
 ---
 No soy usuario de NetBeans, la principal alternativa a Eclipse para programar con Java ME, pero para quien sí lo sea aquí está la nueva versión: [NetBeans IDE 6.1 Download](http://download.netbeans.org/netbeans/6.1/final/ "NetBeans IDE 6.1 Download").
 

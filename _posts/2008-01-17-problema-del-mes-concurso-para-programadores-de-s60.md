@@ -7,11 +7,8 @@ layout: post
 guid: http://javiercancela.com/2008/01/17/problema-del-mes-concurso-para-programadores-de-s60/
 permalink: /index.php/2008/01/17/problema-del-mes-concurso-para-programadores-de-s60/
 categories:
-  - Symbian
-tags:
-  - desarrollo móvil
-  - Nokia
-  - S60
+  - symbian
+image: /images/obsolete.jpg
 ---
 [_Problem of the month_](http://www.forum.nokia.com/main/platforms/s60/problem_of_the_month.html "Problem of the month") es el nombre que han puesto en Nokia a este desafío mensual para programadores S60 que comienza hoy.
 

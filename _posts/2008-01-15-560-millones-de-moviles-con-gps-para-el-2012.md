@@ -7,12 +7,9 @@ layout: post
 guid: http://javiercancela.com/2008/01/15/560-millones-de-moviles-con-gps-para-el-2012/
 permalink: /index.php/2008/01/15/560-millones-de-moviles-con-gps-para-el-2012/
 categories:
-  - LBS
-  - Noticias
-tags:
-  - GPS
-  - ipoki
-  - redes sociales
+  - lbs
+  - noticias
+image: /images/obsolete.jpg
 ---
 O eso dice Berg Insight, una consultora especializada en el negocio de las telecomunicaciones, en [un estudio recién publicado](http://www.berginsight.com/ShowReport.aspx?m_m=3&id=63 "GPS and Mobile Handsets"). Sólo he leído el resumen, más que nada por los 1500€ que cuesta el estudio.
 

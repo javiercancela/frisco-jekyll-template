@@ -7,12 +7,9 @@ layout: post
 guid: http://javiercancela.com/2008/01/09/un-ejemplo-de-aplicacion-java-para-blackberry-parte-i/
 permalink: /index.php/2008/01/09/un-ejemplo-de-aplicacion-java-para-blackberry-parte-i/
 categories:
-  - BlackBerry
-  - Java ME
-tags:
-  - desarrollo móvil
-  - Java
-  - JavaME
+  - blackberry
+  - java-me
+image: /images/obsolete.jpg
 ---
 **Introducción**
 

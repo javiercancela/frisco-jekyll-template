@@ -7,11 +7,9 @@ layout: post
 guid: http://javiercancela.com/2008/01/04/abierto-el-plazo-de-envio-de-aplicaciones-para-el-android-developer-challenge/
 permalink: /index.php/2008/01/04/abierto-el-plazo-de-envio-de-aplicaciones-para-el-android-developer-challenge/
 categories:
-  - Android
-  - Noticias
-tags:
-  - Android Developer Challenge
-  - Google
+  - android
+  - noticias
+image: /images/obsolete.jpg
 ---
 Desde el día dos de Enero se pueden enviar aplicaciones para intentar hacerse con el parte del botín de 10 millones de dólares que Google ofrece en su _[Android Developer Challenge](http://code.google.com/android/adc.html "Android Developer Challenge")_, concurso en el que se premiará a las aplicaciones más útiles e innovadoras desarrolladas para la plataforma [Android](http://code.google.com/android/what-is-android.html "What is Android?").
 

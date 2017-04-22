@@ -7,13 +7,9 @@ layout: post
 guid: http://javiercancela.com/2008/02/06/symbian-signed-open-signed-online-ya-en-beta/
 permalink: /index.php/2008/02/06/symbian-signed-open-signed-online-ya-en-beta/
 categories:
-  - Noticias
-  - Symbian
-tags:
-  - desarrollo móvil
-  - firma de aplicaciones móviles
-  - S60
-  - Symbian Signed
+  - noticias
+  - symbian
+image: /images/obsolete.jpg
 ---
 La popularidad de algunas aplicaciones de terceros para dispositivos S60 3rd Ed., especialmente aquellas que hacen uso de la [Sensor API](http://javiercancela.com/2007/11/17/un-vistazo-a-las-apis-de-acelerometros-como-el-del-n95/ "Un vistazo a las APIs de acelerómetros (como el del N95)"), se ha visto entorpecida por la necesidad de firmar la aplicación antes de instalarla en el móvil. Los sistemas de firma hasta ahora disponibles estaban pensados para desarrolladores dispuestos a pagar porque sus aplicaciones estuviesen disponibles para todo el mundo, lo que dificultaba la labor de los programadores aficionados cuyas aplicaciones tienen que pasar por un laborioso proceso de firma para poder ser instaladas en el móvil del usuario (como se puede ver en este post de DavidGP y en sus comentarios: [Firmando una aplicación Symbian (OpenSigned) o como instalar rotateMe](http://www.davidgp.com/2008/01/03/firmando-una-aplicacion-symbian-o-como-instalar-rotateme/ "Firmando una aplicación Symbian (OpenSigned) o como instalar rotateMe")).
 

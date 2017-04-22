@@ -7,10 +7,8 @@ layout: post
 guid: http://javiercancela.com/2008/03/08/primeras-impresiones-sobre-la-sdk-del-iphone/
 permalink: /index.php/2008/03/08/primeras-impresiones-sobre-la-sdk-del-iphone/
 categories:
-  - Noticias
-tags:
-  - iPhone
-  - SDK
+  - noticias
+image: /images/obsolete.jpg
 ---
 Con algo de retraso, algunas ideas sobre el anuncio de Apple:
 

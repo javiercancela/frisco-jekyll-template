@@ -7,11 +7,8 @@ layout: post
 guid: http://javiercancela.com/2008/01/14/mas-sobre-la-firma-de-aplicaciones-symbian/
 permalink: /index.php/2008/01/14/mas-sobre-la-firma-de-aplicaciones-symbian/
 categories:
-  - Symbian
-tags:
-  - firma de aplicaciones móviles
-  - S60
-  - Symbian Signed
+  - symbian
+image: /images/obsolete.jpg
 ---
 Han publicado en AllAboutSymbian una [guía para firmar aplicaciones](http://www.allaboutsymbian.com/features/item/Signing_an_S60_application_with_GenialSiS.php "Sign an S60 application with GenialSiS") _S60 3rd Edition_. Es similar a [la que publicó DavidGP](http://www.davidgp.com/2008/01/03/firmando-una-aplicacion-symbian-o-como-instalar-rotateme/ "Firmando una aplicación Symbian (OpenSigned) o como instalar rotateMe") hace un par de semanas, pero utilizando un aplicación llamada [GenialSIS](http://www.socci.eu/HOME.html "GenialSIS"), que se encarga tanto de generar el certificado como de firmar la aplicación. La aplicación también puede subir el certificado a _Symbian Signed_, aunque en el artículo recomiendan hacerlo a mano.
 

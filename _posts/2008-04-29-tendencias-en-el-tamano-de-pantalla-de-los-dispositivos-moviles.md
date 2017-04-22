@@ -7,11 +7,8 @@ layout: post
 guid: http://javiercancela.com/2008/04/29/tendencias-en-el-tamano-de-pantalla-de-los-dispositivos-moviles/
 permalink: /index.php/2008/04/29/tendencias-en-el-tamano-de-pantalla-de-los-dispositivos-moviles/
 categories:
-  - Varios
-tags:
-  - internet móvil
-  - resolución
-  - tamaño de pantalla
+  - otros
+image: /images/obsolete.jpg
 ---
 Tras un par de semanas sin conexión por culpa de una mudanza, dos entradas de Morten Hjerde me dan la excusa para un pequeño apunte con el que volver al blog.
 

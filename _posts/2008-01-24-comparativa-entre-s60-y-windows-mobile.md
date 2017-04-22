@@ -7,10 +7,9 @@ layout: post
 guid: http://javiercancela.com/2008/01/24/comparativa-entre-s60-y-windows-mobile/
 permalink: /index.php/2008/01/24/comparativa-entre-s60-y-windows-mobile/
 categories:
-  - Symbian
-  - Windows Mobile
-tags:
-  - S60
+  - symbian
+  - windows-mobile
+image: /images/obsolete.jpg
 ---
 Una entrada rápida para que no parezca que esta bitácora está difunta (sólo aletargada en una semana de mucho trabajo).
 

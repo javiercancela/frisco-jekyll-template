@@ -7,10 +7,8 @@ layout: post
 guid: http://javiercancela.com/2008/01/03/tutorial-firmando-una-aplicacion-symbian/
 permalink: /index.php/2008/01/03/tutorial-firmando-una-aplicacion-symbian/
 categories:
-  - Symbian
-tags:
-  - DavidGP
-  - Symbian Signed
+  - symbian
+image: /images/obsolete.jpg
 ---
 Cortesía de DavidGP:
 

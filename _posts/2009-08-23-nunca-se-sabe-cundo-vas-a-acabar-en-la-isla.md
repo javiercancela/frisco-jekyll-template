@@ -7,10 +7,8 @@ layout: post
 guid: http://javiercancela.wordpress.com/2009/08/23/nunca-se-sabe-cundo-vas-a-acabar-en-la-isla/
 permalink: /index.php/2009/08/23/nunca-se-sabe-cundo-vas-a-acabar-en-la-isla/
 categories:
-  - Android
-tags:
-  - Perdidos
-  - Sensor API
+  - android
+image: /images/obsolete.jpg
 ---
 … y los creadores de Android lo han tenido en cuenta.
 

@@ -7,9 +7,8 @@ layout: post
 guid: http://javiercancela.com/2008/02/20/mas-sobre-blackberry/
 permalink: /index.php/2008/02/20/mas-sobre-blackberry/
 categories:
-  - BlackBerry
-tags:
-  - apagón BlackBerry
+  - blackberry
+image: /images/obsolete.jpg
 ---
 Hoy he recibido un correo de RIM informándome de que me mandarán unas nuevas claves para que pruebe con ellas, y pidiéndome disculpas por las molestias. Sigue sin parecerme muy serio, porque aún no tengo las claves, ni me han dado más explicaciones.
 

@@ -7,12 +7,8 @@ layout: post
 guid: http://javiercancela.wordpress.com/?p=463
 permalink: /index.php/2009/08/10/realidad-aumentada-en-android-ar-compass-ii/
 categories:
-  - Android
-tags:
-  - desarrollo android
-  - desarrollo móvil
-  - OpenGL
-  - realidad aumentada
+  - android
+image: /images/obsolete.jpg
 ---
 Una vez [obtenida la imagen de la cámara](http://javiercancela.com/2009/08/04/realidad-aumentada-en-android-ar-compass-i/) pasamos a la brújula. Necesitaremos dos cosas: obtener los datos de orientación y dibujarlos en el lugar adecuado. Empezaremos inicializando los sensores y los datos iniciales de la brújula.
 

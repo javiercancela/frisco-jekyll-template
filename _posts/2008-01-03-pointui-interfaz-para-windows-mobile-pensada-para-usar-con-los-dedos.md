@@ -7,12 +7,9 @@ layout: post
 guid: http://javiercancela.com/2008/01/03/pointui-interfaz-para-windows-mobile-pensada-para-usar-con-los-dedos/
 permalink: /index.php/2008/01/03/pointui-interfaz-para-windows-mobile-pensada-para-usar-con-los-dedos/
 categories:
-  - Noticias
-  - Windows Mobile
-tags:
-  - interfaces de usuario
-  - interfaz táctil
-  - Pointui
+  - noticias
+  - windows-mobile
+image: /images/obsolete.jpg
 ---
 A través de [IntoMobile](http://www.intomobile.com/2008/01/02/pointui-makes-your-touchscreen-enabled-windows-mobile-device-look-cooler-than-ever.html "Pointui makes your touchscreen enabled Windows Mobile device look cooler than ever") me entero de la existencia de [Pointui](http://www.pointui.com "Pointui"), una interfaz para Windows Mobile versiones 5 y 6 que permite al usuario sustituir el stylus por sus dedos gracias al tamaño de los elementos de la interfaz.
 

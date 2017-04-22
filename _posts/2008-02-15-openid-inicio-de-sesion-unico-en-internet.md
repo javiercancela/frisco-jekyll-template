@@ -7,13 +7,8 @@ layout: post
 guid: http://javiercancela.com/?p=82
 permalink: /index.php/2008/02/15/openid-inicio-de-sesion-unico-en-internet/
 categories:
-  - Internet
-tags:
-  - autenticación web
-  - myOpenID
-  - OpenID
-  - Plaxo
-  - Windows CardSpace
+  - internet
+image: /images/obsolete.jpg
 ---
 Una de las consecuencias del boom de esta cosa llamada Web2.0, en la que las aplicaciones web se cuentan por cientos o miles, es la necesidad de mantener un usuario con su contraseña para cada uno de esos sitios. Tenemos que elegir entre memorizar varias contraseñas y recordar dónde se usa cada una, o bien, como suele ser más común, utilizar el mismo usuario y contraseña (quizás un par de ellas) para todos los sitios que frecuentamos. Esta última opción es bastante peligrosa, pues basta con que alguien con malas intenciones nos capture una contraseña ([y a veces no por nuestra culpa](http://www.codinghorror.com/blog/archives/000953.html "You're Probably Storing Passwords Incorrectly")) para que todas nuestras cuentas queden expuestas.
 

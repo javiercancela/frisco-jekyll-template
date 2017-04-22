@@ -7,10 +7,8 @@ layout: post
 guid: http://javiercancela.wordpress.com/?p=210
 permalink: /index.php/2008/05/06/programando-en-android-prologo/
 categories:
-  - Android
-tags:
-  - ipoki
-  - plugin
+  - android
+image: /images/obsolete.jpg
 ---
 Una pequeña paradoja que se produce a la hora de aprender cualquier habilidad técnica, como un lenguaje de programación, es que para los más novatos en la materia la dificultad está no tanto en encontrar documentación completa, correcta o incluso bien redactada, sino en encontrar material lo suficientemente básico como para no perderse desde el inicio en los pequeños detalles que no se explican por parecer obvios.
 

@@ -7,10 +7,9 @@ layout: post
 guid: http://javiercancela.com/2008/02/17/intentando-firmar-una-aplicacion-blackberry-no-todo-va-a-ser-symbian/
 permalink: /index.php/2008/02/17/intentando-firmar-una-aplicacion-blackberry-no-todo-va-a-ser-symbian/
 categories:
-  - BlackBerry
+  - blackberry
   - ipoki
-tags:
-  - firma de aplicaciones móviles
+image: /images/obsolete.jpg
 ---
 Como parte del proceso de desarrollo del plugin de Ipoki para BlackBerry, solicité a RIM unas claves para firmar la aplicación, que utiliza algunas clases marcadas como Signed en la documentación. Estas clases obligan a que la aplicación esté firmada antes de ser instalada en un dispositivo. Para solicitar las claves existen dos posibilidades: rellenar [este formulario](https://www.blackberry.com/SignedKeys/ "BlackBerry Code Signing Keys Order Form"), o descargar esta [versión del formulario en pdf](http://www.blackberry.com/developers/pdfs/JDE%20API%20Key%20Order%20Form.pdf "Order Form"), imprimirla, firmarla y enviarla por fax. La existencia de esta última opción es el primer indicio de que RIM todavía no ha entrado en el siglo XXI.
 

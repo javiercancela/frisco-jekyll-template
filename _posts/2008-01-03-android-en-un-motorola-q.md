@@ -7,10 +7,8 @@ layout: post
 guid: http://javiercancela.com/2008/01/03/android-en-un-motorola-q/
 permalink: /index.php/2008/01/03/android-en-un-motorola-q/
 categories:
-  - Android
-tags:
-  - Motorola
-  - VNC
+  - android
+image: /images/obsolete.jpg
 ---
 Por [Josh Guilfoyle](http://devtcg.blogspot.com/2007/12/android-vnc-part-deux.html):
 

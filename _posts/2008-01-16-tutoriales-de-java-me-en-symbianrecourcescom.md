@@ -7,10 +7,8 @@ layout: post
 guid: http://javiercancela.com/2008/01/16/tutoriales-de-java-me-en-symbianrecourcescom/
 permalink: /index.php/2008/01/16/tutoriales-de-java-me-en-symbianrecourcescom/
 categories:
-  - Java ME
-  - Symbian
-tags:
-  - desarrollo móvil
-  - JavaME
+  - java-me
+  - symbian
+image: /images/obsolete.jpg
 ---
 [Symbianresources.com](symbianresources.com "SymbianResources") ha actualizado su [lista de tutoriales Java ME](http://www.symbianresources.com/tutorials/#javame "Tutoriales Java ME"). Symbianresources.com es un sitio de la Universidad de Ciencias Aplicadas de Hagenbert, en Austria, y publica tutoriales y ejercicios sobre programación de sistemas Symbian, tanto en Java como en C++. El material está sacado de los cursos impartidos en dicha universidad.

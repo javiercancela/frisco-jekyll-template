@@ -7,11 +7,8 @@ layout: post
 guid: 'http://javiercancela.com/2008/02/11/%c2%bfpara-que-modelo-de-blackberry-desarrollar/'
 permalink: /index.php/2008/02/11/para-que-modelo-de-blackberry-desarrollar/
 categories:
-  - BlackBerry
-tags:
-  - BlackBerry Handheld Software
-  - desarrollo móvil
-  - JDE
+  - blackberry
+image: /images/obsolete.jpg
 ---
 A la hora de desarrollar software para dispositivos BlackBerry, y para que nuestro producto sea compatible con la mayor cantidad posible de modelos, es útil tener en cuenta dos cosas:
 

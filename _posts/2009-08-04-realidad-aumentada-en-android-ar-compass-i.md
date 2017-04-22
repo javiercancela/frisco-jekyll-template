@@ -7,11 +7,8 @@ layout: post
 guid: http://javiercancela.wordpress.com/?p=441
 permalink: /index.php/2009/08/04/realidad-aumentada-en-android-ar-compass-i/
 categories:
-  - Android
-tags:
-  - desarrollo android
-  - desarrollo móvil
-  - realidad aumentada
+  - android
+image: /images/obsolete.jpg
 ---
 Decíamos en el [anterior artículo](http://javiercancela.com/2009/08/03/realidad-aumentada-en-android-introduccion/) que la realidad aumentada combina datos generados por ordenador con imágenes del entorno obtenidas en tiempo real. La parte complicada es la superposición de los datos sobre la imagen en la posición correcta. Así que vamos a comenzar con una aplicación de realidad _levemente_ aumentada: una brújula virtual.
 

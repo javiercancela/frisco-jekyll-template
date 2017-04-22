@@ -7,10 +7,8 @@ layout: post
 guid: http://javiercancela.wordpress.com/?p=211
 permalink: /index.php/2008/05/12/programando-en-android-conceptos-iniciales-i/
 categories:
-  - Android
-tags:
-  - Activity
-  - AndroidManifest
+  - android
+image: /images/obsolete.jpg
 ---
 El primer paso para [relacionar conceptos](http://javiercancela.com/2008/05/06/programando-en-android-prologo/ "Programando en Android - Prólogo") es conocer los conceptos. Y en Android existen una serie de conceptos que suponen la piedra y el mortero de cualquier aplicación.
 

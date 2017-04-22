@@ -7,11 +7,8 @@ layout: post
 guid: http://javiercancela.wordpress.com/?p=222
 permalink: /index.php/2008/05/19/programando-en-android-conceptos-iniciales-ii/
 categories:
-  - Uncategorized
-tags:
-  - Android
-  - desarrollo móvil
-  - Intent
+  - otros
+image: /images/obsolete.jpg
 ---
 **_Intents_**
 

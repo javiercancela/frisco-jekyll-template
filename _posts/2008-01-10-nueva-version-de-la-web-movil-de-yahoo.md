@@ -7,11 +7,9 @@ layout: post
 guid: http://javiercancela.com/2008/01/10/nueva-version-de-la-web-movil-de-yahoo/
 permalink: /index.php/2008/01/10/nueva-version-de-la-web-movil-de-yahoo/
 categories:
-  - Noticias
-  - Web móvil
-tags:
-  - desarrollo móvil
-  - Yahoo! Mobile
+  - noticias
+  - web-movil
+image: /images/obsolete.jpg
 ---
 En [http://beta.m.yahoo.com/](http://beta.m.yahoo.com/ "Yahoo! mobile beta").
 

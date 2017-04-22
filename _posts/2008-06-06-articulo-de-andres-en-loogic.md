@@ -8,10 +8,7 @@ guid: http://javiercancela.wordpress.com/?p=243
 permalink: /index.php/2008/06/06/articulo-de-andres-en-loogic/
 categories:
   - ipoki
-tags:
-  - andrés
-  - geoweb
-  - loogic
+image: /images/obsolete.jpg
 ---
 [Andrés](http://blogs.ipoki.com/andres/ "The Ipoki kitchen") ha escrito el Loogic un artículo sobre redes sociales y geolocalización: &#8220;[Redes sociales y Geoweb](http://loogic.com/redes-sociales-y-geoweb/)&#8220;.
 

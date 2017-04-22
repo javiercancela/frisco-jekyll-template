@@ -7,11 +7,8 @@ layout: post
 guid: http://javiercancela.wordpress.com/2009/07/06/impresiones-sobre-el-htc-magic/
 permalink: /index.php/2009/07/06/impresiones-sobre-el-htc-magic/
 categories:
-  - Android
-tags:
-  - HTC Magic
-  - Twidroid
-  - TwitterRide
+  - android
+image: /images/obsolete.jpg
 ---
 ###### 
 

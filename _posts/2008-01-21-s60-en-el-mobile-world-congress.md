@@ -7,11 +7,9 @@ layout: post
 guid: http://javiercancela.com/2008/01/21/s60-en-el-mobile-world-congress/
 permalink: /index.php/2008/01/21/s60-en-el-mobile-world-congress/
 categories:
-  - Noticias
-  - Symbian
-tags:
-  - Mobile World Congress
-  - S60
+  - noticias
+  - symbian
+image: /images/obsolete.jpg
 ---
 El [Mobile World Congress](http://www.mobileworldcongress.com/ "www.mobileworldcongress.com") que se celebrará en Barcelona del 11 al 14 de Febrero promete ser uno de los eventos más interesantes de este año para los amantes de la tecnología móvil. Circulan múltiples rumores sobre lo que podremos ver en él, como Google presentando un dispositivo Android o Telefónica anunciando el iPhone.
 

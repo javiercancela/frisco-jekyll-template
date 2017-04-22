@@ -8,8 +8,7 @@ guid: http://javiercancela.wordpress.com/?p=220
 permalink: /index.php/2008/05/15/alberto-triunfando-en-la-where20-o-como-usa-is-different/
 categories:
   - ipoki
-tags:
-  - Where2.0
+image: /images/obsolete.jpg
 ---
 [<img class="alignright size-medium wp-image-221" src="http://localhost/wp-content/uploads/2008/05/alberto.jpg?w=257" alt="" width="257" height="300" srcset="http://localhost/wp-content/uploads/2008/05/alberto.jpg 800w, http://localhost/wp-content/uploads/2008/05/alberto-258x300.jpg 258w, http://localhost/wp-content/uploads/2008/05/alberto-768x895.jpg 768w" sizes="(max-width: 257px) 100vw, 257px" />](http://localhost/wp-content/uploads/2008/05/alberto.jpg)Alberto no se va a volver de vacío de la [Where2.0](http://blogs.ipoki.com/es/ "Presentación de Ipoki en la Where2.0 Conference") gracias a Frank Taylor, de [Google Earth Blog](http://www.gearthblog.com/blog/archives/2008/05/winner_of_google_earth_blog_spacena.html "Winner of Google Earth Blog SpaceNavigator Giveaway"). Este blogger especialista en GPS, gráficos 3D, y simuladores espaciales (trabajó en la NASA, tope _cool_&#8230;) sorteó un [ratón 3D](http://www.gearthblog.com/blog/archives/2008/04/space_navigator_for_notebooks_revie.html "Space Navigator for Notebooks Reviewed") entre la gente que le había dado su tarjeta, y Alberto resultó el ganador.
 

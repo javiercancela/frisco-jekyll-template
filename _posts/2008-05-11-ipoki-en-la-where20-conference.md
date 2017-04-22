@@ -8,9 +8,7 @@ guid: http://javiercancela.wordpress.com/?p=217
 permalink: /index.php/2008/05/11/ipoki-en-la-where20-conference/
 categories:
   - ipoki
-tags:
-  - Where2.0
-  - WhereCamp2008
+image: /images/obsolete.jpg
 ---
 [<img class="alignnone size-full wp-image-219" src="http://localhost/wp-content/uploads/2008/05/728x90.jpg" alt="Where2.0 Conference" width="480" height="86" srcset="http://localhost/wp-content/uploads/2008/05/728x90.jpg 480w, http://localhost/wp-content/uploads/2008/05/728x90-300x54.jpg 300w" sizes="(max-width: 480px) 100vw, 480px" />](http://en.oreilly.com/where2008/public/schedule/detail/1577) [](http://localhost/wp-content/uploads/2008/05/728x90.jpg)
 

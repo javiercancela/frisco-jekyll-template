@@ -7,11 +7,8 @@ layout: post
 guid: http://javiercancela.wordpress.com/?p=390
 permalink: /index.php/2009/07/15/errores-emulando-el-gps-en-android/
 categories:
-  - Android
-tags:
-  - DDMS
-  - desarrollo android
-  - GPS
+  - android
+image: /images/obsolete.jpg
 ---
 <div id="_mcePaste" style="position:absolute;width:1px;height:1px;top:0;left:-10000px;">
   Existen dos formas de enviar datos al GPS del emulador de Android: con el DDMS (Dalvik Debug Monitor Service) y con la instrucción &#8216;geo&#8217; de la consola del emulador (como se explica en la documentación [http://developer.android.com/guide/topics/location/index.html#location]). El DDMS es especialmente útil, ya que permite cargar archivos kml o gpx a partir de los cuales enviar actualizaciones periódicas al emulador. Sin embargo, en la versión 1.5 r2 de la SDK de Android hay dos bugs que resultan bastante molestos para desarrollar aplicaciones que usan el GPS.

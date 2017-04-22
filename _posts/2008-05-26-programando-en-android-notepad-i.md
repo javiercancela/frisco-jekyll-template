@@ -7,11 +7,8 @@ layout: post
 guid: http://javiercancela.com/?p=231
 permalink: /index.php/2008/05/26/programando-en-android-notepad-i/
 categories:
-  - Android
-tags:
-  - android notepad
-  - AndroidManifest
-  - intent-filter
+  - android
+image: /images/obsolete.jpg
 ---
 La mayoría de los mortales olvidamos cualquier conocimiento abstracto en la décima parte del tiempo que nos costó adquirir dicho conocimiento (dato completamente inventado, pero en mi caso muy próximo a la realidad). Así que lo que vamos a hacer en concretar este conocimiento, y ponernos a programar.
 

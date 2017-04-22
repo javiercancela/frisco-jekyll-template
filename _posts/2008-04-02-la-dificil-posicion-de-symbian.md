@@ -7,9 +7,8 @@ layout: post
 guid: http://javiercancela.com/2008/04/02/la-dificil-posicion-de-symbian/
 permalink: /index.php/2008/04/02/la-dificil-posicion-de-symbian/
 categories:
-  - Symbian
-tags:
-  - Nigel Clifford
+  - symbian
+image: /images/obsolete.jpg
 ---
 CNET publicó ayer una entrevista con el CEO de Symbian titulada [_Symbian CEO pitches middle ground between iPhone, Android_](http://www.news.com/8301-13579_3-9907219-37.html?tag=nl.e703 "Symbian CEO pitches middle ground between iPhone, Android") (algo así como &#8216;El CEO de Symbian se posiciona en terreno intermedio entre iPhone y Android&#8217;). Es la primera entrevista que leo del principal ejecutivo de Symbian, llamado Nigel Clifford, y si algo me ha llamado la atención es cierta falta de convicción en algunas de las declaraciones, como si no tuviese una estrategia clara con la que afrontar los retos que se le vienen encima.
 

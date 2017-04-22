@@ -7,13 +7,8 @@ layout: post
 guid: 'http://javiercancela.com/2008/04/01/%c2%bfcuando-un-movil-es-antiguo/'
 permalink: /index.php/2008/04/01/cuando-un-movil-es-antiguo/
 categories:
-  - Varios
-tags:
-  - Android
-  - cformsII
-  - CLDC
-  - iPhone
-  - S60
+  - otros
+image: /images/obsolete.jpg
 ---
 Un lector del blog me ha escrito un correo a una de las cuentas de Ipoki y me ha hecho pensar en un par de cosas.
 

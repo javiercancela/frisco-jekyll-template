@@ -7,11 +7,8 @@ layout: post
 guid: http://javiercancela.com/2008/03/13/acceder-a-internet-con-java-en-una-blackberry/
 permalink: /index.php/2008/03/13/acceder-a-internet-con-java-en-una-blackberry/
 categories:
-  - BlackBerry
-tags:
-  - BES
-  - BIS
-  - desarrollo móvil
+  - blackberry
+image: /images/obsolete.jpg
 ---
 Entre las peculiaridades que presentan las BlackBerry como dispositivos programables, la que más quebraderos de cabeza suele causar es la conexión a Internet. El motivo no es la API utilizada, que es la habitual [Generic Connection Framework](http://developers.sun.com/mobility/midp/articles/genericframework/ "Generic Connection Framework") de CLDC 1.0, sino los diferentes tipos de acceso a Internet que se pueden usar en los dispositivos BlackBerry. Los tipos de conexión dependen tanto servicio contratado, del modelo de BlackBerry, de la operadora&#8230; De hecho, lo que viene a continuación no es información contrastada, sino conclusiones que he sacado tras investigar en diversas páginas y manuales que he encontrado por Internet. Es además una exposición simplificada, destinada a desarrolladores que quieran programar en la BlackBerry aplicaciones que se conectan a Internet. Cualquier aportación o corrección es como siempre bienvenida.
 

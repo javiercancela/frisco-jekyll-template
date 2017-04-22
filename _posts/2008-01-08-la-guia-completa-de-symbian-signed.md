@@ -7,13 +7,9 @@ layout: post
 guid: http://javiercancela.com/2008/01/08/la-guia-completa-de-symbian-signed/
 permalink: /index.php/2008/01/08/la-guia-completa-de-symbian-signed/
 categories:
-  - Noticias
-  - Symbian
-tags:
-  - desarrollo móvil
-  - firma de aplicaciones móviles
-  - S60
-  - Symbian Signed
+  - noticias
+  - symbian
+image: /images/obsolete.jpg
 ---
 La gente de Symbian ha publicado una versión aún más completa de la guía de Symbian Signed de la que hablábamos en [esta entrada](http://javiercancela.com/2007/11/29/firma-de-aplicaciones-en-symbian-novedades-en-symbian-signed/ "novedades en Symbian Signed").
 

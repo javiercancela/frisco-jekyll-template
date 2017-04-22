@@ -8,7 +8,7 @@ guid: http://javiercancela.com/2007/12/29/nuevo-blog/
 permalink: /index.php/2007/12/29/nuevo-blog/
 categories:
   - ipoki
-tags:
+image: /images/obsolete.jpg
   - blog
 ---
 Bienvenidos al nuevo blog.

@@ -7,12 +7,8 @@ layout: post
 guid: http://javiercancela.com/2008/01/03/kunerilite-aplicaciones-flashlite-para-s60/
 permalink: /index.php/2008/01/03/kunerilite-aplicaciones-flashlite-para-s60/
 categories:
-  - Symbian
-tags:
-  - Flash Lite
-  - KuneriLite
-  - S60
-  - Sensor API
+  - symbian
+image: /images/obsolete.jpg
 ---
 Tenía pendiente desde hace tiempo hablar algo de [KuneriLite](http://www.kunerilite.net/ "Go beyond! - Home") (me temo que no he guardado el enlace donde lo vi por primera vez) y al disponerme a hacerlo veo que han sacado [una nueva versión](http://wiki.kunerilite.net/index.php?title=KuneriLite_0.9.4 "KunerLite 0.9.4") que permite acceder a la [_Sensor API_](http://javiercancela.com/2007/11/17/un-vistazo-a-las-apis-de-acelerometros-como-el-del-n95/ "Un vistazo a las APIs de acelerómetros (como el del N95)"), incluye un asistente para la creación de paquetes Flash Lite e incorpora algunas otras mejoras.
 

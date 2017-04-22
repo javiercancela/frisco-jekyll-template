@@ -7,12 +7,8 @@ layout: post
 guid: http://javiercancela.com/2008/04/04/algunas-consideraciones-sobre-android/
 permalink: /index.php/2008/04/04/algunas-consideraciones-sobre-android/
 categories:
-  - Android
-tags:
-  - Apache License
-  - GPL
-  - Open Handset Alliance
-  - Open Source
+  - android
+image: /images/obsolete.jpg
 ---
 Hablaba en mi anterior entrada ([La difícil posición de Symbian](http://javiercancela.com/2008/04/02/la-dificil-posicion-de-symbian/ "La dificil posición de Symbian")) de lo abierto de la plataforma de Google. Adjudicaba ese adjetivo tanto por la libertad que da el sistema a los desarrolladores como por la promesa de liberar el sistema con licencia Open Source. Sin embargo, en los seis meses transcurridos desde la presentación de Android sólo se ha liberado el código fuente del kernel ([Android Linux Kernel Tree](http://git.android.com/ "Android Linux Kernel Tree")), lo que ha llevado a mucha gente a preguntarse en los grupos de Google sobre el por qué de tanto retraso.
 

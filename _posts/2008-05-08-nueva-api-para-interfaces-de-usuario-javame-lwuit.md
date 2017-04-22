@@ -7,11 +7,8 @@ layout: post
 guid: http://javiercancela.wordpress.com/?p=213
 permalink: /index.php/2008/05/08/nueva-api-para-interfaces-de-usuario-javame-lwuit/
 categories:
-  - Java ME
-tags:
-  - JavaME
-  - LWUIT
-  - Sun
+  - java-me
+image: /images/obsolete.jpg
 ---
 Una de las partes menos agradecidas de la programación en JavaME es el diseño de la interfaz de usuario. El paquete javax.microedition.lcdui de MIDP está orientado a la creacion de unas interfaces de usuario muy básicas, que se adecuan bien a las capacidades de los móviles de hace unos años pero que ahora mismo suponen una limitación para la potencia de cualquier dispositivo actual.
 

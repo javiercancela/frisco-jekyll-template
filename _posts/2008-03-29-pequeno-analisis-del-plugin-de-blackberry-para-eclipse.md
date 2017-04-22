@@ -7,9 +7,8 @@ layout: post
 guid: http://javiercancela.com/2008/03/29/pequeno-analisis-del-plugin-de-blackberry-para-eclipse/
 permalink: /index.php/2008/03/29/pequeno-analisis-del-plugin-de-blackberry-para-eclipse/
 categories:
-  - BlackBerry
-tags:
-  - Eclipse
+  - blackberry
+image: /images/obsolete.jpg
 ---
 Las vacaciones de semana santa, el trabajo y un problema en el servidor, que volvió inaccesible este blog durante varias horas del miércoles, se han conjurado para hacerme establecer un nuevo record de días sin publicar nada. Pero hay mucho sobre lo que escribir, así que confío en que la próxima semana compense esta que acaba.
 

@@ -7,10 +7,8 @@ layout: post
 guid: http://javiercancela.wordpress.com/?p=238
 permalink: /index.php/2008/06/02/programando-en-android-notepad-ii/
 categories:
-  - Android
-tags:
-  - android notepad
-  - desarrollo móvil
+  - android
+image: /images/obsolete.jpg
 ---
 **La clase NotesList**
   

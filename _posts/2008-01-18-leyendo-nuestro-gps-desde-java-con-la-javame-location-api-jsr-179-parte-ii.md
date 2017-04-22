@@ -7,14 +7,9 @@ layout: post
 guid: http://javiercancela.com/2008/01/18/leyendo-nuestro-gps-desde-java-con-la-javame-location-api-jsr-179-parte-ii/
 permalink: /index.php/2008/01/18/leyendo-nuestro-gps-desde-java-con-la-javame-location-api-jsr-179-parte-ii/
 categories:
-  - BlackBerry
-  - Java ME
-tags:
-  - AGPS
-  - desarrollo móvil
-  - GPS
-  - JavaME
-  - Nokia
+  - blackberry
+  - java-me
+image: /images/obsolete.jpg
 ---
 Esta entrada completa la explicación del ejemplo tratado en la serie de entradas **Un ejemplo de aplicación Java para BlackBerry**. Ver enlaces al final.
 

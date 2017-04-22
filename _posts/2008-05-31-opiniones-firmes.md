@@ -7,12 +7,8 @@ layout: post
 guid: http://javiercancela.wordpress.com/?p=239
 permalink: /index.php/2008/05/31/opiniones-firmes/
 categories:
-  - Varios
-tags:
-  - jeff atwood
-  - opiniones firmes
-  - ricardo galli
-  - velocidad de escape
+  - otros
+image: /images/obsolete.jpg
 ---
 Me encuentro ocasionalmente con ideas reveladoras. Las leo y noto como si un grupo de neuronas aletargadas se activasen de repente, haciéndome pensar en algo en lo que no había pensado antes.
 

@@ -7,12 +7,9 @@ layout: post
 guid: http://javiercancela.com/2008/01/14/un-ejemplo-de-aplicacion-java-para-blackberry-parte-iii/
 permalink: /index.php/2008/01/14/un-ejemplo-de-aplicacion-java-para-blackberry-parte-iii/
 categories:
-  - BlackBerry
-  - Java ME
-tags:
-  - desarrollo móvil
-  - Java
-  - JavaME
+  - blackberry
+  - java-me
+image: /images/obsolete.jpg
 ---
 Vames a ver ahora una descripción de la aplicación GPSDemo, que viene de ejemplo con la versión 4.1 del JDE de BlackBerry. Esta aplicación nos permite leer el GPS de nuestro dispositivo para mostrar en pantalla información sobre nuestra posición y velocidad, además de grabar durante nuestro recorrido una serie de _waypoints_ que contienen la distancia recorrida, el tiempo y la velocidad media.
   

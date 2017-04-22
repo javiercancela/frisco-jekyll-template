@@ -7,15 +7,8 @@ layout: post
 guid: http://javiercancela.com/2007/12/14/una-de-breves/
 permalink: /index.php/2007/12/14/una-de-breves/
 categories:
-  - Noticias
-tags:
-  - Android
-  - Carbide.c++
-  - Go to Android
-  - LiPS
-  - Nokia PC Phone
-  - Symbian Signed
-  - TryPhone
+  - noticias
+image: /images/obsolete.jpg
 ---
 Tras unos días especialmente ocupado en el trabajo y preparando la nueva versión de [hipoqih](http://hipoqih.com), varias noticias interesantes:
 

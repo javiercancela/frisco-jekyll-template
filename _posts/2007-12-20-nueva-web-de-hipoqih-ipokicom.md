@@ -8,12 +8,7 @@ guid: http://javiercancela.com/2007/12/20/nueva-web-de-hipoqih-ipokicom/
 permalink: /index.php/2007/12/20/nueva-web-de-hipoqih-ipokicom/
 categories:
   - ipoki
-tags:
-  - geolocalización
-  - geoposicionamiento
-  - hipoqih
-  - LBS
-  - seguimiento GPS
+image: /images/obsolete.jpg
 ---
 [La nueva web.](http://www.ipoki.com "ipoki.com")
 

@@ -7,12 +7,9 @@ layout: post
 guid: http://javiercancela.com/2008/01/16/un-ejemplo-de-aplicacion-java-para-blackberry-parte-iv-y-final/
 permalink: /index.php/2008/01/16/un-ejemplo-de-aplicacion-java-para-blackberry-parte-iv-y-final/
 categories:
-  - BlackBerry
-  - Java ME
-tags:
-  - desarrollo móvil
-  - Java
-  - JavaME
+  - blackberry
+  - java-me
+image: /images/obsolete.jpg
 ---
 Para la gestión de los waypoints vamos a crear una nueva ventana. Para ello crearemos una nueva clase en el archivo PointScreen.java.
 

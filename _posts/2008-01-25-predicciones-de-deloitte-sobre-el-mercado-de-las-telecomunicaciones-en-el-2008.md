@@ -7,11 +7,8 @@ layout: post
 guid: http://javiercancela.com/2008/01/25/predicciones-de-deloitte-sobre-el-mercado-de-las-telecomunicaciones-en-el-2008/
 permalink: /index.php/2008/01/25/predicciones-de-deloitte-sobre-el-mercado-de-las-telecomunicaciones-en-el-2008/
 categories:
-  - Varios
-tags:
-  - deloitte
-  - previsiones
-  - telefonía móvil
+  - otros
+image: /images/obsolete.jpg
 ---
 Un breve apunte para señalar [este estudio](http://www.deloitte.com/dtt/article/0%2C1002%2Ccid%25253D187259%2C00.html "Telecommunications Predictions 2008") que, aunque no es más que otra serie de previsiones, proviene de una de las consultoras más importantes del mercado.
 

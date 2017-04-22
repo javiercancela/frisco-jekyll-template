@@ -7,12 +7,8 @@ layout: post
 guid: http://javiercancela.wordpress.com/?p=472
 permalink: /index.php/2009/08/17/realidad-aumentada-en-android-ar-compass-iii/
 categories:
-  - Android
-tags:
-  - desarrollo android
-  - desarrollo móvil
-  - OpenGL
-  - realidad aumentada
+  - android
+image: /images/obsolete.jpg
 ---
 La entrada anterior se centró la clase Compass, que describe la brújula. También presentaba la clase CompassRenderer, que es la encargada de dibujarla en su sitio. Vamos a ver esta clase con más detalle.
 

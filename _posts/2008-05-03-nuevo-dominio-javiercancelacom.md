@@ -8,8 +8,7 @@ guid: http://javiercancela.wordpress.com/?p=207
 permalink: /index.php/2008/05/03/nuevo-dominio-javiercancelacom/
 categories:
   - ipoki
-tags:
-  - nuevo dominio
+image: /images/obsolete.jpg
 ---
 He movido el blog a un nuevo dominio: http://javiercancela.com, albergado directamente en WordPress.com. El feed de feedburner se mantiene (feed.feedburner.com/bitacoramovil), pero http://blogs.ipoki.com/feed/ pasa a http://javiercancela.com/feed/.
 

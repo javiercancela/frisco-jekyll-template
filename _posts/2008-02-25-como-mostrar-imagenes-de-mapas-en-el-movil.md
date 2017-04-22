@@ -7,15 +7,8 @@ layout: post
 guid: http://javiercancela.com/2008/02/25/como-mostrar-imagenes-de-mapas-en-el-movil/
 permalink: /index.php/2008/02/25/como-mostrar-imagenes-de-mapas-en-el-movil/
 categories:
-  - Varios
-tags:
-  - desarrollo móvil
-  - geolocalización
-  - Google Maps
-  - Google Static Maps API
-  - Microsoft Visual Earth
-  - Yahoo! Map Image API
-  - Yahoo! Maps
+  - otros
+image: /images/obsolete.jpg
 ---
 En realidad esta entrada no se centra en cómo mostrar las imágenes, sino en cómo obtenerlas. Imaginemos que queremos programar una aplicación para móviles que se encargue de mostrar información geolocalizada. Existen abundantes APIs web que nos permiten mostrar todo tipo de información sobre un mapa, como las de [Google](http://code.google.com/apis/maps/ "http://code.google.com/apis/maps/"), [Yahoo](http://developer.yahoo.com/maps/ "Yahoo! Maps Web Services") o [Microsoft](http://dev.live.com/virtualearth "Microsoft Virtual Earth™"), por citar sólo las tres más conocidas. El problema es que a estos servicios se accede usando JavaScript o Flash, ya que están pensados para visualizar la información en un navegador. Si no podemos renderizar esta información en nuestra aplicación, por ejemplo por falta de soporte javascript en el dispositivo, necesitamos buscar una alternativa que nos permita mostrar una imagen estática con la misma información.
 

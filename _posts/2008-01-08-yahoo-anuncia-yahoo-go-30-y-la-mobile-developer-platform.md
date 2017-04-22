@@ -7,12 +7,9 @@ layout: post
 guid: http://javiercancela.com/2008/01/08/yahoo-anuncia-yahoo-go-30-y-la-mobile-developer-platform/
 permalink: /index.php/2008/01/08/yahoo-anuncia-yahoo-go-30-y-la-mobile-developer-platform/
 categories:
-  - Noticias
-  - Web móvil
-tags:
-  - desarrollo móvil
-  - widgets
-  - Yahoo! Go
+  - noticias
+  - web-movil
+image: /images/obsolete.jpg
 ---
 Esta semana se celebra en Las Vegas la feria de electrónica CES, y en ella Yahoo! ha anunciado la nueva versión de su apuesta para la web móvil: [Yahoo! Go 3.0](http://mobile.yahoo.com/go "Yahoo! Go 3.0").
 

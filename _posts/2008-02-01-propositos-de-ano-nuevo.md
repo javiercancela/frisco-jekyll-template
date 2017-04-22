@@ -7,9 +7,8 @@ layout: post
 guid: http://javiercancela.wordpress.com/?p=80
 permalink: /index.php/2008/02/01/propositos-de-ano-nuevo/
 categories:
-  - Personal
-tags:
   - blog
+image: /images/obsolete.jpg
 ---
 > _&#8230;- Disponer de un dominio propio. (Hecho)__&#8230;_
 

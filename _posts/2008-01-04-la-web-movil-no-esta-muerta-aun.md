@@ -7,10 +7,8 @@ layout: post
 guid: http://javiercancela.com/2008/01/04/la-web-movil-no-esta-muerta-aun/
 permalink: /index.php/2008/01/04/la-web-movil-no-esta-muerta-aun/
 categories:
-  - Web móvil
-tags:
-  - iPhone
-  - Mike Rowehl
+  - web-movil
+image: /images/obsolete.jpg
 ---
 Mike Rowehl [vuelve sobre el concepto de web móvil](http://www.thisismobility.com/blog/2008/01/02/the-mobile-web-or-one-web-or-something-else/ "The Mobile Web or One Web, or Something Else"), en un artículo que presenta la siguiente tipología de páginas web según su orientación a los dispositivos móviles:
 

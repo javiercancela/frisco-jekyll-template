@@ -7,10 +7,8 @@ layout: post
 guid: http://javiercancela.wordpress.com/?p=226
 permalink: /index.php/2008/05/22/el-informe-opera-sobre-la-web-movil-reflexiones/
 categories:
-  - Web móvil
-tags:
-  - Estado de la web móvil
-  - opera mini
+  - web-movil
+image: /images/obsolete.jpg
 ---
 Opera ha publicado estos días un pequeño informe llamado &#8220;Estado de la web móvil&#8221; (en inglés [aquí](http://www.opera.com/mobile_report/ "First Quarter, 2008")), que analiza tendencias en la navegación por Internet a través de dispositivos móviles usando datos anónimos enviados por su navegador Opera Mini durante los tres primeros meses del 2008.
 

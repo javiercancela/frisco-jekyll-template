@@ -7,9 +7,8 @@ layout: post
 guid: http://javiercancela.com/2008/02/22/habemus-claves-de-blackberry/
 permalink: /index.php/2008/02/22/habemus-claves-de-blackberry/
 categories:
-  - BlackBerry
-tags:
-  - firma de aplicaciones móviles
+  - blackberry
+image: /images/obsolete.jpg
 ---
  La gente de RIM me ha enviado unas claves nuevas y, esta vez sí, he conseguido registrarlas. No me han dado más detalles sobre el asunto, pero imagino que hubo algún problema por su parte en la activación de las claves anteriores. Tras el registro he podido probar el proceso de firma desde el JDE y ha funcionado bien: el entorno indica para cada uno de los tres tipos de claves (RBB, RCR y RRT, para APIs de aplicación, criptográficas y de run-time respectivamente) si la firma es requerida u opcional, y automáticamente calcula un hash del código, lo envía a RIM y lo devuelve firmado.
 

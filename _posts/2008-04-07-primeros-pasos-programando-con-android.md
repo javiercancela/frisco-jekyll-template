@@ -7,9 +7,8 @@ layout: post
 guid: http://javiercancela.com/2008/04/07/primeros-pasos-programando-con-android/
 permalink: /index.php/2008/04/07/primeros-pasos-programando-con-android/
 categories:
-  - Android
-tags:
-  - anddev
+  - android
+image: /images/obsolete.jpg
 ---
 Programar con Android está resultando una tarea agradable. Un sistema nuevo, diseñado desde cero, debe dar solución a los problemas que, por motivos históricos, están presentes en otros sistemas más veteranos. En algunos aspectos Android apunta en la buena dirección, como en el diseño de la interfaz de usuario, que está resuelto con elegancia. En otros, como el rendimiento o la fragmentación de dispositivos, habrá que esperar a que el sistema exista en algún lugar más que el emulador. También hay defectos, pero el sistema todavía está en beta, sufriendo modificaciones, así que de momento seremos condescendientes.
 

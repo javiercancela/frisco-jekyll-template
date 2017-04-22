@@ -7,12 +7,8 @@ layout: post
 guid: http://javiercancela.wordpress.com/?p=223
 permalink: /index.php/2008/05/17/limo-platform-la-plataforma-linux-mobile/
 categories:
-  - Linux Mobile
-tags:
-  - LiMo
-  - LiMo Foundation
-  - LiMo Platform
-  - sistemas operativos móviles
+  - linux-mobile
+image: /images/obsolete.jpg
 ---
 La [fundación LiMo](http://www.limofoundation.org/ "LiMo foundation") fue fundada a principios del 2007 por Motorola, NEC, NTT DoCoMo, Orange, Panasonic, Samsung y Vodafone con el propósito de crear un sistema operativo abierto basado en Linux y disponible para cualquier hardware. Desde entonces han sacado varias notas de prensa anunciando la incorporación de nuevas en presas a la fundación así como sus previsiones de lanzamiento de los primeros dispositivos LiMo.
 

@@ -7,13 +7,9 @@ layout: post
 guid: http://javiercancela.com/2008/01/29/ampliado-el-plazo-de-presentacion-de-aplicaciones-para-el-android-developer-challenge/
 permalink: /index.php/2008/01/29/ampliado-el-plazo-de-presentacion-de-aplicaciones-para-el-android-developer-challenge/
 categories:
-  - Android
-  - Noticias
-tags:
-  - Android Developer Challenge
-  - desarrollo móvil
-  - Google
-  - iPhone
+  - android
+  - noticias
+image: /images/obsolete.jpg
 ---
 Eso anuncia hoy el [Android Developers Blog](http://android-developers.blogspot.com/2008/01/deadline-extension-for-android.html "Deadline Extension for the Android Developer Challenge"). ¿Los motivos? La gran cantidad de información que han obtenido de los usuarios, gracias a la cual habrá una nueva versión de la [SDK](http://code.google.com/android/download.html "Download the Android SDK") en unas semanas.
 

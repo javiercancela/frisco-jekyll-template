@@ -7,12 +7,8 @@ layout: post
 guid: http://javiercancela.com/2008/02/26/debate-en-la-red-sobre-el-futuro-de-las-aplicaciones-moviles/
 permalink: /index.php/2008/02/26/debate-en-la-red-sobre-el-futuro-de-las-aplicaciones-moviles/
 categories:
-  - Web móvil
-tags:
-  - Android
-  - desarrollo móvil
-  - iPhone
-  - Palm
+  - web-movil
+image: /images/obsolete.jpg
 ---
 Una entrada publicada por [Michael Mace](http://www.mikemace.com/ "Michael Mace"), un consultor especializado en tecnología móvil, ha provocado un intenso debate sobre el futuro de las aplicaciones nativas para móviles. La entrada se titula _[Mobile applications, RIP](http://mobileopportunity.blogspot.com/2008/02/mobile-applications-rip.html "Mobile applications, RIP")_, y comienza con un resumen que traduzco a continuación:
 

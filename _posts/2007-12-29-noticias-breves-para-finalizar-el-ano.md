@@ -7,13 +7,8 @@ layout: post
 guid: http://javiercancela.com/2007/12/29/noticias-breves-para-finalizar-el-ano/
 permalink: /index.php/2007/12/29/noticias-breves-para-finalizar-el-ano/
 categories:
-  - Noticias
-tags:
-  - Android
-  - blogs japón
-  - Google
-  - Mobile World Congress
-  - smartphones para internet
+  - noticias
+image: /images/obsolete.jpg
 ---
 No sólo es este blog lo que tengo abandonado debido a las vacaciones y a la nueva web, sino todos los blogs a los que estoy subscrito y que tras unos días de desatención acumulan cientos y cientos de entradas no leídas. Después de mucho vistazo superficial y un uso abundante del botón de &#8220;Marcar todo como leído&#8221;, he aquí un par de asuntos que me han parecido interesantes:
 

@@ -9,11 +9,9 @@ permalink: /index.php/2009/07/13/notificaciones-push-en-dispositivos-moviles/
 twitter_cards_summary_img_size:
   - 'a:7:{i:0;i:240;i:1;i:180;i:2;i:1;i:3;s:24:"width="240" height="180"";s:4:"bits";i:8;s:8:"channels";i:3;s:4:"mime";s:9:"image/gif";}'
 categories:
-  - Android
-  - BlackBerry
-tags:
-  - iPhone
-  - Notificaciones Push
+  - android
+  - blackberry
+image: /images/obsolete.jpg
 ---
 **¿Qué es una notificación _push_****?**
 

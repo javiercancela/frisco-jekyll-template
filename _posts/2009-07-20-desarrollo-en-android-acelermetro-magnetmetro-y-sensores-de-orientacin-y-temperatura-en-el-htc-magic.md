@@ -7,12 +7,8 @@ layout: post
 guid: http://javiercancela.wordpress.com/?p=401
 permalink: /index.php/2009/07/20/desarrollo-en-android-acelermetro-magnetmetro-y-sensores-de-orientacin-y-temperatura-en-el-htc-magic/
 categories:
-  - Android
-tags:
-  - acelerómetro
-  - desarrollo android
-  - desarrollo móvil
-  - magnetómetro
+  - android
+image: /images/obsolete.jpg
 ---
 Android permite acceder a los sensores internos del dispositivo a través de las clases <span>Sensor</span>, <span>SensorEvent</span> y <span>SensorManager</span>, y de la interfaz <span>SensorEventListener</span>, del paquete <span>android.hardware</span>.
 

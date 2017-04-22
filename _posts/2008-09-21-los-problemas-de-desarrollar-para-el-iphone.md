@@ -7,10 +7,8 @@ layout: post
 guid: http://javiercancela.wordpress.com/?p=249
 permalink: /index.php/2008/09/21/los-problemas-de-desarrollar-para-el-iphone/
 categories:
-  - Sin categoría
-tags:
-  - AppStore
-  - iPhone
+  - otros
+image: /images/obsolete.jpg
 ---
 [<img src="http://farm1.static.flickr.com/129/352593346_b55ab8e05f_m_d.jpg" alt="iphone, de shapeshift" align="left" />](http://www.flickr.com/photos/shapeshift/352593346/sizes/s/ "iphone, de shapeshift") El iPhone 3G has sido sin duda la estrella tecnológica del verano. Eso es bueno para Apple, pero probablemente también para los usuarios que deseen utilizar su móvil para navegar por Internet, y por dos motivos. Uno, ha estimulado a las operadoras para competir, aunque tímidamente, con sus tarifas de datos. Dos, presiona a los fabricantes para que las características de sus nuevos modelos de gama alta estén a la altura del iPhone. Es decir, pantallas grandes e interfaces intuitivas.
 

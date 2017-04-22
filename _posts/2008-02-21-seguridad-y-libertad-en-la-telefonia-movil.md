@@ -7,16 +7,8 @@ layout: post
 guid: http://javiercancela.com/?p=90
 permalink: /index.php/2008/02/21/seguridad-y-libertad-en-la-telefonia-movil/
 categories:
-  - Tecnología
-tags:
-  - Android
-  - F-Secure
-  - iPhone
-  - McAfee
-  - Mobile World Congress
-  - Nokia
-  - seguridad móvil
-  - tecnología móvil
+  - otros
+image: /images/obsolete.jpg
 ---
 Varios medios de comunicación se han hecho eco ([News.com](http://www.news.com/Mobile-industry-sees-new-security-risks/2100-1002_3-6230592.html "Mobile industry sees new security risks"), [Reuters UK](http://uk.reuters.com/article/internetNews/idUKL144082020080214 "Mobile industry sees new security risks"), [MobileCrunch](http://mobilecrunch.com/2008/02/15/open-source-may-create-security-risks-for-mobile-phones/ "Open Source may Create Security Risks for Mobile Phones")) de unas declaraciones del jefe de investigación de F-Secure, Mikko Hypponen, durante el pasado Mobile World Congress de Barcelona. En ellas alertaba del peligro que una plataforma abierta como Android puede suponer para la seguridad de los dispositivos móviles. Traduzco:
 

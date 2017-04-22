@@ -7,12 +7,9 @@ layout: post
 guid: http://javiercancela.com/2007/12/17/consejos-para-programadores-j2me-y-blackberry-2/
 permalink: /index.php/2007/12/17/consejos-para-programadores-j2me-y-blackberry-2/
 categories:
-  - BlackBerry
-  - Java ME
-tags:
-  - desarrollo móvil
-  - J2ME
-  - optimización de código.
+  - blackberry
+  - java-me
+image: /images/obsolete.jpg
 ---
 **Preprocesado**
 
