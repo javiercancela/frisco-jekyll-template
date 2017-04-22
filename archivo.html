@@ -15,13 +15,22 @@ image: /images/main.jpg
 
 <section>
 	<div class="text-container">
+		{% assign months = "enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre" | split: "|" %}
 	   {% for post in site.posts %}
-	       {% assign currentDate = post.date | date: "%Y" %}
-	       {% if currentDate != myDate %}
-	           <br/><br/><h2>{{ currentDate }}</h2>
-	           {% assign myDate = currentDate %}
+	       {% assign currentYear = post.date | date: "%Y" %}
+	       {% if currentYear != myYear %}
+	           <br/><br/><h2>{{ currentYear }}</h2>
+	           {% assign myYear = currentYear %}
+	           {% assign myMonth = "" %}
 	       {% endif %}
-	       <h3><a href="{{ post.url }}"><span>{{ post.date | date: "%B %-d, %Y" }}</span> - {{ post.title }}</a></h3>
+	       {% assign m = post.date | date: "%-m" | minus: 1 %}
+	       {% assign currentMonth = months[m] %}
+	       {% if currentMonth != myMonth %}
+	           <h3>{{ currentMonth }}</h3>
+	           {% assign myMonth = currentMonth %}
+	       {% endif %}
+			{% assign day = post.date | date: "%d" %}
+	       <h3><a href="{{ post.url }}"><span>{{ day }} de {{ currentMonth }} de {{ currentYear }}</span> - {{ post.title }}</a></h3>
 	   {% endfor %}
 	   <br/>
 	</div>
