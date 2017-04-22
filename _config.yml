@@ -47,7 +47,7 @@ collections:
   staff_members:
     _hide_content: true
 
-paginate: 5
+paginate: 10
 paginate_path: "/:num/"
 
 jekyll-archives:
