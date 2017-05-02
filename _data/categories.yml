@@ -38,3 +38,7 @@
   slug: internet
 - name: Linux Mobile
   slug: linux-mobile
+- name: Google Maps
+  slug: google-maps
+- name: Javascript
+  slug: javascript
