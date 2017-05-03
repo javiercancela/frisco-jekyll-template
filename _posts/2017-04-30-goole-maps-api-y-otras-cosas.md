@@ -53,17 +53,25 @@ Pero mi sensación era que este término dejó de usarse de forma bastante repen
     </figure>
 </div>
 
-
 ## Zips con javascript en GMail
 
 ¿Sabéis otra cosa que Google ya no deja hacer? Descargar desde GMail una zip que contenga javascript. El servidor detecta que el contenido puede ser peligroso y no permite descargarlo. 
 
 Sin embargo, esta limitación parece sólo de la aplicación web. Usando un cliente de correo eletrónico como Thunderbird (que abrí para esto por primera vez desde que instalé Ubuntu) el archivo se desarga sin problemas. Eso sí, contectaros vía IMAP si no queréis descargaros todo el correo que tengáis almacenado en el inbox de GMail (en mi caso, todo el personal correo desde el 2008)
 
-visual studio code
+## Visual Studio Code
 
-sdfsd
+[Sublime Text 3](https://www.sublimetext.com/3) es un editor estupendo: potente, flexible, multiplataforma y extremadamente rápido. Es superior a las otras opciones que he probado para desarrollo front y Python, creación de documentos Markdown, y gestión de archivos de texto en general.
 
-mashupsj -> https://trends.google.com/trends/explore?cat=1142&date=all&q=mashup
+<div style="text-align:center">
+    <figure>
+        <img alt="Visual Studio Code, bueno, bonito y barato" src ="/images/vsc.png" />
+        <figcaption>Visual Studio Code, bueno, bonito y barato</figcaption>
+    </figure>
+</div>
 
-http://www.businessinsider.com/sundar-pichai-hints-at-ads-in-google-maps-2017-4
+Sorprendentemente, la mejora alternativa viene de la mano de Microsoft: [Visual Studio Code](https://code.visualstudio.com/). Gratuito, _open source_, multiplataforma y rápido. Pese al nombre  se parece más a Sublime Text que al [Visual Studio tradicional](https://www.visualstudio.com/es/vs/whatsnew). 
+
+Está orientado al desarrollo desde el inicio, así que incluye de serie depurador para diversos lenguajes, autocompletado, integración con Git... Tiene también un sistema extensiones que permite adaptarlo a casi cualquier necesidad. 
+
+Destaca como entorno de desarrollo _front_, con depuración nativa de javascript, integración con Chrome, _linting_ para diversos sabores de javascript, ... Pero también es una gran herramienta para Python, Go y _scripting_ en general. Totalmente recomendable.
