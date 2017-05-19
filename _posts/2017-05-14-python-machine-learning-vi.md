@@ -11,7 +11,7 @@ image: /images/pml/pml.jpg
 comments: true
 ---
 
-La regresión logística es un modelo de clasificación que permite superar algunos de los problemas del perceptrón, como su incapacidad para converger si las clases no son linearmente separables. Para estudiarlo, empezaremos con un pequeño recordatorio sobre los conceptos estadísticos involucrados.
+La regresión logística es un modelo de clasificación que permite superar algunos de los problemas del perceptrón, como su incapacidad para converger si las clases no son linearmente separables. Para estudiarlo, empezaremos con un pequeño recordatorio de los conceptos estadísticos involucrados.
 
 ## Análisis por regresión
 
