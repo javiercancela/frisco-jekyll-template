@@ -1,7 +1,7 @@
 ---
-title: Machine Learning con Python - Tema 2 - El perceptrón
+title: PML T2 - El perceptrón
 date: 2017-03-19 03:00:00 +0200
-description: Notas sobre el libro "Python Machine Learning", de Sebastian Raschka
+description: Python Machine Learning - Tema 2 - Notas sobre el libro de Sebastian Raschka
 categories:
   - python
   - libros

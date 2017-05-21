@@ -1,7 +1,7 @@
 ---
-title: Machine Learning con Python - Tema 2 - Adaline
+title: PML T2 - ADALINE
 date: 2017-04-02 03:00:00 +0200
-description: Notas sobre el libro "Python Machine Learning", de Sebastian Raschka
+description: Python Machine Learning - Tema 2 - Notas sobre el libro de Sebastian Raschka
 categories:
   - python
   - libros
@@ -31,6 +31,8 @@ En concreto, la función lineal de activación de Adaline es la función identid
 ## Minimización de funciones de costos
 
 Igual que en el caso del perceptrón, la actualización de pesos se realiza calculando $$w_j := w_j + \eta(y^{(i)} - \hat y^{(i)})x_j^{(i)}$$. Para el perceptrón tanto $$y^{(i)}$$ como $$\hat y^{(i)}$$ son etiquetas de clases con solo dos posibles valores. En el caso de Adaline se usan valores continuos.
+
+<a name="1"></a>
 
 La idea de la función de costos es definir una función que se pueda optimizar durante el proceso de aprendizaje. Para ello utilizamos la suma de los errores al cuadrado (_Sum of Squared Errors_, o _SSE_, también llamado en inglés [_Residual Sum of Squareds_](https://en.wikipedia.org/wiki/Residual_sum_of_squares)):
 

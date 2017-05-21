@@ -1,7 +1,7 @@
 ---
-title: Machine Learning con Python - Tema 3 - Introducción a Scikit-learn
+title: PML T3 - Introducción a Scikit-learn
 date: 2017-04-23 03:00:00 +0200
-description: Notas sobre el libro "Python Machine Learning", de Sebastian Raschka
+description: Python Machine Learning - Tema 3 - Notas sobre el libro de Sebastian Raschka
 categories:
   - python
   - libros

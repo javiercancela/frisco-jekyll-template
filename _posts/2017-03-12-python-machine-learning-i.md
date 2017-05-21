@@ -1,7 +1,7 @@
 ---
-title: Machine Learning con Python - Tema 1
+title: PML T1 - Aprendizaje máquina
 date: 2017-03-12 03:00:00 +0200
-description: Notas sobre el libro "Python Machine Learning", de Sebastian Raschka
+description: Python Machine Learning - Tema 1 - Notas sobre el libro de Sebastian Raschka
 categories:
   - python
   - libros

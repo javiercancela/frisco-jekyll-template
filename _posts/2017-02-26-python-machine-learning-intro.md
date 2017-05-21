@@ -1,5 +1,5 @@
 ---
-title: Machine Learning con Python - Introducción
+title: Machine Learning con Python
 date: 2017-02-26 03:00:00 +0200
 description: Notas sobre el libro "Python Machine Learning", de Sebastian Raschka
 categories:
