@@ -52,4 +52,26 @@ indica la probabilidad de que la muestra $$i$$ pertenezca a la clase real ($$y^{
 
 Entonces, la función $$L(\mathbf{w})$$ es el producto de las probabilidades de que cada muestra sea de su clase real, en función de los pesos $$\mathbf{w}$$ establecidos. Si maximizamos esa función, estaremos maximizando la calidad de la predicción para el conjunto de muestras. 
 
-El siguiente paso que da el libro es calcular el logaritmo de $$L(\mathbf(w))$$. El propósito de esta función es
+El siguiente paso que da el libro es calcular el logaritmo de $$L(\mathbf(w))$$. El propósito de esta función es doble. Por un lado, evita un problema potencial si las probabilidades son lo suficientemente pequeñas para que su producto provoque un desbordamiento. El logaritmo convierte los productos en sumas, con lo que el riesgo desaparece. Por otro lado, el cálculo de la derivada se simplifica mucho por el mismo motivo.
+
+$$
+l(\mathbf{w}) = \log L(\mathbf{w}) = \log \Bigg[ \prod_{i=1}^{n} \bigg( \phi \big(z^{(i)} \big) \bigg) ^ {y^{(i)}} \bigg( 1 - \phi \big( z^{(i)} \big) \bigg)^{1-y^{(i)}}  \Bigg]
+$$
+
+Dado que $$\log (xy) = \log x + \log y$$, el logaritmo del productorio se convierte en un sumatorio de logaritmos:
+
+$$
+l(\mathbf{w}) = \sum_{i=1}^{n} \Bigg[ \log \bigg( \bigg( \phi \big(z^{(i)} \big) \bigg) ^ {y^{(i)}} \bigg( 1 - \phi \big( z^{(i)} \big) \bigg)^{1-y^{(i)}} \bigg) \Bigg].
+$$
+
+Ahora el sumatorio contiene también el logaritmo de un producto, por lo que podemos convertirlo en:
+
+$$
+l(\mathbf{w}) = \sum_{i=1}^{n} \Bigg[ \log \bigg( \phi \big(z^{(i)} \big) \bigg) ^ {y^{(i)}} + \log \bigg( 1 - \phi \big( z^{(i)} \big) \bigg)^{1-y^{(i)}}  \Bigg].
+$$
+
+Finalmente podemos simplificar usar la propiedad $$\log (x^y) = y \log x$$ para convertir la expresión en:
+
+$$
+l(\mathbf{w}) = \sum_{i=1}^{n} \Bigg[ y^{(i)} \log \bigg( \phi \big(z^{(i)} \big) \bigg) + \bigg(1-y^{(i)} \bigg) \log \bigg( 1 - \phi \big( z^{(i)} \big) \bigg) \Bigg].
+$$
