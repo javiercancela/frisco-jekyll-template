@@ -48,11 +48,19 @@ $$
 \bigg( \phi \big(z^{(i)} \big) \bigg) ^ {y^{(i)}} \bigg( 1 - \phi \big( z^{(i)} \big) \bigg)^{1-y^{(i)}}
 $$
 
-indica la probabilidad de que la muestra $$i$$ pertenezca a la clase real ($$y^{(i)}$$), ya que si $$y^{(i)} = 1$$, la expresión se simplifica a $$\phi \big(z^{(i)} \big)$$, y si $$y^{(i)} = 0$$ nos queda $$\bigg( 1 - \phi \big( z^{(i)} \big) \bigg)^{1-y^{(i)}}$$, que es la probabilidad de que la muestra sea de clase distinta de $$1$$, es decir, la probabilidad de que se de clase $$0$$.
+indica la probabilidad de que la muestra $$i$$ pertenezca a la clase real ($$y^{(i)}$$), ya que si $$y^{(i)} = 1$$, la expresión se simplifica a $$\phi \big(z^{(i)} \big)$$, y si $$y^{(i)} = 0$$ nos queda 
+
+$$
+\bigg( 1 - \phi \big( z^{(i)} \big) \bigg)^{1-y^{(i)}},
+$$ 
+
+que es la probabilidad de que la muestra sea de clase distinta de $$1$$, es decir, la probabilidad de que se de clase $$0$$.
 
 Entonces, la función $$L(\mathbf{w})$$ es el producto de las probabilidades de que cada muestra sea de su clase real, en función de los pesos $$\mathbf{w}$$ establecidos. Si maximizamos esa función, estaremos maximizando la calidad de la predicción para el conjunto de muestras. 
 
-El siguiente paso que da el libro es calcular el logaritmo de $$L(\mathbf(w))$$. El propósito de esta función es doble. Por un lado, evita un problema potencial si las probabilidades son lo suficientemente pequeñas para que su producto provoque un desbordamiento. El logaritmo convierte los productos en sumas, con lo que el riesgo desaparece. Por otro lado, el cálculo de la derivada se simplifica mucho por el mismo motivo.
+### Simplificando los cálculos
+
+El siguiente paso que da el libro es calcular el logaritmo de $$L(\mathbf{w})$$. El propósito de esta función es doble. Por un lado, evita un problema potencial si las probabilidades son lo suficientemente pequeñas para que su producto provoque un desbordamiento. El logaritmo convierte los productos en sumas, con lo que el riesgo desaparece. Por otro lado, el cálculo de la derivada se simplifica mucho por el mismo motivo.
 
 $$
 l(\mathbf{w}) = \log L(\mathbf{w}) = \log \Bigg[ \prod_{i=1}^{n} \bigg( \phi \big(z^{(i)} \big) \bigg) ^ {y^{(i)}} \bigg( 1 - \phi \big( z^{(i)} \big) \bigg)^{1-y^{(i)}}  \Bigg]
@@ -76,3 +84,4 @@ $$
 l(\mathbf{w}) = \sum_{i=1}^{n} \Bigg[ y^{(i)} \log \bigg( \phi \big(z^{(i)} \big) \bigg) + \bigg(1-y^{(i)} \bigg) \log \bigg( 1 - \phi \big( z^{(i)} \big) \bigg) \Bigg].
 $$
 
+En la siguiente entrada veremos cómo convertir esta expresión en una función de costos.
