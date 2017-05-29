@@ -75,3 +75,4 @@ Finalmente podemos simplificar usar la propiedad $$\log (x^y) = y \log x$$ para 
 $$
 l(\mathbf{w}) = \sum_{i=1}^{n} \Bigg[ y^{(i)} \log \bigg( \phi \big(z^{(i)} \big) \bigg) + \bigg(1-y^{(i)} \bigg) \log \bigg( 1 - \phi \big( z^{(i)} \big) \bigg) \Bigg].
 $$
+
