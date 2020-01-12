@@ -37,6 +37,8 @@ gems:
   - jekyll-archives
   - jekyll-sitemap
 
+plugins:
+  - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock

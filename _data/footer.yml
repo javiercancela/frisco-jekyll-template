@@ -7,16 +7,12 @@ left_links:
     link: /sobre-mi/
 right_links:
   - name:
-    link: https://twitter.com/jcanvic
+    link: https://twitter.com/javier_cancela_
     social_icon: Twitter
     new_window: true
   - name:
     link: https://www.linkedin.com/in/javiercancela
     social_icon: LinkedIn
-    new_window: true
-  - name:
-    link: https://plus.google.com/+JavierCancelaVicente
-    social_icon: Google Plus
     new_window: true
   - name:
     link: /feed.xml
