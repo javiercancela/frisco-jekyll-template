@@ -30,7 +30,7 @@ social:
 
 permalink: /:year/:month/:day/:title/
 
-gems:
+plugins:
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-paginate
