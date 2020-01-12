@@ -19,7 +19,7 @@ description: Página personal de Javier Cancela
 author:
   name: Javier Cancela
   email: javier.cancela.vicente@gmail.com
-  twitter: jcanvic
+  twitter: javier_cancela_
 social:
   name: Javier Cancela
   links:
@@ -37,8 +37,6 @@ gems:
   - jekyll-archives
   - jekyll-sitemap
 
-plugins:
-  - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
