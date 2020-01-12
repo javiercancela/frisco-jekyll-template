@@ -1,3 +1,0 @@
-mkdir ../site
-cd ../site
-
