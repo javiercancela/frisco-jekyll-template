@@ -9,7 +9,7 @@ categories:
   - inteligencia-artificial
 image: /images/pml/pml.jpg
 comments: true
-excerpt: ADALINE, la neurona linea adaptativa
+excerpt: ADALINE, la neurona lineal adaptativa
 ---
 
 El perceptrón visto en el post anterior es una red neuronal de una sola capa. Otro ejemplo de este tipo de redes es la llamada **neurona lineal adaptativa**, en inglés _ADAptative LIneal NEuron_, o [_ADALINE_](https://es.wikipedia.org/wiki/Adaline). Nos dice el libro que la importancia de este algoritmo se debe a que muestra con claridad la definición y minimización de las funciones de costos (_cost functions_). 

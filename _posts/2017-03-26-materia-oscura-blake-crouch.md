@@ -6,6 +6,7 @@ categories:
   - libros
   - ciencia-ficcion
 image: http://i.imgur.com/q2ZEHxF.jpg
+excerpt: Comentario del libro Materia Oscura, de Blake Crouch
 comments: true
 ---
 

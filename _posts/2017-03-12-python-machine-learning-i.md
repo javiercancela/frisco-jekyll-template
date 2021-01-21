@@ -8,6 +8,7 @@ categories:
   - machine-learning
   - inteligencia-artificial
 image: /images/pml/pml.jpg
+excerpt: Conceptos básicos sobre el <em>Machine Learning</em>
 comments: true
 ---
 
