@@ -1,0 +1,66 @@
+I"�<p>En una <a href="/2007/10/18/symbian-signed-firma-de-aplicaciones-en-symbian/">entrada anterior</a> hablábamos de Symbian Signed y mencionábamos que se estaban preparando cambios en el sistema de firma de aplicaciones Symbian. Estos cambios empezarán a tener efecto durante diciembre, pero ya se conoce con detalle en qué van a consistir.</p>
+
+<p><strong><em>Publisher ID</em></strong></p>
+
+<p>Como ocurría hasta ahora, para una parte de los casos será necesario un <em>Publisher ID</em>. Este identificador es un certificado digital que permitirá acceder a algunas de las opciones de firma de aplicaciones. A partir de ahora habrá que <a href="https://www.trustcenter.de/cs-bin/PublisherID.cgi/en/155102" title="TC PUBLISHER ID">obtenerlo de TrustCenter</a>, por 200 dólares al año, pero seguirán valiendo los ya existentes de VeriSign.</p>
+
+<p><strong>Tipos de firma</strong></p>
+
+<p>Existirán tres sistemas de firma:</p>
+
+<p><em>Open Signed</em> <em>**</em></p>
+
+<p>Es un sistema diseñado para firmar aplicaciones que están en fase de pruebas o se van a destinar a uso personal, pues limita el número de móviles en los que se puede instalar la aplicación.</p>
+
+<p>Para utilizarla bastará con enviar la aplicación a través del sitio de Symbian Signed y proporcionar una dirección de correo electrónico válida. La firma será válida durante 3 años y permitirá firmar un solo dispositivo sin <em>Publisher ID</em> (es necesario asociar un IMEI al certificado), o un máximo de 1000 dispositivos si tenemos un <em>Publisher ID</em>.</p>
+
+<p><em>Express Signed</em></p>
+
+<p>Con esta opción necesitaremos siempre un <em>Publisher ID</em> y una cuenta en Symbian Signed. Al enviar las aplicaciones para su firma nos comprometemos a que estas cumplan el <em>Symbian Signed Test Criteria</em> (ver más adelante) y pagaremos 20 dólares por cada firma, que tendrá una duración de diez años.</p>
+
+<p><em>Certified Signed</em></p>
+
+<p>Este sistema añade al anterior el requisito de que la aplicación haya sido probada por una <em>Test House</em> acreditada, lo cual acarreará un coste económico. A cambio las aplicaciones tendrán acceso a capacidades del dispositivo no accesibles con una firma <em>Express Signed</em>.</p>
+
+<p>Una explicación del proceso completo se puede encontrar en <a href="http://developer.symbian.com/main/learning/press/books/pdf/large_symbian_signed.pdf" title="A Guide to Symbian Signed">esta guía [pdf]</a>.</p>
+
+<p>En <a href="http://developer.symbian.com/main/downloads/files/Symbian_Signed_Grid.pdf" title="Symbian Signed Grid">este documento [pdf]</a> podemos ver un cuadro resumen.</p>
+
+<p><strong><em>Capabilities</em> (Capacidades)</strong></p>
+
+<p>Se dividen en tres tipos (podemos ver una lista de la funciones incluidas en cada capacidad en <a href="http://www.symbian.com/developer/techlib/v9.1docs/doc_source/guide/N10022/GT_9.1/FunctionsByCapablity.html" title="Functions listed by capability">esta página</a>):</p>
+
+<p><em>De usuario</em></p>
+
+<p>LocalServices, Location, NetworkServices, ReadUserData, UserEnvironment y WriteUserData.</p>
+
+<p>Están siempre disponibles, aunque en ocasiones se requiere de la aceptación de usuario para usarlas.</p>
+
+<p><em>De sistema</em></p>
+
+<p>PowerMgmt, ProtServ, ReadDeviceData, SurroundingsDD, SwEvent, TrustedUI y WriteDeviceData las podemos usar siempre.</p>
+
+<p>CommDD, DiskAdmin, NetworkControl y MultimediaDD sólo las podremos usar con <em>Certified Signed</em> o con <em>Open Signed</em> y el <em>Publiser ID.</em></p>
+
+<p><em>De fabricante</em></p>
+
+<p>AllFiles, DRM y TCB. Además de requerir <em>Certified Signed</em> o <em>Open Signed</em> y <em>Publiser ID</em> necesitan también aprobación del fabricante del dispositivo.</p>
+
+<p><strong><em>Symbian Signed Test Criteria</em></strong></p>
+
+<p>El conjunto de pruebas que una aplicación debe superar para poder ser firmada. Con estas pruebas Symbian pretende garantizar que la aplicación se comporta correctamente, sin causar ningún tipo de problema al usuario del dispositivo.</p>
+
+<p>Por ejemplo se pide que la aplicación se ejecute correctamente, finalice correctamente, que se pueda finalizar desde la barra de tareas, que no interfiera en las llamadas de voz, que maneje bien situaciones de baja memoria… Algunas pruebas son obligatorias siempre y otras sólo cuando se quieren utilizar ciertas capacidades.</p>
+
+<p>La descripción completa del test está en <a href="http://developer.symbian.com/wiki/download/attachments/2208/Symbian+Signed+Test+Criteria+3.0.0_ISSUED.pdf?version=1" title="Symbian Signed Test Criteria (v3.0.0 ISSUED)">este documento [pdf]</a>.</p>
+
+<p><strong>Detalles adicionales</strong></p>
+
+<p>Este sistema entrará en funcionamiento durante diciembre del 2007. En el caso de Series 60, la firma de aplicaciones no es obligatoria en ningún sistema anterior a S60 3rd Ed. Para dispositivos S60 3rd Ed. la instalación de aplicaciones sin firma será posible si el fabricante del dispositivo lo permite y aun así, si la aplicaciones hace uso determinadas capacidades será necesario que el usuario configuré el móvil para permitir instalaciones de aplicaciones sin firma.</p>
+
+<p><strong>Más información:</strong></p>
+
+<p>http://developer.symbian.com/main/signed/</p>
+
+<p>http://developer.symbian.com/wiki/display/sign/Symbian+Signed+Test+Criteria</p>
+:ET

@@ -1,0 +1,36 @@
+I"�
+<p>Para crear un blog en GitHub usaremos <a href="https://pages.github.com/">GitHub Pages</a>. Cada cuenta de GitHub dispone de un sitio gratuito en el que alojar recursos estáticos; para usarlo tan solo hay que crear un repositorio con el nombre <em>nombreusuario</em>.github.io. Los archivos que subamos a ese repositorio serán accesibles a través de http://nombreusuario.github.io.</p>
+
+<p>Además, GitHub Pages soporta <a href="https://github.com/jekyll/jekyll">Jekyll</a>. Jekyll es un generador de sitios web desarrollado en Ruby. Es fácil de usar, y permite hacer todo lo que se necesita en un blog personal.</p>
+
+<p>El proceso de instalación de Jekyll en Windows 10 pasa por:</p>
+
+<h3 id="1-instalar-chocolatey">1. Instalar Chocolatey</h3>
+<p><a href="https://chocolatey.org/">Chocolatey</a> es un gestor de paquetes para Windows. Desde la ventana de comandos lanzada en modo administrador, ejecutamos:</p>
+<div style="font-family: monospace;">
+script
+@powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" &amp;&amp; SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
+</div>
+<p>Esa línea se encarga de ejecutar un script de PowerShell que instala Chocolatey, y añade el ejecutable al path.</p>
+
+<p>Tras esto cerramos la línea de comandos.</p>
+
+<h3 id="2-instalar-ruby">2. Instalar Ruby</h3>
+<p>Ruby es un lenguaje de programación bastante popular. Para instalarlo abrimos de nuevo la consola en modo administrador y escribimos:</p>
+<pre><code class="language-script">choco install ruby -y
+</code></pre>
+
+<h3 id="3-instalar-jekyll">3. Instalar Jekyll</h3>
+<p><a href="http://guides.rubygems.org">Gem</a> es el gestor de paquetes de Ruby. Permite instalar tanto librerías como programas. Así que lo usaremos para instalar Jekyll:</p>
+<pre><code class="language-script">gem install jekyll
+</code></pre>
+
+<p>En este paso yo me encontré un error. Un problema con SSL: “SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed”. Para solucionarlo seguí las instrucciones de esta página: http://guides.rubygems.org/ssl-certificate-update/#manual-solution-to-ssl-issue. Hay que descargar este certificado: <a href="https://raw.githubusercontent.com/rubygems/rubygems/master/lib/rubygems/ssl_certs/index.rubygems.org/GlobalSignRootCA.pem">GlobalSignRootCA.pem</a> y copiarlo en la carpeta de certificados de Gem (en mi caso, C:/tools/ruby23/lib/ruby/2.3.0/rubygems).</p>
+
+<p>Y listo. Con</p>
+<pre><code class="language-script">jekyll -v
+</code></pre>
+<p>comprobamos que jekyll se ha instalado correctamente.</p>
+
+<p>El siguiente paso: montar el blog.</p>
+:ET

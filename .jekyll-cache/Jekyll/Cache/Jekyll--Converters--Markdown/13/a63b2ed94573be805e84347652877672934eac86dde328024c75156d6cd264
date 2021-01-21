@@ -1,0 +1,87 @@
+I"�<p><strong>Introducción</strong></p>
+
+<p>La especificación <a href="http://jcp.org/en/jsr/detail?id=179" title="Location API for J2ME"><em>JSR-179 Location API for J2ME</em></a> pone a nuestra disposición una serie de clases que permiten acceder desde Java a información relacionada con la posición y el movimiento de nuestro dispositivo.</p>
+
+<p>Lo que vamos a ver es una descripción básica de estas clases. Para probarlo necesitaremos un móvil que implemente al especificación JSR-179, como la mayoría de los Nokia o BlackBerry modernos.</p>
+
+<p>Hay que tener en cuenta que no es necesario que el móvil disponga de GPS. La <em>Location API</em> nos aisla del origen de los datos, que puede ser un GPS o puede ser un servicio de pago proporcionado por la operadora. Debido a esto la API nos ofrece una serie de parámetros para filtrar qué tipo de servicios nos interesan de aquellos disponibles.</p>
+
+<p>**Fuentes de localización</p>
+
+<p>**</p>
+
+<p>En lo referente a localización, existen habitualmente tres fuentes posibles de datos:</p>
+
+<p>– GPS: nuestro móvil incorpora un GPS, o está conectado a uno (habitualmente a través de Bluetooth).</p>
+
+<p>– Assisted GPS: además de un GPS, nuestro móvil tiene acceso a información de localización que evita que el GPS pase hasta varios minutos obteniendo esa información de los satélites antes de dar la primera posición. Para ello es necesario un servicio específico ofrecido por algunas operadoras, habitualmente de pago.</p>
+
+<p>– Cell Id: el móvil no tiene acceso a un GPS, pero sí a un servicio que le proporciona información basada en el identificador de la célula telefónica en la que se encuentra. También suele ser un servicio de pago por parte de las operadoras.</p>
+
+<p>La <em>Location API</em> está preparada para el dispositivo tenga acceso a todo tipo de <em>Location Providers</em> o Proveedores de Localización, que es como se denominan a estas fuentes de datos. Para poder seleccionar entre las opciones actuales y futuras existe una clase que nos permite definir una serie de criterios que deba cumplir el proveedor que nos interese.</p>
+
+<p><strong>Estableciendo criterios</strong></p>
+
+<p>La clase <code class="language-plaintext highlighter-rouge">javax.microedition.location.Criteria</code> proporciona funciones que nos van a permitir filtrar los proveedores de localización disponibles. Veamos qué podemos definir en esta clase:</p>
+
+<ul>
+  <li>
+    <p>La precisión horizontal y vertical.</p>
+
+    <p>Se establece mediante los métodos <code class="language-plaintext highlighter-rouge">setHorizontalAccuracy</code> y <code class="language-plaintext highlighter-rouge">setVerticalAccuracy</code>. La precisión de los datos depende de su origen. Así, si indicamos una precisión de 50 metros excluiremos los datos provenientes de localización por celda telefónica, que suelen tener precisiones de cientos de metros, pero aceptaremos los datos del GPS, con precisiones típicas de pocos metros.</p>
+  </li>
+  <li>
+    <p>El permiso para obtener datos a cambio de un precio.</p>
+
+    <p>Mediante el método <code class="language-plaintext highlighter-rouge">setCostAllowed(false)</code> (el valor por defecto es true) impedimos que nos cobren por obtener datos de localización. Esto excluye habitualmente el A-GPS y la localización por celda telefónica, que necesitan comunicación con la red telefónica para obtener la información, además de un posible sobrecoste por el servicio.</p>
+  </li>
+  <li>
+    <p>El nivel de consumo de batería.</p>
+
+    <p>A través del método <code class="language-plaintext highlighter-rouge">setPreferredPowerConsumption</code> podemos indicar si permitiremos un nivel de consumo bajo, medio o alto. Hay que tener en cuenta que es el fabricante del dispositivo quien decide qué es alto, medio o bajo, pero probablemente el uso de un dispositivo GPS interno o bluetooth tendrá un consumo medio o alto.</p>
+  </li>
+  <li>
+    <p>Otros criterios.</p>
+
+    <p>El tiempo de respuesta, la velocidad o información relativa a la dirección postal. Para una descripción más extensa, véase la <a href="http://www-users.cs.umn.edu/~czhou/docs/jsr179/lapi/javax/microedition/location/Criteria.html" title="Class Criteria">referencia de la clase <code class="language-plaintext highlighter-rouge">Criteria</code></a>.</p>
+  </li>
+</ul>
+
+<p><strong>Accediendo al GPS</strong></p>
+
+<p>Una vez definidos los criterios, obtendremos una referencia al proveedor de contenidos. La clase <code class="language-plaintext highlighter-rouge">LocationProvider</code> implementa un método estático <a href="http://www-users.cs.umn.edu/~czhou/docs/jsr179/lapi/javax/microedition/location/LocationProvider.html#getInstance(javax.microedition.location.Criteria)" title="getInstance"><code class="language-plaintext highlighter-rouge">getInstance(Criteria criteria)</code></a> que devuelve un proveedor que se adapte a los criterios que hemos indicado. Si ninguno de los proveedores disponibles encaja en los criterios indicados, el método devolverá <code class="language-plaintext highlighter-rouge">null</code>. En caso de que no exista ningún proveedor de localización disponible se lanzará una <code class="language-plaintext highlighter-rouge">LocationException</code>. Es posible llamar a <code class="language-plaintext highlighter-rouge">getInstance</code> pasando <code class="language-plaintext highlighter-rouge">null</code> como parámetro: de esta forma se especifican los parámetros menos restrictivos para la selección.</p>
+
+<p>Utilizaremos la instancia obtenida de <code class="language-plaintext highlighter-rouge">LocationProvider</code> para obtener la posición mediante el método <a href="http://www-users.cs.umn.edu/~czhou/docs/jsr179/lapi/javax/microedition/location/LocationProvider.html#getLocation(int)" title="getLocation"><code class="language-plaintext highlighter-rouge">getLocation</code></a>. En el podemos especificar un <em>timeout</em>, o tiempo que queremos que espere el sistema para obtener una posición. Una vez obtenida dispondremos de un objeto <code class="language-plaintext highlighter-rouge">Location</code> que contendrá, entre otras cosas, las coordenadas de nuestra ubicación.</p>
+
+<p><strong>Un ejemplo sencillo</strong></p>
+
+<p>Juntemos todo en un ejemplo muy sencillo, sólo útil para hacerse una idea del código descrito:</p>
+
+<blockquote>
+  <p><code class="language-plaintext highlighter-rouge">// Establecemos los criterios. Queremos sólo un GPS interno o Bluetooth&lt;br /&gt;
+Criteria criteria = new Criteria();&lt;br /&gt;
+criteria.setCostAllowed(false);&lt;br /&gt;
+// Como el valor por defecto de los siguientes parámetros&lt;br /&gt;
+// es NO_REQUIREMENT, las siguientes líneas no son necesarias&lt;br /&gt;
+criteria.setHorizontalAccuracy(NO_REQUIREMENT);&lt;br /&gt;
+criteria.setVerticalAccuracy(NO_REQUIREMENT);&lt;br /&gt;
+criteria.setPreferredPowerConsumption(NO_REQUIREMENT);</code></p>
+</blockquote>
+
+<blockquote>
+  <p><code class="language-plaintext highlighter-rouge">&lt;br /&gt;
+// Aquí falta capturar la posible excepción y verificar que el&lt;br /&gt;
+// valor devuelto no es null&lt;br /&gt;
+LocationProvider lp = LocationProvider.getInstance(criteria);&lt;br /&gt;
+// Con -1 indicamos el timeout por defecto&lt;br /&gt;
+Location location = lp.getLocation(-1);</code></p>
+
+  <p><code class="language-plaintext highlighter-rouge">Coordinates coordinates = location.getQualifiedCoordinates();&lt;br /&gt;
+System.out.println("Latitud: " + coordinates.getLatitude());&lt;br /&gt;
+System.out.println("Longitud: " + coordinates.getLongitude());</code></p>
+</blockquote>
+
+<p><strong>Referencias</strong>:</p>
+
+<p><a href="http://www-users.cs.umn.edu/~czhou/docs/jsr179/lapi/" title="JSR179 Location API for J2ME">Documentación on-line de la Location API</a></p>
+:ET

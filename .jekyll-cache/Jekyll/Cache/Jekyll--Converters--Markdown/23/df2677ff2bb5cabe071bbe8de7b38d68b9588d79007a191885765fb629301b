@@ -1,0 +1,366 @@
+I"��<p>Empezamos con los algoritmos. Vamos a implementar un perceptrón en Python, y entrenarlo para que sepa clasificar las diferentes especies de flores en Iris. El libro comienza mostrando el <a href="https://es.wikipedia.org/wiki/Neurona_de_McCulloch-Pitts">modelo de neurona de McCulloch-Pitts</a>:</p>
+
+<div style="text-align:center">
+    <figure>
+        <img alt="En este modelo se emite una señal de salida si el resultado de aplicar una función a la suma de las entradas supera cierto umbral" src="https://raw.githubusercontent.com/rasbt/python-machine-learning-book/master/code/ch02/images/02_01.png" />
+        <figcaption>En este modelo se emite una señal de salida si el resultado de aplicar una función a la suma de las entradas supera cierto umbral</figcaption>
+    </figure>
+</div>
+
+<p>Tomando este modelo como base, Frank Rosenblatt diseñó un dispositivo electrónico con capacidad para aprender. El algoritmo usado por ese dispositivo se conoce como Perceptrón.</p>
+
+<h2 id="perceptrón">Perceptrón</h2>
+
+<p>El <a href="https://es.wikipedia.org/wiki/Perceptr%C3%B3n">perceptrón</a> es un algoritmo de aprendizaje supervisado para realizar tareas de clasificación binaria, es decir, para determinar si una muestra pertenece o no a una clase.</p>
+
+<div style="background-color: #EEEEEE; padding: 1em">
+El libro asume cierta familiaridad trabajando con vectores y matrices. Para refrescar conceptos recomiendo revisar los <a href="https://es.wikipedia.org/wiki/%C3%81lgebra_lineal#Enlaces_externos">enlaces externos referenciados en la página de la Wikipedia dedicada al Álgebra Lineal</a>. También tiene buena pinta [el curso de la Khan Academy](https://es.khanacademy.org/math/linear-algebra). <br />
+En inglés hay varios libros gratuitos disponibles, como [este](https://www.math.ucdavis.edu/~linear/linear-guest.pdf) y [este](http://www.cs.cmu.edu/~zkolter/course/linalg/linalg_notes.pdf).
+</div>
+
+<div style="text-align:center">
+    <figure>
+        <a href="https://commons.wikimedia.org/wiki/File:Perceptr%C3%B3n_5_unidades.svg#/media/File:Perceptr%C3%B3n_5_unidades.svg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Perceptr%C3%B3n_5_unidades.svg/1200px-Perceptr%C3%B3n_5_unidades.svg.png" alt="Perceptrón 5 unidades.svg" /></a>
+        <figcaption>
+            De <a href="//commons.wikimedia.org/w/index.php?title=User:Alejandro.cartas&amp;action=edit&amp;redlink=1" class="new" title="User:Alejandro.cartas (page does not exist)">Alejandro Cartas</a> - <span class="int-own-work" lang="es">Trabajo propio</span>, <a href="http://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=41534843">Enlace</a>
+        </figcaption>
+    </figure>
+</div>
+
+<p>Como podemos ver en la figura anterior, la señal de entrada está compuesta por un array \(\bf x\) al que se aplica una serie de pesos definidos por un array \(\bf w\). Es decir, cada elemento \(x_i\) se multiplica por \(w_i\), y se suma el resultado de cada uno de estos productos. De una manera más formal, definimos</p>
+
+\[x = \begin{bmatrix}
+x_1 \cr
+\vdots \cr
+x_m \cr
+\end{bmatrix}, w = \begin{bmatrix}
+w_1 \cr
+\vdots \cr
+w_m \cr
+\end{bmatrix}
+\tag{2.1}\]
+
+<p>Y la entrada resultante \(z\) será la suma de cada entrada ponderada:</p>
+
+\[z = \sum{w_ix_i} = w_1x_1 + \cdots + w_mx_m
+\tag{2.2}\]
+
+<p>Ya tenemos la entrada \(z\) a la función de activación \(\phi(z)\). Para nuestro caso vamos a usar como función de activación la <a href="https://es.wikipedia.org/wiki/Funci%C3%B3n_escal%C3%B3n_de_Heaviside">función escalón</a>. Esta función se define de la siguiente forma:</p>
+
+\[\phi(z) = \begin{cases}
+\text{1 si } z \ge \theta \cr
+\text{-1 en otro caso}
+\end{cases}
+\tag{2.3}\]
+
+<p>Ese valor \(\theta\) es el umbral que tiene que superar \(z\) para disparar la señal. Para simplificar los cálculos, definimos un peso 0 con \(w_0 = -\theta\) y \(x_0 = 1\), de esta forma podemos escribir:</p>
+
+\[z = w_0x_0 + w_1x_1 + \cdots + w_mx_m
+\tag{2.4}
+\label{2.4}\]
+
+<p>y</p>
+
+\[\phi(z) = \begin{cases}
+\text{1 si } z \ge 0 \cr
+\text{-1 en otro caso}
+\end{cases}
+\tag{2.5}
+\label{2.5}\]
+
+<p>El valor de \(z\) se puede escribir también como \(z = \mathbf{w}^T\bf x\). El superíndice T indica que la matriz (en este caso un array, que tratamos como una matriz de 1 columna y n filas) está traspuesta, o lo que es lo mismo, se han convertidos sus columnas en filas. Por lo tanto:</p>
+
+\[\mathbf{w}^T\bf x = \begin{bmatrix} w_0 &amp; w_1 &amp; \cdots &amp; w_m \end{bmatrix} \begin{bmatrix}
+x_1 \cr
+\vdots \cr
+x_m \cr
+\end{bmatrix}
+
+\tag{2.6}\]
+
+<p>Esto nos permite usar la operación de producto escalar entre matrices. En una operación entre matrices, si la primera tiene dimensiones \(n \times m\), la segunda debe tener \(m \times p\), dando como resultado una matriz \(n \times p\). En nuestro caso, la dimensiones serían \(1 \times n\) y \(n \times 1\), dando como resultado una matriz \(1 \times 1\), es decir, un escalar. Por ello esta operación es realmente un producto escalar entre vectores, cuyo resultado es la ya conocida expresión \eqref{2.4}</p>
+
+<h2 id="entrenando-el-modelo">Entrenando el modelo</h2>
+
+<p>Pretendemos modificar los valores de los pesos (\(\mathbf{w}\)) de forma que las salidas del preceptrón se vayan acercando a los valores esperados. Para ello se inicializan los pesos a cero, o a un valor muy pequeño, se obtiene la salida, y se actualizan los pesos.</p>
+
+<p>¿Cómo se actualizan los pesos? Sumándoles una cantidad (positiva o negativa) que depende de la entrada, de la diferencia entre la salida real y la salida esperada, y de la tasa de aprendizaje (\(\eta\)), que es una constante que vale entre 0 y 1:</p>
+
+\[\Delta w_j = \eta(y^{(i)} - \hat y^{(i)})x_j^{(i)}
+\tag{2.7}\]
+
+<p>En esta fórmula \(y^{(i)}\) es la clase a la que pertenece la muestra (i), \(\hat y^{(i)}\) es la clase predicha por el perceptrón, y \(x_j^{(i)}\) es la entrada de la característica j para la muestra (i). Todo esto se multiplica para calcular la variación en la característica j: \(\Delta w_j\). Con cada muestra se recalculan los pesos:</p>
+
+\[w_j := w_j + \Delta w_j
+\tag{2.8}\]
+
+<h3 id="condiciones-de-convergencia">Condiciones de convergencia</h3>
+
+<p>Este proceso iterativo puede converger o no. Para que el perceptrón clasifique correctamente las muestras , el valor de \(w_j\) debe ir acercándose cada vez más a un valor final, o lo que es lo mismo, \(\Delta w_j\) debe tender a cero.</p>
+
+<p>Para que se de esta situación deben cumplirse dos requisitos. En primer lugar, la tasa de aprendizaje debe ser suficientemente pequeña. En general, cuanto más grande sea \(\eta\) más rápido será el aprendizaje, pero pasado cierto valor el proceso de aprendizaje nunca convergerá. En segundo lugar, las dos clases deben ser linealmente separables. Es decir, si representamos los elementos de ambas clases en un diagrama de 2 dimensiones (suponeniendo que las muestras tienen dos características), debe existir una línea que separe a todos los de una clase a un lado, y a todos los de la otra clase al otro lado.</p>
+
+<div style="text-align:center">
+    <figure>
+        <img alt="Ejemplos con muestras de dos clases. Sólo el primero es linearmente separable." src="https://raw.githubusercontent.com/rasbt/python-machine-learning-book/master/code/ch02/images/02_03.png" />
+        <figcaption>Ejemplos con muestras de dos clases. Sólo el primero es linearmente separable.</figcaption>
+    </figure>
+</div>
+
+<h2 id="perceptrón-en-python">Perceptrón en Python</h2>
+
+<p>El código del capítulo 2 (y de los demás capítulos) está, como comentamos, <a href="https://github.com/rasbt/python-machine-learning-book/blob/master/code/ch02/ch02.ipynb">subido a GitHub</a> en formato <a href="http://jupyter.org/">Jupyter</a>. Jupyter (originalmente iPython) es una aplicación web que permite crear y compartir documentos que contengan código, gráficas, animaciones… de un forma muy sencilla. Jupyter viene incluido en Anaconda, que es el entorno Python que recomendamos en <a href="/2017/03/12/python-machine-learning-i/">una entrada anterior</a>. También se puede ver el código completo de cada capítulo como archivo Python <a href="https://github.com/rasbt/python-machine-learning-book/tree/master/code/optional-py-scripts">aquí</a>.</p>
+
+<p>El código comienza declarando una clase <code class="language-plaintext highlighter-rouge">Perceptron</code> en la que se definen en constructor y tres métodos:</p>
+<pre class="line-numbers">
+  <code class="language-python">
+    import numpy as np
+
+    class Perceptron(object):
+      def __init__(self, eta=0.01, n_iter=10):
+        self.eta = eta
+        self.n_iter = n_iter
+
+      def fit(self, X, y):
+        self.w_ = np.zeros(1 + X.shape[1])
+        self.errors_ = []
+
+        for _ in range(self.n_iter):
+          errors = 0
+          for xi, target in zip(X, y):
+            update = self.eta * (target - self.predict(xi))
+            self.w_[1:] += update * xi
+            self.w_[0] += update
+            errors += int(update != 0.0)
+          self.errors_.append(errors)
+        return self
+
+      def net_input(self, X):
+        return np.dot(X, self.w_[1:]) + self.w_[0]
+
+      def predict(self, X):
+        return np.where(self.net_input(X) &gt;= 0.0, 1, -1)
+  </code>
+</pre>
+
+<p>Inicializamos el perceptrón con dos parámetros: <code class="language-plaintext highlighter-rouge">eta</code>, que es la tasa de aprendizaje, y <code class="language-plaintext highlighter-rouge">n_iter</code>, que es el número de veces que vamos a recorrer el conjunto de datos de entrenamiento. A cada una de estas veces se les llama “épocas”.</p>
+
+<p>Una vez instanciado el perceptrón llamaremos al método <code class="language-plaintext highlighter-rouge">fit</code> para entrenar nuestro modelo. Se le pasan dos parámetros: una matriz \(\bf X\), que contiene una fila por cada muestra y una columna por cada característica, y que constituye nuestro conjunto de datos de entrenamiento; y un array \(\bf y\), que contiene el resultado objetivo para cada muestra.</p>
+
+<p>Lo primero que hace el método <code class="language-plaintext highlighter-rouge">fit</code> es inicializar los pesos y los errores:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="bp">self</span><span class="p">.</span><span class="n">w_</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">X</span><span class="p">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+  <span class="bp">self</span><span class="p">.</span><span class="n">errors_</span> <span class="o">=</span> <span class="p">[]</span>
+</code></pre></div></div>
+
+<p>Los pesos se inicializan a un array con el mismo número de elementos que muestras tiene la matriz \(\bf X\) más uno. Ese más uno es debido a que vamos a almacenar también el parámetro \(w_0\) corresondiente al umbral \(\theta\) que pasamos a la izquiera en la equación \eqref{2.4}. Como estamos inicializando todo a cero consideramos el umbral inicial de activación como cero.</p>
+
+<p>A continuación comienza un precose que se ejecutará <code class="language-plaintext highlighter-rouge">n_iter</code> veces. En el se itera sobre los datos proporcionados mediante esta instrucción:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   <span class="k">for</span> <span class="n">xi</span><span class="p">,</span> <span class="n">target</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Lo que va a hacer la instrucción <code class="language-plaintext highlighter-rouge">zip</code> es devolver un elemento por cada lista que se le pase de parámetro. Así, si \(\bf X\) es una matriz de 100 filas (muestras) y 2 columnas (características), e \(\bf y\) es un array de 100 elementos (las clases reales de cada muestra), la instrucción anterior iterará para cada muestra almacenando en <code class="language-plaintext highlighter-rouge">xi</code> las características y en <code class="language-plaintext highlighter-rouge">target</code> su clase real.</p>
+
+<p>Con esos datos vamos a calcular los nuevos pesos. La fórmula era la siguiente:</p>
+
+\[\Delta w_j = \eta(y^{(i)} - \hat y^{(i)})x_j^{(i)}
+w_j := w_j + \Delta w_j\]
+
+<p>En nuestro caso hacemos esto:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="n">update</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">eta</span> <span class="o">*</span> <span class="p">(</span><span class="n">target</span> <span class="o">-</span> <span class="bp">self</span><span class="p">.</span><span class="n">predict</span><span class="p">(</span><span class="n">xi</span><span class="p">))</span>
+    <span class="bp">self</span><span class="p">.</span><span class="n">w_</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span> <span class="o">+=</span> <span class="n">update</span> <span class="o">*</span> <span class="n">xi</span>
+    <span class="bp">self</span><span class="p">.</span><span class="n">w_</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+=</span> <span class="n">update</span>
+    <span class="n">errors</span> <span class="o">+=</span> <span class="nb">int</span><span class="p">(</span><span class="n">update</span> <span class="o">!=</span> <span class="mf">0.0</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Calculamos primero el factor \(\eta(y^{(i)} - \hat y^{(i)})\), y después lo multiplicamos por \(\bf{x^{(i)}}\) para sumárselo al array de pesos, salvo el peso 0. Al ser tanto ‘self.w_[1:]’ como ‘xi’ arrays con un elemento por cada característica, estamos aplicando la corrección a todos los pesos. En el peso \(w_0\) no multiplicamos por \(\bf{x_0^{(i)}}\), ya que este por definición vale uno. Finalmente acumulamos el error de cada muestra, y al final de cada época lo añadimos a un array. Esto nos permitirá ver la evolución del error por épocas.</p>
+
+<p>Veamos ahora cómo calcular el término \(\hat y^{(i)}\), que en código se obtiene llamando a <code class="language-plaintext highlighter-rouge">self.predict(xi)</code></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">def</span> <span class="nf">net_input</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">xi</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">np</span><span class="p">.</span><span class="n">dot</span><span class="p">(</span><span class="n">xi</span><span class="p">,</span> <span class="bp">self</span><span class="p">.</span><span class="n">w_</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span> <span class="o">+</span> <span class="bp">self</span><span class="p">.</span><span class="n">w_</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+  <span class="k">def</span> <span class="nf">predict</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">xi</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">np</span><span class="p">.</span><span class="n">where</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">net_input</span><span class="p">(</span><span class="n">xi</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Lo primero que hace <code class="language-plaintext highlighter-rouge">predict</code> con <code class="language-plaintext highlighter-rouge">xi</code> es usarlo para invocar <code class="language-plaintext highlighter-rouge">net_input</code>. En esta función usamos <code class="language-plaintext highlighter-rouge">np.dot</code> para realizar un producto escalar entre <code class="language-plaintext highlighter-rouge">xi</code> y <code class="language-plaintext highlighter-rouge">self.w_[1:]</code>. Es decir, suponiendo una muestra con dos características, y por tanto dos entradas y dos pesos, <code class="language-plaintext highlighter-rouge">np.dot(xi, self.w_[1:])</code> equivale a \(w_1x_1 + w_2x_2\). A esto le sumamos \(w_0\) (ya que \(x_0\) es igual a uno), y tenemnos que <code class="language-plaintext highlighter-rouge">net_input</code> devuelve el valor \(z\), tal como se define en \eqref{2.4}. La última parte, <code class="language-plaintext highlighter-rouge">np.where(self.net_input(xi) &gt;= 0.0, 1, -1)</code> devuelve 1 si \(z\) es mayor o igual que 0, y -1 en otro caso. En resumen, el método <code class="language-plaintext highlighter-rouge">predict</code> es la función \(\phi(z)\) (\eqref{2.5}).</p>
+
+<h3 id="perceptrón-con-el-conjunto-de-datos-iris">Perceptrón con el conjunto de datos Iris</h3>
+
+<p>Toda la lógica del perceptrón está implementada en la clase anterior. Vamos a utilizarla con el conjunto de datos Iris ya mencionado anteriormente. El ejemplo del libro utilizan la librería <code class="language-plaintext highlighter-rouge">pandas</code>, especializada en análisis de datos y estructuras, para cargar los datos de Iris. Estos datos se almacenan en un tipo de datos de la librería llamado <a href="http://pandas.pydata.org/pandas-docs/stable/dsintro.html#dataframe">DataFrame</a>:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">'https://archive.ics.uci.edu/ml/'</span>
+                 <span class="s">'machine-learning-databases/iris/iris.data'</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="bp">None</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">df</span><span class="p">.</span><span class="n">tail</span><span class="p">())</span>                
+</code></pre></div></div>
+
+<p>El archivo de datos lo estamos descargando de internet, pero también está disponible en el código de ejemplo para usar en local.</p>
+
+<p>El código de ejemplo imprime las últimas líneas de la estructura de datos cargada:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>145</strong></td>
+      <td>6.7</td>
+      <td>3.0</td>
+      <td>5.2</td>
+      <td>2.3</td>
+      <td>Iris-virginica</td>
+    </tr>
+    <tr>
+      <td><strong>146</strong></td>
+      <td>6.3</td>
+      <td>2.5</td>
+      <td>5.0</td>
+      <td>1.9</td>
+      <td>Iris-virginica</td>
+    </tr>
+    <tr>
+      <td><strong>147</strong></td>
+      <td>6.5</td>
+      <td>3.0</td>
+      <td>5.2</td>
+      <td>2.0</td>
+      <td>Iris-virginica</td>
+    </tr>
+    <tr>
+      <td><strong>148</strong></td>
+      <td>6.2</td>
+      <td>3.4</td>
+      <td>5.4</td>
+      <td>2.3</td>
+      <td>Iris-virginica</td>
+    </tr>
+    <tr>
+      <td><strong>149</strong></td>
+      <td>5.9</td>
+      <td>3.0</td>
+      <td>5.1</td>
+      <td>1.8</td>
+      <td>Iris-virginica</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>A continuación preprocesamos los datos, para dejarlos en el formato adecuado para trabajar con ellos. Usaremos las librerías <code class="language-plaintext highlighter-rouge">numpy</code>, para tratar los datos, y <code class="language-plaintext highlighter-rouge">matplotlib</code>, para dibujarlos en una gráfica</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+<span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="p">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">100</span><span class="p">,</span> <span class="mi">4</span><span class="p">].</span><span class="n">values</span>
+</code></pre></div></div>
+
+<p>En primer lugar hemos seleccionado los 100 primeros registros del DataFrame, pero cogiendo sólo la quinta columna (la 4 por comenzar el índice en 0). Esto nos devuelve un array con 100 valores, cada uno de los cuales es el nombre de la especie. Es decir, cogemos las etiquetas de la clase de cada muestra.</p>
+
+<p>En el conjunto de datos Iris los datos están ordenados de tal forma que los 50 primeros son Iris-setosa, y los 50 siguientes Iris-versicolor. De esta forma limitarnos a los 100 primeros registros nos permite realizar una clasificación binaria.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">where</span><span class="p">(</span><span class="n">y</span> <span class="o">==</span> <span class="s">'Iris-setosa'</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>El siguiente paso consiste en sustituir las etiquetas de texto por valores numéricos. El valor objetivo pasará a ser -1 para las Iris-setosa y 1 para las Iris-versicolor. Almacenamos los datos en un array \(\bf y\) de 100 elementos.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">X</span> <span class="o">=</span> <span class="n">df</span><span class="p">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">100</span><span class="p">,</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">]].</span><span class="n">values</span>
+</code></pre></div></div>
+
+<p>De las cuatro características posibles nos vamos a quedar con dos: la longitud del sépalo y la longitud del pétalo. Esto nos permitirá dibujar los datos en una gráfica de dos dimensiones. Al igual que hicimos con el valor objetivo, cogemos los cien primeros valores del conjunto de datos, quedándonos con la primera y la tercera columna. Esto nos devuelve una matriz \(\bf X \in \mathbb R^{100x2}\).</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plt</span><span class="p">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">X</span><span class="p">[:</span><span class="mi">50</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">X</span><span class="p">[:</span><span class="mi">50</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+            <span class="n">color</span><span class="o">=</span><span class="s">'red'</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s">'o'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">'setosa'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="mi">50</span><span class="p">:</span><span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">X</span><span class="p">[</span><span class="mi">50</span><span class="p">:</span><span class="mi">100</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+            <span class="n">color</span><span class="o">=</span><span class="s">'blue'</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s">'x'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">'versicolor'</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="p">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">'sepal length [cm]'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">'petal length [cm]'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s">'upper left'</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="p">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>Dibujamos los datos almacenados. Marcamos con una ‘o’ roja las Iris-setosa (las 50 primeras), y con una ‘x’ azul las Iris-versicolor. El resultado es este:</p>
+
+<div style="text-align:center">
+    <figure>
+        <img alt="Datos de entrenamiento" src="https://raw.githubusercontent.com/rasbt/python-machine-learning-book/master/code/ch02/images/02_06.png" />
+        <figcaption>Datos de entrenamiento</figcaption>
+    </figure>
+</div>
+
+<p>Con los datos listos podemos realizar el entrenamiento.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ppn</span> <span class="o">=</span> <span class="n">Perceptron</span><span class="p">(</span><span class="n">eta</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">n_iter</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">ppn</span><span class="p">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Instanciamos el perceptrón con un \(\eta = 0.1\) y 10 épocas. Para entrenar  basta con llamar al método <code class="language-plaintext highlighter-rouge">fit</code> pasando \(\bf X\)  e \(\bf y\) como parámetros.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plt</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">ppn</span><span class="p">.</span><span class="n">errors_</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">ppn</span><span class="p">.</span><span class="n">errors_</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s">'o'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">'Epochs'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">'Number of updates'</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="p">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="c1"># plt.savefig('./perceptron_1.png', dpi=300)
+</span><span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>Una vez entrenado el modelo, pintamos en un gráfico los errores encontrados en cada generación. En  el eje X pintamos las épocas (la longitud del array de errores), y en el Y mostramos el número de errores.</p>
+
+<div style="text-align:center">
+    <figure>
+        <img alt="Errores por época" src="https://raw.githubusercontent.com/rasbt/python-machine-learning-book/master/code/ch02/images/02_07.png" />
+        <figcaption>Errores por época</figcaption>
+    </figure>
+</div>
+
+<p>A partir de la 6ª época el modelo ya no comete errores. Ahora vamos a dibujar los datos de entrenamiento, pero marcando las zonas que el modelo ya entrenado considera como de una clase u otra.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">matplotlib.colors</span> <span class="kn">import</span> <span class="n">ListedColormap</span>
+
+<span class="k">def</span> <span class="nf">plot_decision_regions</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">classifier</span><span class="p">,</span> <span class="n">resolution</span><span class="o">=</span><span class="mf">0.02</span><span class="p">):</span>
+    <span class="n">markers</span> <span class="o">=</span> <span class="p">(</span><span class="s">'s'</span><span class="p">,</span> <span class="s">'x'</span><span class="p">,</span> <span class="s">'o'</span><span class="p">,</span> <span class="s">'^'</span><span class="p">,</span> <span class="s">'v'</span><span class="p">)</span>
+    <span class="n">colors</span> <span class="o">=</span> <span class="p">(</span><span class="s">'red'</span><span class="p">,</span> <span class="s">'blue'</span><span class="p">,</span> <span class="s">'lightgreen'</span><span class="p">,</span> <span class="s">'gray'</span><span class="p">,</span> <span class="s">'cyan'</span><span class="p">)</span>
+    <span class="n">cmap</span> <span class="o">=</span> <span class="n">ListedColormap</span><span class="p">(</span><span class="n">colors</span><span class="p">[:</span><span class="nb">len</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">unique</span><span class="p">(</span><span class="n">y</span><span class="p">))])</span>
+</code></pre></div></div>
+
+<p>Definimos una nueva función que nos permita dibujar en distintos colores las zonas que serían de Iris-setosa e Iris-versicolor si una muestra tuviese unas características que estuviesen en ese punto.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">plot_decision_regions</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">classifier</span><span class="p">,</span> <span class="n">resolution</span><span class="o">=</span><span class="mf">0.02</span><span class="p">):</span>
+    <span class="c1"># ... Continuación
+</span>    <span class="n">x1_min</span><span class="p">,</span> <span class="n">x1_max</span> <span class="o">=</span> <span class="n">X</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">].</span><span class="nb">min</span><span class="p">()</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">X</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">].</span><span class="nb">max</span><span class="p">()</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="n">x2_min</span><span class="p">,</span> <span class="n">x2_max</span> <span class="o">=</span> <span class="n">X</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">].</span><span class="nb">min</span><span class="p">()</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">X</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">].</span><span class="nb">max</span><span class="p">()</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="n">xx1</span><span class="p">,</span> <span class="n">xx2</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">arange</span><span class="p">(</span><span class="n">x1_min</span><span class="p">,</span> <span class="n">x1_max</span><span class="p">,</span> <span class="n">resolution</span><span class="p">),</span>
+                           <span class="n">np</span><span class="p">.</span><span class="n">arange</span><span class="p">(</span><span class="n">x2_min</span><span class="p">,</span> <span class="n">x2_max</span><span class="p">,</span> <span class="n">resolution</span><span class="p">))</span>
+    <span class="n">Z</span> <span class="o">=</span> <span class="n">classifier</span><span class="p">.</span><span class="n">predict</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">([</span><span class="n">xx1</span><span class="p">.</span><span class="n">ravel</span><span class="p">(),</span> <span class="n">xx2</span><span class="p">.</span><span class="n">ravel</span><span class="p">()]).</span><span class="n">T</span><span class="p">)</span>
+    <span class="n">Z</span> <span class="o">=</span> <span class="n">Z</span><span class="p">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">xx1</span><span class="p">.</span><span class="n">shape</span><span class="p">)</span>
+    <span class="n">plt</span><span class="p">.</span><span class="n">contourf</span><span class="p">(</span><span class="n">xx1</span><span class="p">,</span> <span class="n">xx2</span><span class="p">,</span> <span class="n">Z</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.4</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">cmap</span><span class="p">)</span>
+    <span class="n">plt</span><span class="p">.</span><span class="n">xlim</span><span class="p">(</span><span class="n">xx1</span><span class="p">.</span><span class="nb">min</span><span class="p">(),</span> <span class="n">xx1</span><span class="p">.</span><span class="nb">max</span><span class="p">())</span>
+    <span class="n">plt</span><span class="p">.</span><span class="n">ylim</span><span class="p">(</span><span class="n">xx2</span><span class="p">.</span><span class="nb">min</span><span class="p">(),</span> <span class="n">xx2</span><span class="p">.</span><span class="nb">max</span><span class="p">())</span>
+
+    <span class="c1"># plot class samples
+</span>    <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">cl</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">unique</span><span class="p">(</span><span class="n">y</span><span class="p">)):</span>
+        <span class="n">plt</span><span class="p">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">X</span><span class="p">[</span><span class="n">y</span> <span class="o">==</span> <span class="n">cl</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">y</span><span class="o">=</span><span class="n">X</span><span class="p">[</span><span class="n">y</span> <span class="o">==</span> <span class="n">cl</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+                    <span class="n">alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="n">idx</span><span class="p">),</span>
+                    <span class="n">marker</span><span class="o">=</span><span class="n">markers</span><span class="p">[</span><span class="n">idx</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="n">cl</span><span class="p">)</span>
+</code></pre></div></div>
+<p>Definimos los valores mínimo y máximo del sépalo (<code class="language-plaintext highlighter-rouge">x1_min</code> y <code class="language-plaintext highlighter-rouge">x1_max</code>) y del pétalo (<code class="language-plaintext highlighter-rouge">x2_min</code> y <code class="language-plaintext highlighter-rouge">x2_max</code>), restando uno al mínimo y sumándolo al máximo para tener un rango con margen. La función <a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.arange.html"><code class="language-plaintext highlighter-rouge">np.arange</code></a> devuelve una lista de valores que van del primer parámetro al segundo en intervalos marcados por el tercer parámetro. Las dos llamadas a <code class="language-plaintext highlighter-rouge">np.arange</code> devolverán un array de valores separados por 0.02. En el primer caso van del 3.30 al 7.98, en el segundo del 0 al 6.08.  Con ambos arrays construimos una matriz que pasamos al predictor, el cual nos devolverá el valor predicho para todos los puntos del plano definido.</p>
+
+<div style="text-align:center">
+    <figure>
+        <img alt="Regiones predichas para cada clase" src="https://raw.githubusercontent.com/rasbt/python-machine-learning-book/master/code/ch02/images/02_08.png" />
+        <figcaption>Regiones predichas para cada clase</figcaption>
+    </figure>
+</div>
+:ET

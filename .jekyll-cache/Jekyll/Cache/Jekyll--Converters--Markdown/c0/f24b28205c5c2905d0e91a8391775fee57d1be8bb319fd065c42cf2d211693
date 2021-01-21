@@ -1,0 +1,32 @@
+I"�<p>Esta semana se celebra en Las Vegas la feria de electrónica CES, y en ella Yahoo! ha anunciado la nueva versión de su apuesta para la web móvil: <a href="http://mobile.yahoo.com/go" title="Yahoo! Go 3.0">Yahoo! Go 3.0</a>.</p>
+
+<p><strong>Yahoo Go!</strong></p>
+
+<p><em>Yahoo Go!</em> es una aplicación para teléfonos móviles. No es un navegador pero proporciona acceso a ciertos servicios de la web, presentando los contenidos de forma personalizada para el móvil. A cambio, sólo se puede acceder a una cantidad limitada de contenidos.</p>
+
+<p>Esta última versión está inicialmente disponible sólo para 34 móviles de última generación, aunque está anunciado el soporte para cientos más. La lista de móviles soportados está aquí: <a href="http://mobile.yahoo.com/go/phones" title="Yahoo! Go Phone List"><em>Yahoo! Go Phone List</em></a>.</p>
+
+<p><strong>Widgets</strong></p>
+
+<p>La versión 3.0 de Yahoo! Go ha evolucionado para convertirse en un gestor de <em>Widgets</em>. Los <em>Widgets</em> son pequeñas aplicaciones diseñadas en un lenguaje declarativo llamado Blueprint, basado en <a href="http://www.w3.org/MarkUp/Forms/" title="The Forms Working Group">XForms</a>. Es un lenguaje de marcas pensado para la presentación de información obtenida desde la web, con soporte para formularios y gestión de eventos. Por lo tanto nos proporcionará facilidades para mostrar la información e interactuar con el usuario, pero sin opción de acceder a funciones propias del dispositivo móvil.</p>
+
+<p>En el momento del anuncio todavía no había ningún Widget disponible, pero sí la promesa de que esta misma semana aparecerían Widgets para los sitios de eBay, MySpace y MTV News.</p>
+
+<p><strong>Yahoo! Mobile Developer Platform</strong></p>
+
+<p>Yahoo! ha presentado también un <a href="http://mobile.yahoo.com/developers" title="Yahoo! Mobile Developers Home">sitio web destinado a desarrolladores de Widgets</a>. En él se proporciona <a href="http://mobile.yahoo.com/developers/roadmap" title="Blueprint Roadmap">información sobre Blueprint</a>, se anuncia el apoyo de empresas como LG y Motorola así como un futuro plugin para Eclipse.</p>
+
+<p>Dado que los Widgets se publicarán en una galería de Yahoo!, cualquiera puede desarrollarlos, pero deberán ser enviados a Yahoo! y aprobados por un administrador, que no aceptará Widgets que accedan a contenido ilegal, inapropiado o potencialmente peligroso.</p>
+
+<p><strong>Impresiones</strong></p>
+
+<p>Todavía es pronto para juzgar esta versión de Yahoo! de la web móvil. ¿Cuál es la apuesta de Yahoo!? Una aplicación propietaria que sustituye al navegador. Soporta un formato alternativo al HTML que se ajusta a los dispositivos móviles, sacrificando un posible estándar abierto a cambio de ofrecer a los usuarios un entorno estable, visualmente atractivo y, si la apuesta tiene éxito, con una amplia oferta de contenidos.</p>
+
+<p>Este año está previsto que se presenten varias iniciativas más que se postularán como competencia directa en el planteamiento (la nueva versión de S60 con soporte para sus propios Widgets) o como alternativa con un enfoque diferente (la SDK del iPhone o los primeros dispositovos Android).</p>
+
+<p>Va a ser un año muy intenso para el desarrollo móvil.</p>
+
+<p><strong>Vía:</strong></p>
+
+<p><a href="http://www.engadgetmobile.com/2008/01/07/yahoo-takes-go-to-version-3-releases-widget-platform/" title="Yahoo! takes Go to version 3, releases widget platform">Engadget Mobile</a></p>
+:ET

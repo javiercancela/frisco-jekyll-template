@@ -1,0 +1,60 @@
+I"�<p>Notas sobre el capítulo 1 del libro “Deep learning”</p>
+
+<h1 id="capítulo-1---introducción">Capítulo 1 - Introducción</h1>
+
+<h2 id="a-quién-va-destinado-este-libro">A quién va destinado este libro</h2>
+<p>Este es un libro destinado a dos tipos distintos de lector:</p>
+<ul>
+  <li>El lector universitario, de grado o máster (<em>undergraduate or graduate</em>)</li>
+  <li>El profesional de la informática que quiere incorporar técnicas de <em>deep learning</em> en sus proyectos</li>
+</ul>
+
+<p>Los autores asumen que el lector posee</p>
+<ul>
+  <li>conocimientos básicos de programación</li>
+  <li>una compresión básica de los factores que afectan al rendimiento de los ordenadores</li>
+  <li>conocimientos sobre la teoría de la complejidad computacional</li>
+  <li>conocimientos básicos de cálculo</li>
+  <li>terminología sobre teoría de grafos</li>
+</ul>
+
+<p>El libro se divide en tres partes. La parte I presenta los conceptos básicos del <em>machine learning</em>, así como las herramientas matemáticas asociadas. La parte II describe los algoritmos más comunes. La parte III describe ideas especulativas, aquello que los autores consideran el futuro de esta disciplina.</p>
+
+<p>Fig 1.6</p>
+
+<h2 id="inteligencia-artifical">Inteligencia artifical</h2>
+<p>El libro comienza hablando sobre los problemas que constituyen el verdadero desafío de la inteligencia artificial hoy en día: las tareas que la gente realiza con facilidad pero cuya descripción formal es compleja, como reconocer rostros en imágenes. <em>Deep learning</em> es una solución a estos problemas. Por una parte acumula conocimiento a través de la experiencia, evitando así que se tenga que definir formalmente todo el conocimiento necesario. Por otro lado, define conceptos en varias capas jerárquicas, de forma que cada concepto se define a partir de varios conceptos más simples. Es esta idea de construir conceptos complejos sobre muchas capas de conceptos más simples, de forma que las estructuras de estas redes neuronales tienen mucha “profundidad”, la que da el nombre de <em>deep learning</em> a esta disciplina.</p>
+
+<p>El origen de esta aproximación a la inteligencia artificial está en las limitaciones de los sistemas que necesitaban que el conocimiento se incorporase de forma explícita. Para eliminar estas limitaciones se empieza a diseñar sistemas capaces de distinguir patrones en datos. Esta capacidad consituye en nucleo del <em>machine learning</em>.</p>
+
+<h2 id="representaciones-y-características">Representaciones y características</h2>
+<p>Una consecuencia de este enfoque centrado en los datos es que los algoritmos de <em>machine learning</em> dependen mucho de la representación de los datos utilizada. El libro nos muestra un ejemplo muy visual:</p>
+<div style="text-align:center">
+    <figure>
+        <img alt="Figura 1.1 - El mismo conjunto de datos representado en coordenadas cartesianas (izq.) y polares (dcha.)" src="/images/DL/Fig1.1.jpg" />
+        <figcaption>Figura 1.1 - El mismo conjunto de datos representado en coordenadas cartesianas (izq.) y polares (dcha.)</figcaption>
+    </figure>
+</div>
+<p>Si el objetivo fuese separar con una línea recta los datos de una categoría (triángulos verdes) de los de la otra (círculos azules), lo tendríamos fácil al representar los datos con coordenadas polares, e imposible al hacerlo con coordenadas cartesianas.</p>
+
+<p>Otro concepto básico que nos presentan es el de <strong>característica</strong> (<em>feature</em> en inglés, lo he visto también traducido al castellano como <strong>atributo</strong>). Una característica es una propiedad medible del fenómeno que se está representando en los datos. Un ejemplo que nos presentan es el de la identificación de una persona a partir de su voz. El sonido emitido permite estimar el tamaño del tracto vocal; este tamaño constituye una <strong>característica</strong> que sirve de pista sobre el sexo y la edad de la persona que habla.</p>
+
+<p>La definición de característica da paso a la introducción del concepto <em>representation learning</em> (aprendizaje de representaciones, aunque creo que la expresión se utiliza también en pedagogía con otro sentido distinto). Determinar qué características debe extraer nuestro algoritmo es, habitualmente, una tarea muy compleja (pensemos en cómo indicarle que detecte coches en fotos, haciéndolo en términos del valor de cada pixel). El <em>representation learning</em> busca que el ordenador descubra tanto la relación entre la representación y el resultado (si tiene cuatro ruedas es un coche) como la representación en sí (el ordenador no va a saber qué es una rueda, pero sí va a aprender que ciertos valores de pixels en zonas próximas aparecen dos, tres o cuatro veces en las fotos que contienen coches).</p>
+
+<h2 id="deep-learning">Deep learning</h2>
+<p>Para presentarnos una definición de <em>Deep learning</em> la introducción nos habla primero de los <strong>factores de variación</strong>. Esta expresión se refiere a todos los factores que afectan al valor de los datos que tratamos. Y algunos de estos factores no serán relevantes para las características que queremos determinar en nuestro algoritmo de aprendizaje. En el ejemplo de las imágenes de coches, el color depende de la cantidad de luz, y su forma del ángulo en el que lo vemos. Necesitamos separar estos factores para poder determinar el color y la forma del coche. Sin embargo, en algunos casos estos factores son muy difíciles de aislar mediante <em>representation learning</em>. <em>Deep learning</em> resuelve el problema con representaciones que se expresan en términos de otras representaciones más simples.</p>
+<div style="text-align:center">
+    <figure>
+        <img alt="Figura 1.2 - A partir de los pixeles individuales el algoritmo identifica bordes, a partir de los cuales identifica contornos, a partir de los que identifica partes de objetos, para finalmente identificar los objetos completos" src="/images/DL/Fig1.2.jpg" />
+        <figcaption>Figura 1.2 - A partir de los pixeles individuales el algoritmo identifica bordes, a partir de los cuales identifica contornos, a partir de los que identifica partes de objetos, para finalmente identificar los objetos completos</figcaption>
+    </figure>
+</div>
+
+<p>Otra forma de ver los algoritmos <em>deep learning</em> consiste en pensar en cada capa como en la memoria de un ordenador tras ejecutar una serie de instrucciones en paralelo.</p>
+
+<p>Por lo tanto, es posible pensar en la profundidad de un algoritmo <em>deep learning</em> de dos maneras distintas: la profundidad podría ser el número de instrucciones secuenciales a ejecutar, pero también podría ser la longitud del grafo que relaciona cada concepto con los conceptos más simples en los que se basa.</p>
+
+<p>Fig 1.4 y 1.5</p>
+
+<h2 id="historia">Historia</h2>
+:ET
