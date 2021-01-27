@@ -7,7 +7,7 @@ categories:
   - deep-learning
   - inteligencia-artificial
 image: /images/deep-learning.jpg
-comments: true
+
 ---
 
 En la asignatura de inteligencia artificial que se impartía en mi facultad (de Física) a mediados de los noventa, el grueso del temario se dedicaba a estudiar [sistemas expertos](https://es.wikipedia.org/wiki/Sistema_experto), pese a que estos ya empezaban a perder prestigio en el ámbito académico. El concepto de [red neuronal](https://es.wikipedia.org/wiki/Red_neuronal_artificial) también aparecía, aunque creo que de pasada. Leyendo a toro pasado sobre aquella época resulta claro que esta disciplina atravesaba un período de crisis.

@@ -7,7 +7,7 @@ categories:
   - deep-learning
   - inteligencia-artificial
 image: /images/deep-learning.jpg
-comments: true
+
 ---
 Notas sobre el capítulo 1 del libro "Deep learning"
 

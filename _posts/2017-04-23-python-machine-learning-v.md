@@ -8,7 +8,7 @@ categories:
   - machine-learning
   - inteligencia-artificial
 image: /images/pml/pml.jpg
-comments: true
+
 ---
 
 El propósito del tema 3 es revisar algoritmos comunes de aprendizaje máquina. Las diferencias existentes entre estos algoritmos hacen que cada uno sea más adecuado para unas tareas que para otras. En unos casos el criterio de elección será la naturaleza de nuestros datos (número de características, ruido, separabilidad lineal,...), mientras que en otros nos basaremos en la direfencia de rendimientos.

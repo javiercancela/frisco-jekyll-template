@@ -8,7 +8,7 @@ categories:
   - machine-learning
   - inteligencia-artificial
 image: /images/pml/pml.jpg
-comments: true
+
 ---
 
 El siguiente punto del libro nos habla de cómo modificar este algoritmo para adaptarlo a conjuntos con millones de datos. El punto clave está en que la forma del algoritmo que hemos analizado reevalúa todo el conjunto de datos cada vez que se realiza una iteración o época. Si tenemos 1 millón de muestras, por cada época vamos a tener que calcular:

@@ -5,7 +5,7 @@ description: Bueno, bonito, barato y de fabricante desconocido
 categories:
   - hardware
 image: https://images-na.ssl-images-amazon.com/images/I/81uKkvC%2BG4L._SL1500_.jpg
-comments: true
+
 ---
 
 Tenía ganas de comprarme un ratón nuevo. Bueno, en realidad se me había roto el teclado de casa, así que me puse a buscar teclados por internet y acabé comprando un ratón. El teclado también, pero más tarde. Amazon es un invento del demonio.

@@ -1,2 +1,0 @@
-I"@<p>Parece que los chicos de Symbian apuestan por Java como lenguaje de desarrollo para su plataforma S60 (que, <a href="/2007/10/17/introduccion-al-desarrollo-de-aplicaciones-para-telefonos-moviles-symbian/">recordemos</a>, es la plataforma entre otros de la mayoría de los teléfonos Nokia). Digo esto porque en la nueva versión de S60, <em>S60 3rd Edition FP2</em>, incluirán una nueva versión de la máquina virtual de Java en la que las librerías no irán compiladas dentro del mismo ejecutable, sino que se almacenarán por separado y se cargarán bajo demanda.</p>
-:ET

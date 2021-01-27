@@ -8,7 +8,7 @@ categories:
   - machine-learning
   - inteligencia-artificial
 image: /images/pml/pml.jpg
-comments: true
+
 ---
 
 A partir del concepto de [regresión logística]({% post_url 2017-05-21-python-machine-learning-vii %}) 

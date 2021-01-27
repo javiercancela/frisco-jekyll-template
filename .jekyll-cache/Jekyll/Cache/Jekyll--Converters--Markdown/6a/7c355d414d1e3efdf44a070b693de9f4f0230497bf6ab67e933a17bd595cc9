@@ -1,4 +1,0 @@
-I"�<p><strong>La clase NotesList</strong></p>
-
-<p>La actividad principal de la aplicación NotePad es NotesList, como se puede ver en el <em>manifest</em>. La clase NotesList se define en el archivo <a href="http://code.google.com/android/samples/NotePad/src/com/google/android/notepad/NotesList.html">NotesList.java</a>, y es la responsable de la pantalla principal de la aplicación, mostrando una lista de las notas disponibles. Para ello hacemos que esta clase herede de <a href="http://code.google.com/android/reference/android/app/ListActivity.html">ListActivity</a>, un tipo de actividad especial diseñada para enlazarse a un cursor y mostrar los elementos del cursor en una lista.</p>
-:ET

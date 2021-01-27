@@ -1,2 +1,0 @@
-I"8<p>Una vez <a href="/2009/08/04/realidad-aumentada-en-android-ar-compass-i/">obtenida la imagen de la cámara</a> pasamos a la brújula. Necesitaremos dos cosas: obtener los datos de orientación y dibujarlos en el lugar adecuado. Empezaremos inicializando los sensores y los datos iniciales de la brújula.</p>
-:ET

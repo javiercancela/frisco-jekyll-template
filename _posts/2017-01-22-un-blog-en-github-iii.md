@@ -6,7 +6,7 @@ categories:
   - blog
   - github
 image: /images/blog.jpg
-comments: true
+
 ---
 Los posts son archivos en formato [markdown](https://daringfireball.net/projects/markdown/) (aunque también se puede usar html), que se guardan en la carpeta `_posts`. Como otros archivos, tienen un _front matter_ que permite asignarles propiedades. Por ejemplo, este es el _front matter_ de este post:
 ```
@@ -18,7 +18,7 @@ categories:
   - blog
   - github
 image: /images/blog.jpg
-comments: true
+
 ---
 ```
 Las propiedades ahí indicadas serán usadas por el archivo de _layout_ del post (`_layouts/post.html`) y sus _includes_ para mostrar la imagen en la cabecera, poner la fecha del post, mostrar o no los comentarios de [disqus](https://disqus.com/), y mostrar las categorías correspondientes.

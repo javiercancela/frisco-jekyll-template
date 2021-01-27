@@ -1,2 +1,0 @@
-I"	<p>Android permite acceder a los sensores internos del dispositivo a través de las clases <span>Sensor</span>, <span>SensorEvent</span> y <span>SensorManager</span>, y de la interfaz <span>SensorEventListener</span>, del paquete <span>android.hardware</span>.</p>
-:ET

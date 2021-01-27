@@ -6,7 +6,7 @@ categories:
   - blog
   - github
 image: /images/blog.jpg
-comments: true
+
 ---
 La forma más eficiente de montar un blog con Jekyll consiste en descargarse una plantilla y modificarla según nuestras necesidades. La página [Jekyll Tips](http://jekyll.tips/templates/) tiene varias plantillas para elegir. Yo me decanté por [Frisco](https://github.com/CloudCannon/frisco-jekyll-template).
 

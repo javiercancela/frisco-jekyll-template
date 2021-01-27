@@ -8,7 +8,7 @@ categories:
   - machine-learning
   - inteligencia-artificial
 image: /images/pml/pml.jpg
-comments: true
+
 ---
 
 Seguimos con algunos conceptos estadísticos útiles para estudiar el modelo de regresión logística.

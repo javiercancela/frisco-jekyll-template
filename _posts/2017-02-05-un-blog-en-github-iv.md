@@ -6,7 +6,7 @@ categories:
   - blog
   - github
 image: /images/blog.jpg
-comments: true
+
 ---
 Como hemos visto antes, la url de nuestro blog será http://nombreusuario.github.io, de forma que la url coincida con el nombre del repositorio. Si nos interesa, podemos cambiar el dominio de la página por un dominio de nuestra propiedad. Por ejemplo, la url de este blog es [http://www.javiercancela.com](http://www.javiercancela.com), en vez de [http://javiercancela.github.io](http://javiercancela.github.io). Veamos cómo se realiza este cambio.
 

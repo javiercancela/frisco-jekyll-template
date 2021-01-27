@@ -7,7 +7,7 @@ categories:
   - ciencia-ficcion
 image: http://i.imgur.com/q2ZEHxF.jpg
 excerpt: Comentario del libro Materia Oscura, de Blake Crouch
-comments: true
+
 ---
 
 [*Materia oscura*, de Blake Crouch](https://www.amazon.com/Materia-oscura-Spanish-Blake-Crouch/dp/6075270477) es una novela de ciencia ficción protagonizada por Jason Dessen, un profesor de física que vive felizmente con su mujer y su hijo en Chicago. El libro nos sumerge en una trama que comienza cuando Jason es secuestrado por un misterioso hombre encapuchado. 

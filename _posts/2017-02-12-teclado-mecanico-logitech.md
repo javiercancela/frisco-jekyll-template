@@ -5,7 +5,7 @@ description: O cómo mirar precios de todos los teclados ergonómicos del mercad
 categories:
   - hardware
 image: /images/LogitechG610.jpg
-comments: true
+
 ---
 [Comprar un ratón nuevo]({{ site.baseurl }}{% post_url 2017-01-29-raton-vertical-CSL %}) no resolvió mi problema con el teclado roto. Mi teclado de los últimos años ha sido un [Logitech K270](https://www.amazon.es/Logitech-K270-Teclado-inal%C3%A1mbrico-Espa%C3%B1ol/dp/B00779631W). No es un mal teclado: económico, resistente, inalámbrico, con buen tacto y no muy grande. Digo resistente pese a la rotura, porque su único problema fue una pata rota tras ser aporreado repetidamente por un niño pequeño, así que no creo que se pueda culpar al teclado del percance.
 

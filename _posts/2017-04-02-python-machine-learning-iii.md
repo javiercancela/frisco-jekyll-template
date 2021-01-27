@@ -8,7 +8,7 @@ categories:
   - machine-learning
   - inteligencia-artificial
 image: /images/pml/pml.jpg
-comments: true
+
 excerpt: ADALINE, la neurona lineal adaptativa
 ---
 

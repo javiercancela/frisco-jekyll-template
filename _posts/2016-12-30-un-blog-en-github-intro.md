@@ -6,7 +6,7 @@ categories:
   - blog
   - github
 image: /images/blog.jpg
-comments: true
+
 ---
 Todo empieza porque hay algo que quiero aprender. No importa qué, aunque si todo va bien será el tema principal de este blog dentro de unas semanas. Importa que leer y practicar no me resulta suficiente. Si quiero aprender algo tengo que reformularlo y exponerlo, como si estuviese dando clase. Así que de eso va este blog.  
 

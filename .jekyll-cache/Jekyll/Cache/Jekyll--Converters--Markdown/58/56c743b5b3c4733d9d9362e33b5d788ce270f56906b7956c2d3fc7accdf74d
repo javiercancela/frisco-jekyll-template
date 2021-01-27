@@ -1,4 +1,0 @@
-I"w<p>Vames a ver ahora una descripción de la aplicación GPSDemo, que viene de ejemplo con la versión 4.1 del JDE de BlackBerry. Esta aplicación nos permite leer el GPS de nuestro dispositivo para mostrar en pantalla información sobre nuestra posición y velocidad, además de grabar durante nuestro recorrido una serie de <em>waypoints</em> que contienen la distancia recorrida, el tiempo y la velocidad media.</p>
-
-<p>La aplicación GPSDemo consta de varias clases, agrupadas en dos archivos: GPSDemo.java y <code class="language-plaintext highlighter-rouge">PointScreen.java</code>. Comenzaremos por el archivo principal.</p>
-:ET

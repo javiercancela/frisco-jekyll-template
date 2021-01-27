@@ -5,7 +5,7 @@ description:
 categories:
   - otros
 image: /images/vacaciones.jpg
-comments: true
+
 ---
 
 Esta semana no hay entrada por vacaciones. Volvemos la semana que viene.

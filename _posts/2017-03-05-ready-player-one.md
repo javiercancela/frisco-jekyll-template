@@ -6,7 +6,7 @@ categories:
   - libros
   - ciencia-ficcion
 image: /images/florian-de-gesincourt-degesart-sk0010-playerone-j-deges1500.jpg
-comments: true
+
 excerpt: Comentario del libro Ready Player One, de Ernest Cline
 ---
 _[Imagen de la cabecera](https://www.artstation.com/artwork/bg49G) de [Florian de Gesincourt](https://www.artstation.com/artist/degesart)_

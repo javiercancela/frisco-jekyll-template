@@ -8,7 +8,7 @@ categories:
   - machine-learning
   - inteligencia-artificial
 image: /images/pml/pml.jpg
-comments: true
+
 ---
 
 Tengo este blog fundamentalmente para aprender. La forma en la que aprendo alguna cosa es la siguiente: decido sobre qué quiero aprender, decido qué material voy a utilizar para ello (libros, cursos web, blogs,...) y preparo unos apuntes basados en ese material. Esos apuntes consisten en entradas en este blog donde explico aquello que creo haber entendido.

@@ -9,7 +9,7 @@ categories:
   - inteligencia-artificial
 image: /images/pml/pml.jpg
 excerpt: Conceptos básicos sobre el <em>Machine Learning</em>
-comments: true
+
 ---
 
 El foco de estas entradas se pondrá en el [código Python publicado en GitHub](https://github.com/rasbt/python-machine-learning-book), pero el primer tema no incluye código, tan sólo presenta una serie de conceptos que resumo en esta entrada.

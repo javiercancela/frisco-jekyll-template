@@ -6,7 +6,7 @@ categories:
   - libros
   - ciencia-ficcion
 image: /images/ttbp.jpg
-comments: true
+
 ---
 *El recuerdo del pasado de la tierra* es una trilogía de ciencia ficción escrita por el autor chino Cixin Liu. En español sólo se ha publicado el primer volumen, *[El problema de los Tres Cuerpos](http://www.edicionesb.com/catalogo/libro/el-problema-de-los-tres-cuerpos_4120.html)* , y están en proceso de traducción los otros dos, [*El bosque oscuro* y *El fin de la muerte*](http://novalibros.com/2016/10/bosque-oscuro-fin-la-muerte-cixin-liu/).
 

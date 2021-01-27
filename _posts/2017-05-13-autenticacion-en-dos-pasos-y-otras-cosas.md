@@ -5,7 +5,7 @@ description: Autenticación en dos pasos, comprimidos con js, y otras cosas
 categories:
   - otros
 image: /images/varios.jpg
-comments: true
+
 ---
 
 Algunas notas rápidas sobre cosas que he visto esta semana.

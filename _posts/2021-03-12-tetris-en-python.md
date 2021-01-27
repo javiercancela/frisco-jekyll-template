@@ -6,7 +6,7 @@ categories:
   - juegos
   - python
 image: /images/tetris-lamp.jpg
-comments: true
+
 excerpt: Tutorial para aprender Python programando un juego clásico
 ---
 
