@@ -1,5 +1,5 @@
 - name: Blog
-  slug: Blog
+  slug: blog
 - name: GitHub
   slug: github
 - name: Hardware

@@ -17,3 +17,6 @@ right_links:
   - name:
     link: /feed.xml
     social_icon: RSS
+  - name:
+    link: mailto:javier.cancela@hey.com
+    social_icon: Email
