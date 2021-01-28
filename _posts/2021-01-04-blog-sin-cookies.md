@@ -11,7 +11,7 @@ excerpt: Para cumplir la GRDP hay que añadir un aviso de cookies... o no usar c
 
 # Cómo eliminar las cookies del blog
 
-No creo que la [Agencia Española de Protección de Datos](https://www.aepd.es/es) esté muy pendiente de un blog con 500 visitas al mes alojado en USA, pero queda feo no tener las cosas en regla. 
+No creo que la [Agencia Española de Protección de Datos](https://www.aepd.es/es) esté muy pendiente de un blog con 500 visitas al mes alojado en USA, pero aun así hay que tener las cosas en regla. 
 
 La Agencia tiene una práctica [guía de uso de cookies](https://www.aepd.es/sites/default/files/2020-07/guia-cookies.pdf) donde se explica en detalle todo lo que hay que saber para cumplir con la legislación. De todo lo que hay que saber sobre este tema lo más importante es: **si no necesitas cookies, no las uses.**
 
@@ -27,8 +27,6 @@ Las cookies son pequeños archivos que el navegador almacena y asocia a un domin
 ## Qué cookies tenía
 
 Pues únicamente tres: la de [Google Analytics](https://analytics.google.com/analytics/web/), la del sistema de comentarios, [Disqus](https://disqus.com/), y la de [CloudFlare](https://www.cloudflare.com/es-es/). 
-
-Solo tenía esos porque este blog es un conjunto de páginas estáticas: el html se [genera en local usando Jekyll]({% post_url 2017-01-03-un-blog-en-github-i %}), y [se sube a GitHub]({% post_url 2017-02-19-un-blog-en-github-y-v %}), que sirve el contenido directamente.
 
 ### Cómo quitar la cookie de Disqus
 
